@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Modelo.Usuario>
+@{
+    Layout = null;
+}
+<select name="usuario">
+    @foreach (var item in Model)
+    {
+        <option value=@item.Id>@item.Nome</option>
+    }
+</select>

@@ -1,0 +1,57 @@
+/****
+--- cores ---
+#bbae79 --> bege botão de pesquisa, titulo destaque semana, linhas, #promo preço;
+#696039 --> links topo esquerdo;
+#6a6863 --> 'esqueceu a senha', prox. ofertas, links rodape -> bege mais escuro
+****/
+
+#admin_conteiner_geral {width:1035px;margin: 30px auto;border:1px solid #bbae79; position:relative;}
+	#admin_head {width:1035px;height:180px;background-color:#f9f5f2;}
+		#admin_topo_esquerdo{margin:20px 0 0 20px; float:left; width:auto; height:140px; font-family:Arial,Helvetica,sans-serif; font-size: 13px; border: 0px solid black;}
+		#admin_topo_esquerdo h1{border: 0px solid black; float:left; margin:20px 0 0 110px; font-size: 53px; color : #6a6863;}
+	#admin_content{border: 1px solid #707070; width:1035px; min-height:593px; float:left; background-color:#efebe0; margin-left: -1px; }
+#tabelas_admin{margin:30px 0 0 20px; font-size:16px;}
+#tabelas_admin .table_mais{float:left; margin:15px 0 0 15px}
+#tabelas_admin input{border:none; text-align:left;}
+#tabelas_admin input:hover{cursor:pointer}
+#tabelas_admin .table_menos{float:left; margin:75px 0 0 -300px}
+
+/*****
+Tamanho dos label
+lbl1 - 30px
+lbl2
+lbl3
+lbl4
+*****/
+
+.lbl1 {width:30px;}
+
+.lbl2 {width:80px;}
+
+.lbl3 {width:130px;}
+
+.lbl4 {width:160px;}
+
+/*****
+Tamanhos de objetos text
+txt1 - 30px
+txt2
+txt3
+txt4
+*****/
+
+.txt1 input[type="text"] {width:30px;}
+
+.txt2 input[type="text"] {width:80px;} 
+	.txt2_1 input[type="text"] {width:95px;} 
+
+.txt3 input[type="text"] {width:100px;}
+
+.txt4 input[type="text"] {width:160px;}
+	.txt4_1 input[type="text"] {width:175px;}
+
+.txt5 input[type="text"] {width:200px;}
+
+.txt6 input[type="text"] {width:250px;}
+
+.txt7 input[type="text"] {width:300px;}

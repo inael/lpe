@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>@(ViewBag.Title == null ? "Levivier" : @ViewBag.Title)</title>
+    <link rel="stylesheet" type="text/css" href="/Content/css/levivier.css" />
+</head>
+<body>
+    <div id="conteiner_geral">
+        <div id="topo_esquerdo">
+            <div id="logo">
+                <a href="@Url.Action("","","Home")"><img src="/Content/img/logo.png" alt="Levivier" /></a>
+            </div>
+            <div id="linhas">
+                @Html.ActionLink("Todas","Todas","Campanha") | <a href="#">Feminino</a> | <a href="#">Masculino</a> | <a href="#">Infantil</a>
+            </div>
+            <form action="">
+            <input type="text" name="pesquisar" value="Buscar em todo o site:" class="campo" />
+            <input type="submit" value="OK" class="botao" />
+            </form>
+        </div>
+        <div id="topo_direito">
+            <div id="redes_sociais">
+                <a href=""><img src=@Url.Content("~/Content/img/orkut.png") alt="Orkut"/></a>
+                <a href=""><img src=@Url.Content("~/Content/img/facebook.png") alt="Facebook" /></a>
+                <a href=""><img src=@Url.Content("~/Content/img/twitter.png") alt="Twitter" /></a>
+            </div>
+            <br />
+            @Html.Partial("_LogOnPartial")
+            <br />
+            <span class="err_login">Esqueceu a senha? Não é cadastrado? <a href="#">Clique aqui</a></span>
+            <br />
+            <div id="sacola">
+                <img src="/Content/img/sacola.jpg" alt="Sacola" />
+                <span class="text"><a href="#">Minha Sacola</a> </span>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>

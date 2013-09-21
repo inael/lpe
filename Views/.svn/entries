@@ -1,0 +1,159 @@
+10
+
+dir
+35
+https://subversion.assembla.com/svn/levivier/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views
+https://subversion.assembla.com/svn/levivier
+
+
+
+2012-08-17T21:34:39.198051Z
+35
+svn_levivier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aa7b5f1d-4862-4721-8e16-11fc317d9ec3
+
+Amigos
+dir
+
+CuponsUsuario
+dir
+
+Produtos
+dir
+
+_ViewStart.cshtml
+file
+
+
+
+
+2012-03-14T23:42:52.000000Z
+69e468f28dacc998525ae89a24bc9fa9
+2012-02-24T16:17:09.722897Z
+4
+joselinoneto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+55
+
+Web.config
+file
+
+
+
+
+2012-03-14T23:42:52.000000Z
+d00fa728c4ce128c9b3b6060bbb30440
+2012-02-24T16:17:09.722897Z
+4
+joselinoneto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2873
+
+CuponsCredito
+dir
+
+MenuGrupo
+dir
+
+Usuario
+dir
+
+Home
+dir
+
+Admin
+dir
+
+ProdutoTipo
+dir
+
+Empresa
+dir
+
+Cidades
+dir
+
+ProdutoCaracteristica
+dir
+
+MenuFuncao
+dir
+
+RamoNegocio
+dir
+
+ProdutoSubTipo
+dir
+
+TipoContato
+dir
+
+Shared
+dir
+
+Marcas
+dir
+
+Regiao
+dir
+
+Contato
+dir
+
+Campanha
+dir
+

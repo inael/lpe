@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ViewWebMvc.Models.FormRespostaViewModel>
+@using ViewWebMvc.Models
+
+@{
+    ViewBag.Title = "DiscoverySizes";
+    FormRespostaViewModel teste = (FormRespostaViewModel)ViewData["FormRespostaViewModel"];
+}
+
+<table cellspacing="0">
+        <tr id="index_title_coluna">
+            <th>
+                IdPessoaMedida
+            </th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td>
+            @teste.NomePessoa
+        </td>
+        <td id="coluna_acao">
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Mais detalhes", "Detalhes", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Apagar", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+</table>

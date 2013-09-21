@@ -1,0 +1,25 @@
+﻿@{
+    var Message = TempData["Message"];
+    var MessageStatus = TempData["MessageStatus"];    
+}
+<input type="text" value="@Message" name="Message" id="Message" style="display:none;" />
+<input type="text" value="@MessageStatus" name="MessageStatus" id="MessageStatus" style="display:none;" />
+<script type="text/javascript" runat="server">  
+    var msg = document.getElementById('Message'); 
+	if(msg.value != "") { 
+		alert(msg.value); 
+    } 
+
+    var msgStatus = document.getElementById('MessageStatus');     
+	if(msgStatus.value == "401") { 
+        logoutPage();		
+    }     
+</script>
+<div class="contTodo" style="margin: 10px">
+    <div id="faces" style="border:0px solid blue; width:605px; height:528px; float:left; margin-top:77px; margin-left:-10px;">
+        <img src="/LPE/Content/imgs/faces-index.png" width="605" height="528" />
+    </div>
+    <div id="logo" style="border:0px solid black; width:262px; height:105px; float:left; position:absolute; left:65%; top:60%;">
+        <img src="/LPE/Content/imgs/logo.png" width="262px" height="105px" />
+    </div>
+</div>

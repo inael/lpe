@@ -1,0 +1,137 @@
+﻿@*<div id="_divPdf" style="display: block;">
+    <div id="boxEsquerda">
+        <form id="addForm" name="addReport" action="" method="post">*@
+            <div class="pageheader">
+                <div class="iconCirculo small"></div>
+                <div class="caminho"></div>
+                <div id="action">
+                    <input id="updateButton" type="button" class="btview" onclick="'ViewResult(''ResultadoManager'',''UpdateSetPdf'',$(''#hidIdResultado'').val())'" />
+                    <input id="backButton" type="button" onclick="callBackButton('RelatorioManager','List')" class="btback" />
+                </div>
+            </div>
+            <div class="formBody">
+                <div id="graphs_div">
+                    <div class="formTitle">
+                        <div class="iconCirculo"></div><p>Gráfico (Resultado)</p>
+                    </div>
+                    <div id="distributorGroupR_div" style="width: 700px; height: 10px;"></div>
+                </div>
+                <div class="formContent">
+                    <div class="formField">
+                        <div class="formTitle">
+                            <div class="iconCirculo"></div><p>Perfil</p>
+                        </div>
+                        <div id="PerfilPdf"></div>
+
+                        <div class="formTitle">
+                            <div class="iconCirculo"></div><p>Caracteristica</p>
+                        </div>
+                        <div id="CaracteristicaPdf"></div>
+
+                        <div class="formTitle">
+                            <div class="iconCirculo"></div><p>Motiva</p>
+                        </div>
+                        <div id="MotivaPdf"></div>
+
+                        <div class="formTitle">
+                            <div class="iconCirculo"></div><p>Desagrada</p>
+                        </div>
+                        <div id="DesagradaPdf"></div>
+
+                        <div class="formTitle">
+                            <div class="iconCirculo"></div><p>Potencial</p>
+                        </div>
+                        <div id="PotencialPdf"></div>
+
+                    </div>
+                </div>
+            </div>    
+        </form>
+@*    </div>
+</div>*@
+<script type="text/javascript">
+//    var currentID;
+
+//    $(document).ready(function () {
+//        $('#PdfContent').hide();
+
+//        $(".caminho").html($("#hidFolder").val() + ' > ' + $("#hidMenu").val());
+
+//        var validator = $("#addForm").validate({
+//            rules: {
+//                Nome: { required: true },
+//                CPF: { required: true }
+//                //selectEstado: { required: true }
+//            },
+//            errorElement: "div",
+//            wrapper: "div",  // a wrapper around the error message 
+//            errorPlacement: function (error, element) { errorCSS(error, element); },
+//            messages: {
+//                Nome: "O Nome do município deve ser preenchido.",
+//                CPF: "O Nome da UF deve ser preenchido."
+//                //selectEstado: "O Nome do estado deve ser preenchido."
+//            }
+//        });
+
+//        $("#GrupoRel").fcbkcomplete({
+//            json_url: 'AutoComplete.aspx/AutoCompleteModel.RelatorioGrupoComplete,AutoCompleteModel,RELATORIOS_GRUPOS,NOME,ID_GRUPO',
+//            cache: true,
+//            filter_case: false,
+//            filter_selected: true,
+//            height: 10,
+//            maxitems: 1,
+//            complete_text: "Digite o nome do grupo..."
+//        });
+//    });
+
+//    //Funçao retirada do CrudMenu.js por causa do preenchimento do fcbkcomplete para o updateform
+//    function setupUpdateForm(Controller, Action, id) {
+//        $.ajax({
+//            type: "post",
+//            url: Controller + "/" + Action,
+//            traditional: true,
+//            data: { 'id': id },
+//            success: function (data, text) {
+//                var entidade = eval("(" + data + ")");
+//                var grupo = entidade.IdGrupo;
+//                var usr = $("#hidIdUser").val();
+//                var quest = $("#hidIdQuest").val();
+
+//                fillFormWithHistoryObject(entidade);
+//                callresultData($("#hidIdQuest").val(), $("#hidIdUser").val());
+
+//                //for (var i = 0; i < estados.length; i++)
+//                $('#GrupoRel').trigger('addItem', [{ 'title': grupo.NomeGrupo, 'value': grupo.IdGrupo}]);
+//            }
+//        });
+//    }
+
+//    function callresultData(idQuest, idUser) {
+//        //var COD = $(id).val();
+//        var loading = '<img src="/LPE/Content/imgs/ajax-loader.gif" alt="Carregando..."/>';
+
+//        $("#distributorGroupR_div").append(loading);
+
+//        drawGraphic(idQuest, idUser, 'GerarGrafico', 'distributorGroupR_div');
+
+//        $("#distributorGroupR_div").height(400);
+
+//        $("#graphs_div").show();
+//    }
+
+//    function ViewResult(Controller, Action, id) {
+//        $('#PdfContent').show();
+//        $('#_div').hide();
+
+//        $.ajax({
+//            type: "post",
+//            url: Controller + "/" + Action,
+//            traditional: true,
+//            data: { 'id': id },
+//            success: function (data, text) {
+//                var entidade = eval("(" + data + ")");
+
+//            }
+//        });
+//    }
+</script>

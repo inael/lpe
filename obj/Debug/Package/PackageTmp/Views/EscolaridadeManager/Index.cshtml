@@ -1,0 +1,56 @@
+﻿<div id="PartialContent">
+    @{
+        Html.RenderAction("CreateAndUpdate", "EscolaridadeManager");
+    }
+</div>
+<div id="Base">
+    <div class="pageheader">
+        <input type="button" id="addRowButton" onclick="callCreate('EscolaridadeManager','Create')" value="" class="btadd" />
+        <input type="button" id="updateRowButton" onclick="callUpdate('EscolaridadeManager','Update','IdEscolaridade')" value="" class="btedit" />
+        <input type="button" id="deleteRowButton" onclick="callDelete('EscolaridadeManager','Delete','IdEscolaridade')" value="" class="btdel" />        
+        <input type="button" id="menuButton" onclick="initializeOptionMenu('#conteudo');" value="" class="btback" />        
+    </div>
+    <div id="search"></div>
+    <table id="Grid"></table>
+</div>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        createGrid();
+        loadGrid('EscolaridadeManager', 'List');
+    });
+
+    function createGrid() {
+        $("#Grid").jqGrid({
+            colNames: ['Codigo', 'Nível', 'Descrição'],
+            colModel: [
+            { name: 'IdEscolaridade', index: 'IdEscolaridade', width: 50, sorttype: "text" },
+            { name: 'DescricaoNivelEscolaridade', index: 'DescricaoNivelEscolaridade', width: 249, sorttype: "text" },
+            { name: 'DescricaoEscolaridade', index: 'DescricaoEscolaridade', width: 249, sorttype: "text" }
+   	              ],
+            datatype: "json",
+            height: 'auto',
+            caption: "Escolariadades Cadastradas",
+            sortorder: "asc",
+            sortable: true,
+            viewrecords: true,
+            datatype: "local"
+        });
+    };
+
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+
+                fillFormWithObject(entidade);
+
+                $('#selectNivel').trigger('addItem', [{ 'title': entidade.selectNivel, 'value': entidade.idNivelEscolaridade}]);
+            }
+        });
+    }
+</script>

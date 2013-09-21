@@ -1,0 +1,107 @@
+﻿@model IEnumerable<Modelo.Campanha>
+
+@{
+    ViewBag.Title = "Levivier - Compre sempre mais";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/Slider/engine/style.css" />
+<script type="text/javascript" src="~/Content/Slider/engine/jquery.js"></script>
+
+<div id="centro">
+    <span class="destaque_titulo">DESTAQUES DA SEMANA </span>
+@{
+    string StrImgDiretorioBase = "~/Content/img/";
+    string CampanhaDestaque = "";
+    foreach (var item in Model)
+    {
+        string StrImg = StrImgDiretorioBase + item.UrlImagemCampanha + "/" + item.UrlImagemCampanha;
+        if ((DateTime.Now.Day - item.DataInicio.Day) == 0 && CampanhaDestaque == "")
+        {
+            CampanhaDestaque = "ok";
+            <div id="bg_centro">
+                <div id="promo">
+                    <img src="@Url.Content(StrImg + "_img_logo_pb.jpg")" alt="@item.NomeCampanha"/> 
+                    <br />
+                    ternos, camisas e sapatos até
+                </div>
+                <div id="promo_preco">
+                    <span class="um">6</span> <span class="dois">5</span> <span class="tres">%</span>
+                </div>
+                <span style="float: left; margin: 50px 0 0 10px; letter-spacing: 2px;">OFF</span>
+            </div>
+            <div id="foto">
+                <img src="@Url.Content(StrImg + "_img_circulo.jpg")" alt="@item.NomeCampanha" />
+            </div>
+     
+            <div id="bg_mais_detalhes">
+                OUTROS DESTAQUES
+            </div>
+        }
+        else
+            if (CampanhaDestaque == "")
+            {
+                CampanhaDestaque = "ok";
+            <div id="bg_centro">
+                <div id="promo">
+                    <img src="@Url.Content(StrImg + "_img_logo_pb.jpg")" alt="@item.NomeCampanha"/> 
+                    <br />
+                    ternos, camisas e sapatos até
+                </div>
+                <div id="promo_preco">
+                    <span class="um">6</span> <span class="dois">5</span> <span class="tres">%</span>
+                </div>
+                <span style="float: left; margin: 50px 0 0 10px; letter-spacing: 2px;">OFF</span>
+            </div>
+            <div id="foto">
+                <img src="@Url.Content(StrImg + "_img_circulo.jpg")" alt="@item.NomeCampanha" />
+            </div>
+     
+            <div id="bg_mais_detalhes">
+                OUTROS DESTAQUES
+            </div>
+                                }
+    }
+}
+    <div id="lista_destaques">
+        <ul>
+    @{
+        foreach (var item in Model)
+        {
+            string StrImg = StrImgDiretorioBase + item.UrlImagemCampanha + "/" + item.UrlImagemCampanha;
+            if ((DateTime.Now.Day - item.DataInicio.Day) >= 2 && (DateTime.Now.Day - item.DataInicio.Day) <= 5)
+            {
+                <li>
+                    <img src="@Url.Content(StrImg + "_img_outros.jpg")" alt="@item.NomeCampanha"/><span class="marca_lista"><br />
+                        @item.EmpresaCampanha.NomeFantasia</span>
+                </li>
+            }
+
+        }
+    }
+        </ul>
+    </div>
+    <div id="row"></div>
+    <span class="prox_of">PRÓXIMAS OFERTAS</span>            
+    <div id="marcas_prox">
+        <ul>
+   @{
+        StrImgDiretorioBase = "~/Content/img/";    
+        foreach (var item in Model)
+        {
+            string StrImg = StrImgDiretorioBase + item.UrlImagemCampanha + "/" + item.UrlImagemCampanha;
+            TimeSpan diff = DateTime.Now - item.DataInicio;
+            if ((item.DataInicio.Day - DateTime.Now.Day) >= 1 && (item.DataInicio.Day - DateTime.Now.Day) <= 12)
+            {
+                <li>
+                     <img src="@Url.Content(StrImg + "_img_logo_pb.jpg")" alt="@item.NomeCampanha"/>
+                </li>
+            }
+        }
+    }
+        </ul>
+    </div>
+    <div id="links_rodape">
+        <a href="">Institucional</a> | <a href="">Política de Privacidade</a> | <a href="">Fale
+            Conosco</a>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+﻿     <div class="pageheader">
+        <div class="iconCirculo small"></div>
+        <div class="caminho"></div>
+    </div>
+            <div class="formBody">
+                <div class="formTitle">
+                    <div class="iconCirculo"></div><p>Digite o nome de usuário para gerar o relatório</p>
+                </div>
+
+                <div class="formContent">
+                    <div class="formField">
+                        <label for="selectNomePessoa[]">Nome</label>
+                        <select id="selectNomePessoa" size="60" name="selectNomePessoa[]" title="Ex.: Thiago" placeholder="Digite o nome da pessoa" required></select>
+                    </div>    
+                </div>
+            </div>    
+            <div id="action">
+                <input id="updateButton" type="button" class="btavancar"/>
+                @*<input id="backButton" type="button" value="Voltar" onclick="callBackButton('PessoaManager','List')" class="btback" />*@
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var currentID;
+
+    $(document).ready(function () {
+        $(".caminho").html($("#hidFolder").attr('value') + ' > ' + $("#hidMenu").attr('value'));
+
+        var validator = $("#addForm").validate({
+            rules: {
+                Nome: { required: true },
+                CPF: { required: true }
+                //selectEstado: { required: true }
+            },
+            errorElement: "div",
+            wrapper: "div",  // a wrapper around the error message 
+            errorPlacement: function (error, element) { errorCSS(error, element); },
+            messages: {
+                Nome: "O Nome do município deve ser preenchido.",
+                CPF: "O Nome da UF deve ser preenchido."
+                //selectEstado: "O Nome do estado deve ser preenchido."
+            }
+        });
+
+        $("#EstadoCivil").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EstadoCivilComplete,AutoCompleteModel,ESTADO_CIVIL,DESCRICAO,ID_ESTADO_CIVIL',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite o estado civil..."
+        });
+
+        $("#Endereco").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EnderecoComplete,AutoCompleteModel,ENDERECOS,LOGRADOURO,ID_ENDERECO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a rua..."
+        });
+
+        $("#Escolaridade").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EscolaridadeComplete,AutoCompleteModel,ESCOLARIDADE,DESCRICAO,ID_ESCOLARIDADE',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a escolaridade ..."
+        });
+
+        $("#Profissao").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.CBOSinonimoComplete,AutoCompleteModel,CBO_SINONIMOS,DESCRICAO,ID_SINONIMO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a Profissao..."
+        });
+
+    });
+
+    //Funçao retirada do CrudMenu.js por causa do preenchimento do fcbkcomplete para o updateform
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                var data = new Date(parseInt(entidade.DtNascimentoPessoa.substr(6), 10));
+                var estadoCivil = entidade.IdEstadoCivil;
+                var endereco = entidade.IdEndereco;
+                var escolaridade = entidade.IdEscolaridade;
+
+                fillFormWithObject(entidade);
+
+                $('#Dia').attr('value', data.getDate());
+                $('#Mes').attr('value', data.getMonth() + 1);
+                $('#Ano').attr('value', data.getFullYear());
+
+                //for (var i = 0; i < estados.length; i++)
+                $('#EstadoCivil').trigger('addItem', [{ 'title': estadoCivil.Descricao, 'value': estadoCivil.IdEstadoCivil}]);
+                $('#Endereco').trigger('addItem', [{ 'title': endereco.Logradouro, 'value': endereco.IdEndereco}]);
+                $('#Escolaridade').trigger('addItem', [{ 'title': escolaridade.DescricaoEscolaridade, 'value': escolaridade.IdEscolaridade}]);
+                $('#Profissao').trigger('addItem', [{ 'title': estadoCivil.Descricao, 'value': estadoCivil.IdProfissao}]);
+            }
+        });
+    }
+
+</script>

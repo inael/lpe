@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+@if (Request.IsAuthenticated)
+{
+    <text>Olá <strong>@User.Identity.Name</strong>! [ @Html.ActionLink("Log Off", "LogOff", "Home")
+    ]</text>
+}
+else
+{
+    using (Html.BeginForm("LogOn", "Home", FormMethod.Post, new { id = "login" }))
+    {
+        <img src="/Content/img/login.jpg" style="float: left; margin: -10px 0 0 10px;" />
+        <label>
+            E-mail
+            <input type="text" name="user" class="campo2" />
+            <br />
+        </label>
+        <label>
+            Senha
+            <input type="password" name="pwd" class="campo2" /><br />
+        </label>
+    <input type="submit" value="OK" class="botao2" /> 
+    }
+}

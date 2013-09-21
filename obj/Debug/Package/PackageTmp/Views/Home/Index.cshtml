@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>LPE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/facebookstyle.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/smoothness/jquery-ui-1.8.13.custom.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/ui.jqgrid.css" />
+    <link rel='stylesheet' type='text/css' href="/LPE/Content/css/GMapsSlider.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/Scripts/OAT/pivot.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/admin.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminIndex.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminDetalhes.css" />
+    <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminCreate.css" />
+</head>
+<body>
+    <div class="sitebody">
+        <div class="conteudotop"></div>
+        <div id="ouralert"></div>
+        <div id='geral' class='appbody'>
+            <div style="height: 20px; max-height: 20px;">
+                <div id="siteContent" style="min-height: 20px; width: 100%; display:block; min-width: 160px; background-color:#fff;">
+                    <table style="border-collapse: collapse; width: 100%;" align="center">
+                        <tr>
+                           <td>
+                             <div id="topLogon">
+                                   <div id="logo"></div>
+                                   <div id="userName" style="padding: 10px; display:none">
+                                       <input id="btnLogout" class="btlogout" type="button" value="Sair"  />
+                                   </div>
+                                   <br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" valign="top">
+                                <!--<div style="width: 100%; min-height: 8px; background-color: whitesmoke;"></div>-->
+                                <!-- Centro -->
+                                <div class="conteudo">
+                                    <div id="conteudo">
+                                        @Html.Partial("Overview")
+                                    </div>
+                                </div>
+                                <div id="logOn" style="border:0px solid green; left:67%; top:90%; float:left; position: absolute;">
+                                    <img src="/LPE/Content/imgs/ajax-loader.gif" />
+                                </div>
+                                <!-- rodape -->
+                                <div class="rodapeTotal">
+                                    <div align="right">
+                                        <a href="http://www.futuriti.net.br">
+                                            <img src="/LPE/Content/imgs/logoTransparente.png" height="25px" title="Desenvolvido por Futuriti" /></a></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-ui-1.8.13.custom.min.js"></script>
+    <!--jQuery adds-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.fcbkcomplete.js"> </script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.history.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.tooltip.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.messages_ptbr.js"></script>
+    <!--jQuery Conversor from HTML Table to CSV format-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.table2csv.0.1.1.min.js"></script>
+    <!--Multi-Threading-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/Thread.js"></script>
+    <!--OAT-->
+    <script type="text/javascript">        var featureList = ["pivot"];</script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/loader.js"></script>
+    <!--jqGrid-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/grid.locale-pt-br.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.jqGrid.min.js"></script>
+    <!--Google -->
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+    </script>
+    <!--Futuriti-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/ajaxUpdate.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/PivotTable.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/ValidationAndMask.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/index.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/CrudMenu.js"></script>
+    <script type='text/javascript'>
+        var indexPage = 0;
+        var sessionUser = '@Session["userKey"]';
+
+            $(document).ready(function () {
+                $.history.init(HistoryContentUpdate, { unescape: true });
+                $.ajaxSetup({
+                    error: trataAjaxError
+                });
+
+                initializeOptionMenu('#logOn');
+
+//                if (sessionUser == "") {
+//                    //alert(sessionUser + "LogOn");
+//                    initializeOptionMenu('#logOn');
+//                }
+//                else {
+//                    //alert(sessionUser + "Content");
+//                    initializeOptionMenu('#conteudo');
+//                    $('#logo').html('<img src="/LPE/Content/imgs/logo.png" width="262px" height="105px" />');
+//                    $('#topLogon').css({ "height": "155px", "background-image": "url(//LPE/Content/imgs/bar-top-content.png)" });
+//                    $('#logOn').hide();
+//                    UpdateContainer('Home', 'LogOn', '#UserInfo', null);
+//                };
+
+            });
+    
+    </script>
+    
+</body>
+</html>

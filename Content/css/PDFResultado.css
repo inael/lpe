@@ -1,0 +1,56 @@
+﻿itext{
+	border: 1px solid black;
+	background-image: url(/LPE/Content/imgs/timbrado.jpg);
+}
+
+paragraph{
+	border: 1px solid black;
+	background-image: url(/LPE/Content/imgs/timbrado.jpg);
+}
+
+title
+{
+	font-size: 24px;
+	color: #5e3a60;
+}
+
+trelatorio
+{
+	border: 0px solid black;
+	background-color:#13a59c;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	float: left;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;    
+}
+
+CATALOG
+{
+background-color: #ffffff;
+width: 100%;
+}
+CD
+{
+display: block;
+margin-bottom: 30pt;
+margin-left: 0;
+}
+TITLE
+{
+color: #FF0000;
+font-size: 20pt;
+}
+ARTIST
+{
+color: #0000FF;
+font-size: 20pt;
+}
+COUNTRY,PRICE,YEAR,COMPANY
+{
+display: block;
+color: #000000;
+margin-left: 20pt;
+}

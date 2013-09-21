@@ -1,0 +1,32 @@
+/****
+--- cores ---
+#bbae79 --> bege botão de pesquisa, titulo destaque semana, linhas, #promo preço;
+#696039 --> links topo esquerdo;
+#6a6863 --> 'esqueceu a senha', prox. ofertas, links rodape -> bege mais escuro
+****/
+
+
+#create_head{border:0px solid black; width:100%; height:70px; background-color:#bbae79;}
+	#create_head h2{border:0px solid black; float:left; font-size:23px; color:#fff; margin:20px; }
+#create_display {border:0px solid black; position:relative; width:98%; left:1%; margin-top:20px;}
+	#create_display fieldset{border:1px solid #847a63; padding-left:15px; font-family:Verdana; font-size:15px;}
+	#create_display .editor{border:0px solid green; float:left; width:100%; margin-top:5px;}
+		#create_display .editor-label{border:0px solid blue; float:left; font-weight:bold; padding:4px;}
+		#create_display .editor-field{border:0px solid red; float:left; margin-right:20px;}
+	#create_display input[type="submit"] 
+{
+	border:0px solid green;
+	float:right;
+	margin-top:30px;
+	height:100%;
+	height: 2em;
+	min-width: 6em;
+	font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Helvetica Neue", Arial;
+	font-size: 100%;
+	background-color: #696039;
+	color: #fff;
+	padding: 3px 12px 5px;
+}
+#create_display input[type="submit"]:hover{ background-color:#837b59; }
+#create_display input[type="submit"]:active{ background-color:#3a3313; }
+#create_display p{border:0px solid green; float:right; clear:both;}

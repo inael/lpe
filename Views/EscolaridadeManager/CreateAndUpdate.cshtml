@@ -1,0 +1,54 @@
+﻿<div id="_div" style="display: none;">
+    <div id="boxEsquerda">
+        <form id="addForm" name="add" action="" method="post">
+        <div class="pageheader">
+            <input id="updateButton" type="button" value="Gravar" class="btsave" />
+            <input id="backButton" type="button" value="Voltar" onclick="callBackButton('EscolaridadeManager','List')" class="btback" />
+        </div>
+        <fieldset>
+            <legend>Formulário de Escolaridade</legend>
+            
+            <label id= "DescricaoEscolaridadeLabel" for="DescricaoEscolaridade">Descrição</label>
+            <input id="DescricaoEscolaridade" name="DescricaoEscolaridade" type="text" size="60" placeholder="Digite o nome da Escolaridade" required/>
+            
+            <label for="selectNivel[]">Nível da escolaridade</label>
+            <select id="selectNivel" size="60" name="selectNivel[]" title="Ex.: São Paulo" placeholder="Digite o nome do municipio" required></select>
+
+        </fieldset>
+        </form>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var currentID;
+
+    $(document).ready(function () {
+
+        var validator = $("#addForm").validate({
+            rules: {
+                DescricaoEscolaridade: { required: true },
+                selectNivel: { required: true }
+            },
+            errorElement: "div",
+            wrapper: "div",  // a wrapper around the error message 
+            errorPlacement: function (error, element) { errorCSS(error, element); },
+            messages: {
+                DescricaoEscolaridade: "O Nome do LOGRADOURO não ficar em branco.",
+                selectNivel: "O nome do MUNICIPIO não pode ficar em branco"
+            }
+        });
+
+        $("#selectNivel").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.NivelEscolaridadeComplete,AutoCompleteModel,ESCOLARIDADE_NIVEL,DESCRICAO,ID_NIVEL_ESCOLARIDADE',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite um nível para a escolaridade..."
+        });
+
+    });
+
+</script>

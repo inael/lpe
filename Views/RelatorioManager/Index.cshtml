@@ -1,0 +1,80 @@
+﻿<div id="PartialContent">
+    @{
+        Html.RenderAction("CreateAndUpdate", "RelatorioManager");
+        Session["Gerar"] = Request.QueryString["Gender"].Substring(0,1);
+    }
+</div>
+<div id="Base">
+    <div class="pageheader">
+        <div class="iconCirculo small"></div>
+        <div class="caminho"></div>
+        <div id="action">
+            <input type="button" id="updateButton" class="btMenu"/>
+            <input type="button" id="addRowButton" onclick="callCreate('RelatorioManager','Create')" value="" class="btadd" />
+            <input type="button" id="updateRowButton" onclick="fillHidden('IdResultado'); callUpdate('RelatorioManager','Update','IdRelatorio',ViewResult,'ResultadoManager,UpdateSetPdf');"  value="" class="btedit" />
+            <input type="button" id="deleteRowButton" onclick="callDelete('RelatorioManager','Delete','IdRelatorio')" value="" class="btdel" />    
+            @*<input id="backButton" type="button" value="Voltar" onclick="callBackButton('PessoaManager','List')" class="btback" />*@
+            <input type="hidden" id="hidIdUser" value="" />
+            <input type="hidden" id="hidIdQuest" value="" />
+            <input type="hidden" id="hidIdResultado" value="" />
+        </div>
+    </div>
+    <div id="search"></div>
+    <table id="Grid"></table>
+</div>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        createGrid();
+        var Action = 'List';
+
+        if (@Session["Gerar"] == '1')
+            Action = 'ListResult';
+        
+        loadGrid('RelatorioManager', Action);
+    });
+
+    function fillHidden(selectField){
+        var selected = jQuery("#Grid").jqGrid('getGridParam', 'selrow');
+        if (selected != null) {
+            var id = $('#Grid').jqGrid('getCell', selected, selectField);
+
+            $.ajax({
+            type: "post",
+            url: "ResultadoManager/Search",
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                //var quest = entidade.IdQuestionario.IdQuestionario;
+                //var user = entidade.IdUsuario.IdUsuario;
+                $('#hidIdUser').val(entidade.IdUsuario.IdUsuario);
+                $('#hidIdQuest').val(entidade.IdQuestionario.IdQuestionario);
+                $('#hidIdResultado').val(entidade.IdResultado);
+                }
+            });
+        }
+    }
+
+    function createGrid() {
+        $("#Grid").jqGrid({
+            colNames: ['Código', 'Questionário', 'Nome', 'Sobrenome', 'Código do relatório', 'Maior percentual', 'Perfil'],
+            colModel: [
+            { name: 'IdResultado', index: 'IdResultado', width: 50, sorttype: "text" },
+            { name: 'NomeQuestionario', index: 'NomeQuestionario', width: 100, sorttype: "text" },
+            { name: 'NomePessoa', index: 'NomePessoa', width: 249, sorttype: "text" },
+            { name: 'SobrenomePessoa', index: 'SobrenomePessoa', width: 249, sorttype: "double" },
+            { name: 'IdRelatorio', index: 'IdRelatorio', width: 150, sorttype: "text" },
+            { name: 'Valor', index: 'Valor', width: 150, sorttype: "double" },
+            { name: 'NomeGrupo', index: 'NomeGrupo', width: 100, sorttype: "text" },
+   	              ],
+            datatype: "json",
+            height: 'auto',
+            caption: "Relatórios não gerados",
+            sortorder: "asc",
+            sortable: true,
+            viewrecords: true,
+            datatype: "local"
+        });
+    };
+</script>

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE0B0CC-3BF2-45ED-9197-EAB1ED4AFDCB}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ViewWebMvc</RootNamespace>
+    <AssemblyName>ViewWebMvc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\dotNet\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\..\..\..\..\..\dotNet\itextsharp.xmlworker-all-5.4.3\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.0.0.7\lib\net40-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc">
+      <HintPath>..\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorPDF">
+      <HintPath>..\packages\RazorPDF.1.0.0\lib\net40\RazorPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AutoCompleteController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\BinaryContentResult.cs" />
+    <Compile Include="Controllers\EnderecoManagerController.cs" />
+    <Compile Include="Controllers\EscolaridadeManagerController.cs" />
+    <Compile Include="Controllers\EstadoManagerController.cs" />
+    <Compile Include="Controllers\PDFController.cs" />
+    <Compile Include="Controllers\RelatorioManagerController.cs" />
+    <Compile Include="Controllers\MunicipioManagerController.cs" />
+    <Compile Include="Controllers\NivelEscolaridadeManagerController.cs" />
+    <Compile Include="Controllers\RespostaController.cs" />
+    <Compile Include="Controllers\MenuOpcaoManagerController.cs" />
+    <Compile Include="Controllers\MenuOpcoesPerfisController.cs" />
+    <Compile Include="Controllers\OpcaoRespostaController.cs" />
+    <Compile Include="Controllers\PessoaManagerController.cs" />
+    <Compile Include="Controllers\QuestaoController.cs" />
+    <Compile Include="Controllers\QuestionarioController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResultadoManagerController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\UsuarioQuestionarioController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddressViewModel.cs" />
+    <Compile Include="Models\EscolaridadeViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Regra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Seguranca\RegrasSite.cs" />
+    <Compile Include="Seguranca\UsuarioSite.cs" />
+    <Compile Include="Utils\EncryptionService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\admin.css" />
+    <Content Include="Content\css\adminCreate.css" />
+    <Content Include="Content\css\adminDetalhes.css" />
+    <Content Include="Content\css\adminIndex.css" />
+    <Content Include="Content\css\estilo.css" />
+    <Content Include="Content\css\facebookstyle.css" />
+    <Content Include="Content\css\formStyle.css" />
+    <Content Include="Content\css\GMapsSlider.css" />
+    <Content Include="Content\css\FormResposta.css" />
+    <Content Include="Content\css\PDFResultado.css" />
+    <Content Include="Content\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_inset-soft_65_ffffff_1x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_inset-soft_75_a6d0ba_1x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-bg_inset-soft_75_e6e6e6_1x100.png" />
+    <Content Include="Content\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\css\smoothness\jquery-ui-1.8.13.custom.css" />
+    <Content Include="Content\css\ui.jqgrid.css" />
+    <Content Include="Content\imgs\add_32x32.png" />
+    <Content Include="Content\imgs\ajax-loader.gif" />
+    <Content Include="Content\imgs\background.png" />
+    <Content Include="Content\imgs\bar-top-content.png" />
+    <Content Include="Content\imgs\barra_top.png" />
+    <Content Include="Content\imgs\alt_32x32.png" />
+    <Content Include="Content\imgs\bar_top_index.png" />
+    <Content Include="Content\imgs\bolaVerde.jpg" />
+    <Content Include="Content\imgs\bolaVerde.png" />
+    <Content Include="Content\imgs\btnavancar.png" />
+    <Content Include="Content\imgs\check_32x26.png" />
+    <Content Include="Content\imgs\eye_32x24.png" />
+    <Content Include="Content\imgs\faces-index.png" />
+    <Content Include="Content\imgs\footer_bg.png" />
+    <Content Include="Content\imgs\Ico_Add.png" />
+    <Content Include="Content\imgs\Ico_Atualizar.png" />
+    <Content Include="Content\imgs\ico_busca.png" />
+    <Content Include="Content\imgs\Ico_Editar.png" />
+    <Content Include="Content\imgs\Ico_Excluir.png" />
+    <Content Include="Content\imgs\Ico_Gravar.png" />
+    <Content Include="Content\imgs\Ico_Menu.png" />
+    <Content Include="Content\imgs\Ico_Visualizar.png" />
+    <Content Include="Content\imgs\Ico_Voltar.png" />
+    <Content Include="Content\imgs\logo.png" />
+    <Content Include="Content\imgs\logoTransparente.png" />
+    <Content Include="Content\imgs\timbrado.jpg" />
+    <Content Include="Content\imgs\x_32x32.png" />
+    <Content Include="Content\Scripts\ajaxUpdate.js" />
+    <Content Include="Content\Scripts\CrudMenu.js" />
+    <Content Include="Content\Scripts\FormResposta.js" />
+    <Content Include="Content\Scripts\GlobalFunctions.js" />
+    <Content Include="Content\Scripts\grid.locale-pt-br.js" />
+    <Content Include="Content\Scripts\Index.js" />
+    <Content Include="Content\Scripts\jquery-1.6.1.js" />
+    <Content Include="Content\Scripts\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="Content\Scripts\jquery.fcbkcomplete.js" />
+    <Content Include="Content\Scripts\jquery.history.js" />
+    <Content Include="Content\Scripts\jquery.jqGrid.min.js" />
+    <Content Include="Content\Scripts\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Content\Scripts\jquery.maskMoney.0.2.js" />
+    <Content Include="Content\Scripts\jquery.table2csv.0.1.1.min.js" />
+    <Content Include="Content\Scripts\jquery.tooltip.js" />
+    <Content Include="Content\Scripts\jquery.treeview.js" />
+    <Content Include="Content\Scripts\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Content\Scripts\jquery.validate.messages_ptbr.js" />
+    <Content Include="Content\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\LogOn.js" />
+    <Content Include="Content\Scripts\OAT\animation.js" />
+    <Content Include="Content\Scripts\OAT\bootstrap.js" />
+    <Content Include="Content\Scripts\OAT\close.png" />
+    <Content Include="Content\Scripts\OAT\dimdown.png" />
+    <Content Include="Content\Scripts\OAT\ghostdrag.js" />
+    <Content Include="Content\Scripts\OAT\instant.js" />
+    <Content Include="Content\Scripts\OAT\loader.js" />
+    <Content Include="Content\Scripts\OAT\pivot.css" />
+    <Content Include="Content\Scripts\OAT\pivot.js" />
+    <Content Include="Content\Scripts\OAT\statistics.js" />
+    <Content Include="Content\Scripts\OAT\Thread.js" />
+    <Content Include="Content\Scripts\OptionMenu.js" />
+    <Content Include="Content\Scripts\PivotTable.js" />
+    <Content Include="Content\Scripts\ValidationAndMask.js" />
+    <Content Include="Global.asax" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="CodeTemplates\.svn\prop-base\" />
+    <Folder Include="CodeTemplates\.svn\props\" />
+    <Folder Include="CodeTemplates\.svn\text-base\" />
+    <Folder Include="CodeTemplates\.svn\tmp\prop-base\" />
+    <Folder Include="CodeTemplates\.svn\tmp\props\" />
+    <Folder Include="CodeTemplates\.svn\tmp\text-base\" />
+    <Folder Include="CodeTemplates\AddController\.svn\prop-base\" />
+    <Folder Include="CodeTemplates\AddController\.svn\props\" />
+    <Folder Include="CodeTemplates\AddController\.svn\tmp\prop-base\" />
+    <Folder Include="CodeTemplates\AddController\.svn\tmp\props\" />
+    <Folder Include="CodeTemplates\AddController\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoCompleteModel\AutoCompleteModel.csproj">
+      <Project>{EE142E69-6AE6-46F0-89A0-01DEF59B4D7A}</Project>
+      <Name>AutoCompleteModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{556DE71E-65D8-4285-A665-9E33D2F9CF61}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{3A97BAF8-1CEA-46B6-87FC-3055CEB49C9D}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{49ABE3D0-E93B-40DE-999E-32123FF789CF}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{CC037D8A-B04F-4689-91BE-89B5F3818023}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeTemplates\.svn\all-wcprops" />
+    <None Include="CodeTemplates\.svn\entries" />
+    <None Include="CodeTemplates\AddController\.svn\all-wcprops" />
+    <None Include="CodeTemplates\AddController\.svn\entries" />
+    <None Include="CodeTemplates\AddController\.svn\text-base\Controller.tt.svn-base" />
+    <None Include="CodeTemplates\AddController\Controller.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\Create.tt">
+      <LastGenOutput>Create1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\AspxCSharp\Delete.tt">
+      <LastGenOutput>Delete1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\AspxCSharp\Details.tt">
+      <LastGenOutput>Details1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\AspxCSharp\Edit.tt">
+      <LastGenOutput>Edit1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\AspxCSharp\Empty.tt">
+      <LastGenOutput>Empty1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\AspxCSharp\List.tt">
+      <LastGenOutput>List1.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\Create.tt">
+      <LastGenOutput>Create1.cshtml</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\Delete.tt">
+      <LastGenOutput>Delete1.cshtml</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\Details.tt">
+      <LastGenOutput>Details1.cshtml</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\Edit.tt">
+      <LastGenOutput>Edit1.cshtml</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\Empty.tt">
+      <LastGenOutput>Empty1.cshtml</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\AddView\CSHTML\List.tt">
+      <LastGenOutput>List1.cshtml</LastGenOutput>
+    </None>
+    <Content Include="Views\Usuario\Detalhes.cshtml" />
+    <Content Include="Views\Shared\_Admin.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Home\LogOn.cshtml" />
+    <Content Include="Views\Usuario\IndexSelect.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Home\Overview.cshtml" />
+    <Content Include="Views\Home\ExpiredPage.cshtml" />
+    <Content Include="Views\Home\OptionMenu.cshtml" />
+    <Content Include="Views\Home\ResetPassword.cshtml" />
+    <Content Include="Views\Resposta\FormResposta.cshtml" />
+    <None Include="Content\Fonts\MyriadPro-Regular.otf" />
+    <Content Include="Views\EnderecoManager\Index.cshtml" />
+    <Content Include="Views\EnderecoManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\PessoaManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\PessoaManager\Index.cshtml" />
+    <Content Include="Views\EstadoManager\Index.cshtml" />
+    <Content Include="Views\EstadoManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\MunicipioManager\Index.cshtml" />
+    <Content Include="Views\MunicipioManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\NivelEscolaridadeManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\NivelEscolaridadeManager\Index.cshtml" />
+    <Content Include="Views\EscolaridadeManager\Index.cshtml" />
+    <Content Include="Views\EscolaridadeManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\RelatorioManager\Index.cshtml" />
+    <Content Include="Views\RelatorioManager\CreateAndUpdate.cshtml" />
+    <Content Include="Views\ResultadoManager\ViewResult.cshtml" />
+    <Content Include="Views\ResultadoManager\UpdateSetPdf.cshtml" />
+    <Content Include="Views\Home\TesteIntegracao.cshtml" />
+    <Content Include="Views\Home\IndexMPE.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VSWebSite">
+      <Guid>{A6613CCA-B54B-43B0-AE3C-BA7E299C1CC8}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62341</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62341/LPE/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

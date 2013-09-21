@@ -1,0 +1,151 @@
+﻿<div id="_div" style="display: none;">
+    <div id="boxEsquerda">
+        <form id="addForm" name="addReport" action="" method="post">
+            <div class="pageheader">
+                <div class="iconCirculo small"></div>
+                <div class="caminho"></div>
+                <div id="action">
+                    <input id="updateButton" type="button" class="btview" />
+                    <input id="backButton" type="button" onclick="callBackButton('RelatorioManager','List')" class="btback" />
+                </div>
+            </div>
+            <div class="formBody">
+                <div id="graphs_div">
+                    <div class="formTitle">
+                        <div class="iconCirculo"></div><p>Gráfico (Resultado)</p>
+                    </div>
+                    <div id="distributorGroupR_div" style="width: 700px; height: 10px;"></div>
+                </div>
+                <div class="formTitle">
+                    <div class="iconCirculo"></div><p>Formulário para geração do relatório</p>
+                </div>
+                <div class="formContent">
+                    <div class="formField">
+                        <label for="GrupoRel">Perfil</label>
+                        <select id="GrupoRel" size="60" name="GrupoRel" title="Ex.: Conservador" required></select>
+
+                        <label for="Caracteristica">Caracteristica</label>
+                        <textarea id="Caracteristica" name="Caracteristica" rows="12" cols="89"></textarea>
+
+                        <label for="Motiva">Motiva</label>
+                        <textarea id="Motiva" name="Motiva" rows="12" cols="89"></textarea>
+
+                        <label for="Desagrada">Desagrada</label>
+                        <textarea id="Desagrada" name="Desagrada" rows="12" cols="89"></textarea>
+
+                        <label for="Potencial">Potencial</label>
+                        <textarea id="Potencial" name="Potencial" rows="12" cols="89"></textarea>
+                    </div>
+
+                    <div class="formField">
+                        <label for="ValorMin">Valor Mínimo</label>
+                        <input id="ValorMin" name="ValorMin" type="text" size="30" title="Ex.: 28" placeholder="Digite sua idade (somente números)"/>
+
+                        <label for="ValorMax">Valor Máximo</label>
+                        <input id="ValorMax" name="ValorMax" type="text" size="30" title="Ex.: 28" placeholder="Digite sua idade (somente números)"/>
+                    </div>
+                </div>
+            </div>    
+        </form>
+    </div>
+</div>
+<div id="PdfContent">
+    @{
+        Html.RenderAction("ViewResult", "ResultadoManager");
+    }
+</div>
+<script type="text/javascript">
+    var currentID;
+
+    $(document).ready(function () {
+        $('#PdfContent').hide();
+        
+        $(".caminho").html($("#hidFolder").val() + ' > ' + $("#hidMenu").val());
+
+        var validator = $("#addForm").validate({
+            rules: {
+                Nome: { required: true },
+                CPF: { required: true }
+                //selectEstado: { required: true }
+            },
+            errorElement: "div",
+            wrapper: "div",  // a wrapper around the error message 
+            errorPlacement: function (error, element) { errorCSS(error, element); },
+            messages: {
+                Nome: "O Nome do município deve ser preenchido.",
+                CPF: "O Nome da UF deve ser preenchido."
+                //selectEstado: "O Nome do estado deve ser preenchido."
+            }
+        });
+
+        $("#GrupoRel").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.RelatorioGrupoComplete,AutoCompleteModel,RELATORIOS_GRUPOS,NOME,ID_GRUPO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite o nome do grupo..."
+        });
+    });
+
+    //Funçao retirada do CrudMenu.js por causa do preenchimento do fcbkcomplete para o updateform
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                var grupo = entidade.IdGrupo;
+                var usr = $("#hidIdUser").val();
+                var quest = $("#hidIdQuest").val();
+
+                fillFormWithHistoryObject(entidade);
+                callresultData($("#hidIdQuest").val(), $("#hidIdUser").val());
+
+                //for (var i = 0; i < estados.length; i++)
+                $('#GrupoRel').trigger('addItem', [{ 'title': grupo.NomeGrupo, 'value': grupo.IdGrupo}]);
+            }
+        });
+    }
+    
+    function callresultData(idQuest, idUser) {
+        //var COD = $(id).val();
+        var loading = '<img src="/LPE/Content/imgs/ajax-loader.gif" alt="Carregando..."/>';
+
+        $("#distributorGroupR_div").append(loading);
+
+        drawGraphic(idQuest, idUser, 'GerarGrafico', 'distributorGroupR_div');
+
+        $("#distributorGroupR_div").height(400);
+
+        $("#graphs_div").show();
+    }
+
+    function ViewResult(Param) {
+        var array = Param.split(',');
+        var Controller = array[0];
+        var Action = array[1];
+        var id = $('#hidIdResultado').val();
+
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                $('#PerfilPdf').html(entidade.IdRelatorio.IdGrupo.NomeGrupo);
+                $('#CaracteristicaPdf').html(entidade.IdRelatorio.Caracteristica);
+                $('#MotivaPdf').html(entidade.IdRelatorio.Motiva);
+                $('#DesagradaPdf').html(entidade.IdRelatorio.Desagrada);
+                $('#PotencialPdf').html(entidade.IdRelatorio.Potencial);
+
+                $('#PdfContent').show();
+                $('#_div').hide();
+            }
+        });
+    }
+</script>

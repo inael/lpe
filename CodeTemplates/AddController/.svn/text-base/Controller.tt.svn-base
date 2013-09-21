@@ -1,0 +1,115 @@
+﻿<#@ template language="C#" HostSpecific="True" #>
+<#
+MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace <#= mvcHost.Namespace #>
+{
+    public class <#= mvcHost.ControllerName #> : Controller
+    {
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+<#
+if(mvcHost.AddActionMethods) {
+#>
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Detalhes/5
+
+        public ActionResult Detalhes(int id)
+        {
+            return View();
+        }
+
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Novo
+
+        public ActionResult Novo()
+        {
+            return View();
+        } 
+
+        //
+        // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Novo
+
+        [HttpPost]
+        public ActionResult Novo(FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add insert logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+        
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
+ 
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        //
+        // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Editar/5
+
+        [HttpPost]
+        public ActionResult Editar(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+ 
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Excluir/5
+ 
+        public ActionResult Excluir(int id)
+        {
+            return View();
+        }
+
+        //
+        // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Excluir/5
+
+        [HttpPost]
+        public ActionResult Excluir(int id, FormCollection colecao)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+ 
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+<#
+}
+#>
+    }
+}

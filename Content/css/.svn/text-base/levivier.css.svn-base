@@ -1,0 +1,96 @@
+/****
+--- cores ---
+#bbae79 --> bege botão de pesquisa, titulo destaque semana, linhas, #promo preço;
+#696039 --> links topo esquerdo;
+#6a6863 --> 'esqueceu a senha', prox. ofertas, links rodape -> bege mais escuro
+****/
+a{text-decoration: none;}
+li{list-style:none;}
+img {
+  border: none;
+}
+body {
+  margin: 0;padding: 0;border: 0; /*background:url(../imagens/bg.jpg) center;*/
+  font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Helvetica Neue", Arial;
+}
+#conteiner_geral {width:1035px;min-height:775px;margin: 0 auto; }
+#topo_esquerdo{margin-left:20px; float:left; width:355px; height:140px; font-family:Arial,Helvetica,sans-serif; font-size: 13px;}
+#topo_esquerdo a{color:#696039}
+#logo, #linhas{float:left;}
+#linhas{margin:10px 0 0 20px; border-bottom:2px solid #bbae79;}
+.campo{width:140px; float:left; margin:10px 0 0 20px;color:#6a6863; border:1px solid #bbae79}
+.botao{width:30px; float:left; margin:10px 0 0 5px; background-color:#f1e8d1; color:#6a6863; text-align:center; border:none;}
+.botao:hover{cursor:pointer}
+#topo_direito{float:right; margin:12px; font-family:Arial,Helvetica,sans-serif;color:#6a6863; }
+#redes_sociais{float:right; width:75px; height:auto; margin-top: -5px;}
+#login{ background:url(../img/bg_login.jpg); float:left; width:245px; height:100px;}
+/*campo topo direito*/
+#topo_direito form{margin:10px;}
+.botao2{width:30px; float:right; margin:10px 10px 0 0; background-color:#f1e8d1;text-align:center;}
+.campo2{width:180px; border:none;-border-radius:10px;-webkit-border-radius:10px; -moz-border-radius:10px;font-size:10px;height:20px; }
+#login label{margin:10px 0 0 15px; float:left; font-size:12px;font-weight: bold}
+.err_login{margin:0 0 0 12px; font-size:11px; float:left}
+#sacola{font-size:11px;width:100px;height:30px; float:left; margin:10px 0 0 160px;}
+#sacola img{padding-top:-20px;float:left;}
+#sacola .text{float:left;padding:10px 0 0 0;}
+#centro, #centro_interno,#tabelas_admin{width:1024px; height:420px; float:left;margin-top:100px; font-family:Arial,Helvetica,sans-serif;}
+#centro_interno{margin:10px 0 0 20px;}
+#foto
+{
+	border:0px solid black; float:left; margin:-180px 0 0 20px; z-index:9999;/* width:250px; height:250px; 
+    border-radius: 210px; /*(padrão) 
+	-moz-border-radius: 210px; /* (navegadores Flock e Firefox) 
+	-webkit-border-radius: 210px; /*(navegadores Chrome e Safari)*/
+}
+#bg_centro{background-color:#e7e5df;width:1024px;height:105px}
+.destaque_titulo{letter-spacing:10px; float:left; margin:-25px 0 0 370px;color:#bbae79;}
+#bg_mais_detalhes{letter-spacing:3px; background-color:#f3f0e9;color:#cac097; font-size:11px; 
+width:180px;height:15px;float:left; margin-left:-5px; z-index:-1; padding:5px 0 0 20px;}
+#lista_destaques{float:left; width:640px;height:150px;margin-left:-20px;}
+#lista_destaques li{display:inline;width:150px;height:155px;font-size:10px;color:#000;float:left}
+.marca_lista{float:right; margin:-10px 5px 0 0 }
+#row{background-color:#bbae79; float:left; width:300px;height:1px; margin-left:250px;}
+.prox_of{float:left;color:#6a6863;font-size:11px;margin:10px 0 0 -200px;letter-spacing:3px;}
+#marcas_prox{float:right;width:660px;height:30px;margin:5px 50px 0 0;}
+#marcas_prox li{display:inline;float:left; margin-left:20px;}
+#links_rodape{float:left; border-top:1px solid #bbae79;height:30px;width:250px;
+font-size: 11px; padding-top:10px; margin:200px 0 0 10px }
+#links_rodape a{color:#6a6863;}
+#promo{width:280px; height:40px; float:left; margin:10px 0 0 410px;letter-spacing:2px;}
+#promo img{margin-left:-15px;}
+#promo_preco{background-color:#bbae79; width:75px; height:75px;float:left;color:#fff;}
+.um, .dois, .tres{float:left;font-family:Arial,Helvetica,sans-serif;}
+.um{margin:17px 0 0 7px;font-size:35px; font-weight:lighter}
+.dois{margin:27px 0 0 0;font-size:35px; font-weight:lighter}
+.tres{margin:37px 0 0 6px;font-size:20px; font-weight:lighter}
+#esquerda_topo{width:680px; height:auto; float:left; margin-top:-30px;}
+#banner_destaque{background:url(../img/banner_femi.jpg) no-repeat;width:515px; height:185px; margin:18px 0 0 0 }
+#data_dest{background-color:#bbae79; color:#fff; font-size:12px; width:180px; height:18px;float:left;}
+#marca_topo{float:right; width:105px; height:135px; font-size:9px; letter-spacing:1px;margin:-185px 30px 0 0}
+#esquerda_centro{float:left; width:750px; height:285px; margin-top:20px; font-size:9px;}
+#esquerda_centro li{display:inline;float:left; margin-left:20px;}
+#esquerda_centro ul{margin-left:-60px}
+#esquerda_inferior{float:left; width:400px; height:200px; margin-top: 20px;}
+#esquerda_inferior li{display:inline;float:left; margin:10px 0 0 60px;}
+#esquerda_inferior ul{margin-left:-100px}
+#direita{float:right;width:210px;height:560px;margin:5px 30px 0 0;}
+#rodape{float:left;background:url(../img/bg_login.jpg);width:1024px;height:150px;}
+#links_rodape_int{float:left;height:30px;width:550px;font-size:10px; padding-top:10px; margin:70px 0 0 80px }
+#links_rodape_int a{color:#6a6863;}
+#row_2{float:right; height:80px;width: 1px;background-color:#bbae79; margin:50px 70px 0 0 ;}
+#row_3{float:left; height:200px;width:1px;background-color:#bbae79;margin:32px 0 0 10px ;}
+#pagseguro{float:right;width:230px; height:90px; background-image:url(../img/pagseguro.png); background-repeat:no-repeat;margin:40px 50px 0 0 }
+#selecionado{float:left;width:150px; height:255px;font-size:9px;}
+#selecionado ul{float:left;margin-left:-35px;}
+#lista_selecionado{float:left;width:785px;height:730px;margin:-23px 0 0 -40px;}
+#lista_selecionado li{float:left;width:220px;height:330px;color:#6a6863;font-size:11px; margin:25px 0 0 25px}
+#map{float:left;font-size:12px;color:#6a6863;margin:230px 0 0 -350px }
+#ver_mais{float:right;font-size:10px;color:#6a6863; margin:230px -270px 0 0}
+#ver_mais a{color:#bbae79}
+#tabelas_admin{margin:30px 0 0 20px; font-size:16px;}
+#tabelas_admin .table_mais{float:left; margin:15px 0 0 15px}
+#tabelas_admin input{border:none; text-align:left;}
+#tabelas_admin input:hover{cursor:pointer}
+#tabelas_admin .table_menos{float:left; margin:75px 0 0 -300px}
+
+

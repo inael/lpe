@@ -1,0 +1,76 @@
+/****
+--- cores ---
+#bbae79 --> bege botão de pesquisa, titulo destaque semana, linhas, #promo preço;
+#696039 --> links topo esquerdo;
+#6a6863 --> 'esqueceu a senha', prox. ofertas, links rodape -> bege mais escuro
+****/
+/* Global / Fontes especiais
+***********************************************************************************************************/
+#form
+{
+    border: 0px solid black;
+    font-family: "Myriad-Regular";
+    font-size:11pt;
+}
+
+#dadosUsuario
+{
+    border: 0px solid black;
+    background-color: #f0eeee;
+    min-height: 20%;
+}
+
+.barraTitulo
+{
+   padding:5px;
+   font-size: 18pt;
+   color:#fff;
+   padding-left: 10%;
+}
+
+#campos
+{
+    padding-left: 10%;
+}
+
+#campos .tituloCampo
+{
+    padding:10px 0px 2px 0px;
+    font-weight:bold;
+}
+
+#campos .contentCampo
+{
+    padding-left: 10px;
+}
+
+#Questionario
+{
+    padding-top:1%;
+}
+
+#Questionario #instrucoes
+{
+    padding:1% 10%;
+    width: 65%;
+    font-style:justify;
+}
+
+#Questionario #questao
+{
+    margin:1% 10% 0 10%;
+    font-weight:bold;
+}    
+
+#Questionario #opcaoResposta
+{
+    margin:1% 10%;
+    padding-bottom:15px;
+    border-bottom: 1px dotted #b8b8b8;
+    max-width:65%;
+}
+
+#form #botao
+{
+    margin:1% 10%;
+}

@@ -1,0 +1,58 @@
+﻿@model Modelo.Resultado
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="/LPE/Content/css/PDFResultado.css"?>
+<itext creationdate="2/4/2003 5:49:07 PM" producer="iTextSharpXML" >
+<paragraph style="font-family: Helvetica; font-size: 18; font-style: italic; background:url(@Context.Server.MapPath("~/Content/imgs/timbrado.jpg");">
+	<image plainwidth="9" plainheight="9" url="@Context.Server.MapPath("~/Content/imgs/bolaVerde.png")" />Características mais prováveis
+</paragraph>
+<newline />
+<paragraph>
+	<chunk style="font-family:Arial; text-align:justify;" red="0" green="0" blue="0">@Model.IdRelatorio.Caracteristica</chunk>
+</paragraph>
+<paragraph style="font-family: Helvetica; font-size: 18; font-style: italic; background:url(@Context.Server.MapPath("~/Content/imgs/timbrado.jpg");">
+	<chunk red="255" green="0" blue="0">@Model.IdRelatorio.Desagrada</chunk>
+</paragraph>
+<paragraph>
+	<chunk style="font-family:Times;font-weight:bold;">Report Date: </chunk>
+	<chunk style="font-family:Times;">@DateTime.Now.ToString("MM/dd/yyyy")</chunk>
+</paragraph>
+<paragraph>
+	<chunk style="font-family:Times;font-weight:bold;">Report Time: </chunk>
+	<chunk style="font-family:Times;">@DateTime.Now.ToString("hh:mm tt")</chunk>
+</paragraph>
+<table width="100%" cellpadding="1.0" cellspacing="1.0" widths="3;8;4;4">
+	<row>
+		<cell borderwidth="0.5" left="false" right="false" top="false" bottom="true">User Name</cell>
+		<cell borderwidth="0.5" left="false" right="false" top="false" bottom="true">Description</cell>
+		<cell borderwidth="0.5" left="false" right="false" top="false" bottom="true" horizontalalign="right">Lucky Number</cell>
+		<cell borderwidth="0.5" left="false" right="false" top="false" bottom="true" horizontalalign="right">Doubled</cell>
+	</row>
+	<row>
+		<cell borderwidth="0.5" left="false" right="false" top="true" bottom="false"  />
+		<cell borderwidth="0.5" left="false" right="false" top="true" bottom="false" colspan="2">Count</cell>
+		<cell borderwidth="0.5" left="false" right="false" top="true" bottom="false" horizontalalign="right">1</cell>
+	</row>
+</table>
+<newline />
+<paragraph leading="14.0" font="unknown" align="Default">
+	You can also add images.
+</paragraph>
+<image url="@Context.Server.MapPath("~/Content/imgs/bolaVerde.jpg")"/>
+<paragraph leading="14.0" font="unknown" align="Default">
+	and do lists.
+</paragraph>
+<newline />
+<list numbered="true" symbolindent="15" font="unknown">
+	<listitem leading="18.0" font="Times" size="12.0" align="Default" indentationleft="15.0">
+		<chunk font="Times" size="12.0">First item</chunk>
+	</listitem>
+	<listitem leading="18.0" font="Times" size="12.0" align="Default" indentationleft="15.0">
+		<chunk font="Times" size="12.0">Second item</chunk>
+	</listitem>
+	<listitem leading="18.0" font="Times" size="12.0" align="Default" indentationleft="15.0">
+		<chunk font="Times" size="12.0">Last item</chunk>
+	</listitem>
+</list>
+
+</itext>

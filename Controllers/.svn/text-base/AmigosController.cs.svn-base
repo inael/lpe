@@ -1,0 +1,114 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Negocio;
+using Modelo;
+
+namespace ViewWebMvc.Controllers
+{
+    public class AmigosController : Controller
+    {
+        AmigosBll negocio;
+
+        public AmigosController()
+        {
+            negocio = new AmigosBll();
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Index()
+        {
+            List<Amigos> lista = negocio.Listar();
+            return View(lista);
+        }
+
+        public ActionResult IndexSelect()
+        {
+            List<Amigos> lista = negocio.ListarAtivos();
+            return View(lista);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Details(int id)
+        {
+            Amigos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(FormCollection collection, Amigos entidade)
+        {
+            try
+            {
+                int idUsuario = Convert.ToInt32(collection["usuario"]);
+                entidade.UsuarioAmigos = new Usuario { Id = idUsuario };
+
+                entidade.UsuarioInclusao = User.Identity.Name;
+                negocio.Inserir(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(entidade);
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id)
+        {
+            Amigos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id, FormCollection collection, Amigos entidade)
+        {
+            try
+            {
+                int idUsuario = Convert.ToInt32(collection["usuario"]);
+                entidade.UsuarioAmigos = new Usuario { Id = idUsuario };
+                
+                entidade.UsuarioAteracao = entidade.UsuarioAteracao = User.Identity.Name;
+                negocio.Alterar(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id)
+        {
+            Amigos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+}

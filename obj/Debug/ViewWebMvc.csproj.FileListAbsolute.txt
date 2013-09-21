@@ -1,0 +1,96 @@
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\ViewWebMvc.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\ViewWebMvc.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\EntityFramework.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Modelo.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Negocio.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\FluentNHibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\NHibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Iesi.Collections.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Modelo.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Negocio.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\EntityFramework.xml
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\FluentNHibernate.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\NHibernate.xml
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Iesi.Collections.xml
+D:\THIAGO\www\Levivier\ViewWebMvc\obj\Debug\ResolveAssemblyReference.cache
+D:\THIAGO\www\Levivier\ViewWebMvc\obj\Debug\ViewWebMvc.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\obj\Debug\ViewWebMvc.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Persistencia.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Fabrica.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Ninject.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\FabricaNhibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Persistencia.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Fabrica.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Ninject.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\Ninject.xml
+D:\THIAGO\www\Levivier\ViewWebMvc\bin\FabricaNhibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\ViewWebMvc.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\ViewWebMvc.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Modelo.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Negocio.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\FluentNHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Persistencia.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\NHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Iesi.Collections.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Fabrica.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Ninject.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\FabricaNhibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Negocio.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\FluentNHibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Persistencia.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\NHibernate.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Iesi.Collections.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Ninject.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\Ninject.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\FabricaNhibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\obj\Debug\ResolveAssemblyReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\obj\Debug\ViewWebMvc.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\obj\Debug\ViewWebMvc.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\obj\Debug\ViewWebMvc.csproj.ResolveComReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\log4net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\log4net.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\BCrypt.Net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\BCrypt.Net.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc\bin\BCrypt.Net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\obj\Debug\ViewWebMvc.csprojResolveAssemblyReference.cache
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\obj\Debug\ViewWebMvc.csproj.ResolveComReference.cache
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\obj\Debug\ViewWebMvc.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\obj\Debug\ViewWebMvc.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\ViewWebMvc.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\ViewWebMvc.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Negocio.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\FluentNHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Persistencia.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\NHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Iesi.Collections.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\FabricaNhibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Modelo.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Negocio.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\FluentNHibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Persistencia.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\NHibernate.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Iesi.Collections.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Fabrica.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\FabricaNhibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Microsoft.Web.Infrastructure.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Common.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Mvc.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\WebActivator.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Common.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Common.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Mvc.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Ninject.Web.Mvc.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Core.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\Core.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\AutoCompleteModel.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\AutoCompleteModel.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\itextsharp.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\itextsharp.xmlworker.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\ViewWebMvc\bin\RazorPDF.dll

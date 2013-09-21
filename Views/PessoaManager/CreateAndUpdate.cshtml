@@ -1,0 +1,179 @@
+﻿<div id="_div" style="display: none;">
+    <div id="boxEsquerda">
+        <form id="addForm" name="addRegion" action="" method="post">
+            <div class="pageheader">
+                <div class="iconCirculo small"></div>
+                <div class="caminho"></div>
+            </div>
+            @*Criar tela de cadastro de Pessoas e controlar o fluxo para a resposta do questionario*@
+            <div class="formBody">
+                <div class="formTitle">
+                    <div class="iconCirculo"></div><p>Formulário de dados pessoais</p>
+                </div>
+
+                <div class="formInfo">
+                    <p>Confira e atualize seus dados pessoais antes de iniciar o questionário</p>
+                </div>
+
+                <div class="formContent">
+                    <div class="formField">
+                        <label for="NomePessoa">Nome</label>
+                        <input id="NomePessoa" name="NomePessoa" type="text" size="60" required />
+                    </div>    
+                    
+                    <div class="formField">
+                        <label for="SobrenomePessoa">Sobrenome</label>
+                        <input id="SobrenomePessoa" name="SobrenomePessoa" type="text" size="60"/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="SexoPessoa">Sexo</label>
+                        <input name="SexoPessoa" type="radio" id="masculino" value="M" style="float:left;" />Masculino
+                        <input name="SexoPessoa" type="radio" id="feminino" value="F" />Feminino
+                    </div>
+
+                    <div class="formField">
+                        <label for="EstadoCivil">Estado civil</label>
+                        <select id="EstadoCivil" size="60" name="EstadoCivil" title="Ex.: Solteiro" required></select>
+                    </div>
+
+                    <div class="formField">
+                        <label for="CPFPessoa">CPF</label>
+                        <input id="CPFPessoa" name="CPFPessoa" type="text" size="60" required/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="EmailPessoa">E-Mail</label>
+                        <input id="EmailPessoa" name="EmailPessoa" type="text" size="60"/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="IdadePessoa">Idade</label>
+                        <input id="IdadePessoa" name="IdadePessoa" type="text" size="60" title="Ex.: 28" placeholder="Digite sua idade (somente números)"/>
+                    </div>
+                    
+                    <div class="formField">
+                        <label for="DtNascimentoPessoa">Nascimento(Dia/Mes/Ano)</label>
+                        <input id="Dia" name="Dia" type="text" size="2" style="width:20px; display:inline"/>/
+                        <input id="Mes" name="Mes" type="text" size="2" style="width:20px; display:inline"/>/
+                        <input id="Ano" name="Ano" type="text" size="4" style="width:30px; display:inline"/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="Endereco">Endereço</label>
+                        <select id="Endereco" size="60" name="Endereco" title="Ex.: Goias" placeholder="Digite o nome da Rua" required></select>
+                    </div>
+
+                    <div class="formField">
+                        <label for="Escolaridade">Escolaridade</label>
+                        <select id="Escolaridade" size="60" name="Escolaridade" title="Ex.: 1 grau" placeholder="Digite sua escolaridade" required></select>
+                    </div>
+
+                    <div class="formField">
+                        <label for="Profissao">Profissão</label>
+                        <select id="Profissao" size="60" name="Profissao" title="Ex.: São Paulo" placeholder="Digite o nome da profissao" required></select>
+                    </div>
+                </div>
+            </div>    
+            <div id="action">
+                <input id="updateButton" type="button" class="btavancar"/>
+                @*<input id="backButton" type="button" value="Voltar" onclick="callBackButton('PessoaManager','List')" class="btback" />*@
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var currentID;
+
+    $(document).ready(function () {
+        $(".caminho").html($("#hidFolder").attr('value') + ' > ' + $("#hidMenu").attr('value'));
+
+        var validator = $("#addForm").validate({
+            rules: {
+                Nome: { required: true },
+                CPF: { required: true }
+                //selectEstado: { required: true }
+            },
+            errorElement: "div",
+            wrapper: "div",  // a wrapper around the error message 
+            errorPlacement: function (error, element) { errorCSS(error, element); },
+            messages: {
+                Nome: "O Nome do município deve ser preenchido.",
+                CPF: "O Nome da UF deve ser preenchido."
+                //selectEstado: "O Nome do estado deve ser preenchido."
+            }
+        });
+
+        $("#EstadoCivil").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EstadoCivilComplete,AutoCompleteModel,ESTADO_CIVIL,DESCRICAO,ID_ESTADO_CIVIL',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite o estado civil..."
+        });
+
+        $("#Endereco").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EnderecoComplete,AutoCompleteModel,ENDERECOS,LOGRADOURO,ID_ENDERECO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a rua..."
+        });
+
+        $("#Escolaridade").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EscolaridadeComplete,AutoCompleteModel,ESCOLARIDADE,DESCRICAO,ID_ESCOLARIDADE',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a escolaridade ..."
+        });
+
+        $("#Profissao").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.CBOSinonimoComplete,AutoCompleteModel,CBO_SINONIMOS,DESCRICAO,ID_SINONIMO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Digite a Profissao..."
+        });
+
+    });
+    
+    //Funçao retirada do CrudMenu.js por causa do preenchimento do fcbkcomplete para o updateform
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                var data = new Date(parseInt(entidade.DtNascimentoPessoa.substr(6), 10));
+                var estadoCivil = entidade.IdEstadoCivil;
+                var endereco = entidade.IdEndereco;
+                var escolaridade = entidade.IdEscolaridade;
+
+                fillFormWithObject(entidade);
+
+                $('#Dia').attr('value', data.getDate());
+                $('#Mes').attr('value', data.getMonth()+1);
+                $('#Ano').attr('value', data.getFullYear());
+
+                //for (var i = 0; i < estados.length; i++)
+                $('#EstadoCivil').trigger('addItem', [{ 'title': estadoCivil.Descricao, 'value': estadoCivil.IdEstadoCivil}]);
+                $('#Endereco').trigger('addItem', [{ 'title': endereco.Logradouro, 'value': endereco.IdEndereco}]);
+                $('#Escolaridade').trigger('addItem', [{ 'title': escolaridade.DescricaoEscolaridade, 'value': escolaridade.IdEscolaridade}]);
+                $('#Profissao').trigger('addItem', [{ 'title': estadoCivil.Descricao, 'value': estadoCivil.IdProfissao}]);
+            }
+        });
+    }
+
+</script>

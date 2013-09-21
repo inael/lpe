@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Negocio;
+using Modelo;
+
+namespace ViewWebMvc.Controllers
+{
+    public class EmpresaController : Controller
+    {
+        EmpresaBll negocio;
+
+        public EmpresaController()
+        {
+            negocio = new EmpresaBll();
+        }
+
+        public ActionResult Index()
+        {
+            List<Empresa> lista = negocio.Listar();
+            return View(lista);
+        }
+
+<<<<<<< .mine
+        public ActionResult Detalhes(int id)
+=======
+        public ActionResult IndexSelect()
+        {
+            List<Empresa> lista = negocio.ListarAtivos();
+            return View(lista);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Details(int id)
+>>>>>>> .r27
+        {
+            Empresa entidade = negocio.Consultar(id);
+
+            return View(entidade);
+        }
+
+        public ActionResult Incluir()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Incluir(FormCollection dadosFormulario, Empresa entidade)
+        {
+            if (ModelState.IsValid)
+            {
+<<<<<<< .mine
+                negocio.Incluir(entidade);
+                if (entidade.Id != 0)
+                    return RedirectToAction("Index");
+                else
+                    return View(entidade);
+=======
+                int idCidade = Convert.ToInt32(collection["cidades"]);
+                entidade.CidadeEmpresa = new Cidades { Id = idCidade };
+                
+                int idRamoNegocio = Convert.ToInt32(collection["ramonegocio"]);
+                entidade.RamoNegocioEmpresa = new RamoNegocio { Id = idRamoNegocio };
+
+                entidade.UsuarioInclusao = User.Identity.Name;
+                negocio.Inserir(entidade);
+                return RedirectToAction("Index");
+>>>>>>> .r27
+            }
+            else
+                return View(entidade);
+        }
+
+       /* public ActionResult ExcluirLogico(int id)
+        {
+
+        }*/
+    }
+}

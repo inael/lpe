@@ -1,0 +1,80 @@
+﻿<div id="_div" style="display: none;">
+    <div id="boxEsquerda">
+        <form id="addForm" name="add" action="" method="post">
+        <div class="pageheader">
+            <input id="updateButton" type="button" value="Gravar" class="btsave" />
+            <input id="backButton" type="button" value="Voltar" onclick="callBackButton('EstadoManager','List')" class="btback" />
+        </div>
+        <fieldset>
+            <legend>Formulário de Município</legend>
+            
+            <label id= "MunicipioLabel" for="Municipio">Município</label>
+            <input id="NomeMunicipio" name="NomeMunicipio" type="text" size="60" placeholder="Digite o nome do Município" required/>
+            
+            <label for="IBGE">Código IBGE</label>
+            <input id="IBGE" name="IBGE" type="text" size="60"/>
+
+            <label for="IDUF">Código UF</label>
+            <input id="IDUF" name="IDUF" type="text" size="60" placeholder="Digite o nome da UF" required/>
+
+            <label for="Estado">Estado</label>
+            <select id="Estado" size="60" name="Estado" title="Ex.: São Paulo" placeholder="Digite o nome do Estado" required></select>
+            
+        </fieldset>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var currentID;
+
+    $(document).ready(function () {
+
+        var validator = $("#addForm").validate({
+            rules: {
+                NomeMunicipio: { required: true },
+                IDUF: { required: true },
+                Estado: { required: true }
+            },
+            errorElement: "div",
+            wrapper: "div",  // a wrapper around the error message 
+            errorPlacement: function (error, element) { errorCSS(error, element); },
+            messages: {
+                NomeMunicipio: "O Nome do município deve ser preenchido.",
+                IDUF: "O Nome da UF deve ser preenchido.",
+                Estado: "O Nome do estado deve ser preenchido."
+            }
+        });
+
+        $("#Estado").fcbkcomplete({
+            json_url: 'AutoComplete.aspx/AutoCompleteModel.EstadoComplete,AutoCompleteModel,ESTADOS,NOME,ID_ESTADO',
+            cache: true,
+            filter_case: false,
+            filter_selected: true,
+            height: 10,
+            maxitems: 1,
+            complete_text: "Enter States..."
+        });
+
+    });
+
+    //Funçao retirada do CrudMenu.js por causa do preenchimento do fcbkcomplete para o updateform
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+                var estados = entidade.IdEstadoMunicipio;
+
+                fillFormWithObject(entidade);
+
+                //for (var i = 0; i < estados.length; i++)
+                $('#Estado').trigger('addItem', [{ 'title': estados.NomeEstado, 'value': estados.IdEstado}]);
+            }
+        });
+    }
+
+</script>

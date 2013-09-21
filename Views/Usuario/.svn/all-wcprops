@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario
+END
+Index.cshtml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario/Index.cshtml
+END
+IndexSelect.cshtml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario/IndexSelect.cshtml
+END
+Detalhes.cshtml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario/Detalhes.cshtml
+END
+Create.cshtml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario/Create.cshtml
+END
+Incluir.cshtml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/ViewWebMvc/Views/Usuario/Incluir.cshtml
+END

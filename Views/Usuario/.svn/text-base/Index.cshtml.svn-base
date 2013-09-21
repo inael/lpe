@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Modelo.Usuario>
+
+@{
+    ViewBag.Title = "Lista de usuários cadastrados";
+	Layout = "~/Views/Shared/_Admin.cshtml";
+    
+    var color = "";
+}
+<div id="index_content">
+    <div id="index_head">
+        <h2>@ViewBag.Title</h2>
+    </div>
+    <table cellspacing="0">
+        <tr id="index_title_coluna">
+            <th>
+                Nome
+            </th>
+            <th>
+                Login
+            </th>
+            <th>
+                Senha
+            </th>
+            <th>
+                Administrador
+            </th>
+            <th>
+                @Html.ActionLink("Cadastrar novo usuário", "Create")
+            </th>
+        </tr>
+
+    @foreach (var item in Model) {
+        if (color == "#f7f3f0")
+        {
+            color = "#f0ebe7";
+        }
+        else
+        {
+            color = "#f7f3f0";
+        }
+        <tr style="background-color:@color;">
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Senha)
+            </td>
+            <td style="text-align:center;">
+                @Html.DisplayFor(modelItem => item.Administrador)
+            </td>
+            <td id="coluna_acao">
+                @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Mais detalhes", "Detalhes", new { id=item.Id }) |
+                @Html.ActionLink("Apagar", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+
+    </table>
+</div>

@@ -1,0 +1,114 @@
+﻿@using Modelo;
+@using System.Web.Script.Serialization;
+@using ViewWebMvc.Serialization;
+
+@{
+    JavaScriptSerializer serialize = JsDateTimeSerializer.GetSerializer();
+    Usuario entityUsuario = (Usuario)Session["user"];
+    Questionario entityQuestionario = (Questionario)ViewData["Questionario"];
+    List<UsuarioToQuestionario> listUsuarioToQuestionario = (List<UsuarioToQuestionario>)ViewData["UsuarioToQuestionario"];
+    List<QuestaoToQuestionario> listQuestoes = (List<QuestaoToQuestionario>)ViewData["Questoes"];
+    List<OpcaoRespostaToQuestionario> listOpcoesResposta = (List<OpcaoRespostaToQuestionario>)ViewData["OpcoesResposta"];
+
+    Session["indice"] = 0;
+
+    var Questoes = MvcHtmlString.Create(serialize.Serialize(listQuestoes.Select(q => new {q.idQuestao.Numero, q.idQuestao.Enunciado, q.idQuestaoToQuestionario})));
+    var TotalQuestoes = listQuestoes.Count;
+    var idUsuarioToQuestionario = MvcHtmlString.Create(serialize.Serialize(listUsuarioToQuestionario.Where(q => q.idQuestionario.IdQuestionario == entityQuestionario.IdQuestionario &&
+                                                                                                           q.idUsuario.IdUsuario == entityUsuario.IdUsuario)
+                                                                                                    .Select(q => new { q.IdUsuarioQuestionario })));
+    var Questionario = MvcHtmlString.Create(serialize.Serialize(entityQuestionario.IdQuestionario));
+}
+<link rel="stylesheet" type="text/css" href="/Content/css/FormResposta.css" />
+<div id="form">
+    <div id="dadosUsuario">
+        <div class="barraTitulo Green">Dados Pessoais</div>
+        <div id="campos">
+            <div class="tituloCampo">Nome</div>
+            <div class="contentCampo">@entityUsuario.Pessoa_Usuario.NomePessoa @entityUsuario.Pessoa_Usuario.NomeMeioPessoa @entityUsuario.Pessoa_Usuario.SobrenomePessoa</div>
+            <div class="tituloCampo">E-mail</div>
+            <div class="contentCampo">@entityUsuario.Login</div>
+            <div class="tituloCampo">Data de Nascimento</div>
+            <div class="contentCampo">@entityUsuario.Pessoa_Usuario.DataInclusao</div>
+        </div>
+    </div>
+    <div id="msgConclusao"></div>
+    <div id="Questionario">
+        <div class="barraTitulo Pink">Instruções</div>
+        <div id="instrucoes">
+            @entityQuestionario.Instrucao
+        </div>
+        <div class="barraTitulo Yellow">Questionário</div>
+        <div id="questao"></div>
+        <div id="opcaoResposta">
+            @foreach (var opcaoResposta in listOpcoesResposta)
+            { 
+                <input type="radio" id="resposta" name="resposta" value="@opcaoResposta.IdOpcaoRespostaQuestionario"/>
+                @opcaoResposta.idOpcaoResposta.Nome
+            }
+        </div>
+    </div>
+    <div id="botao">
+        <input type="button" id="btnAvancar" value="Avancar" />
+        <div id="loading" style="float:right; margin-right:89%;">
+            <img src="/Content/imgs/ajax-loader.gif" />
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        var list = @Questoes;
+        var cont = @Session["indice"];
+        var concluido = 0;
+        var listUserQuest = @idUsuarioToQuestionario;
+
+        $('#resposta').attr('checked',true);
+        $('#questao').html(list[cont].Numero+"."+list[cont].Enunciado);
+        $('#loading').hide();
+
+        $('#btnAvancar').click(function () {
+            /*if ($('#resposta').is(':checked') == false) {
+                alert("É necessário preencher preencher uma das opções abaixo.");
+            } 
+            else {*/
+                if (cont == @TotalQuestoes-1){
+                    concluido = 1;
+                }
+            
+                $('#loading').show();
+                $('#resposta').attr('disabled', true);
+            
+                AjaxWaitRequest('#btnAvancar', {
+                    url: "Resposta/Inserir",
+                    data: {
+                        Questao: list[cont].idQuestaoToQuestionario,
+                        Resposta: $('#resposta:checked').val(),
+                        Questionario: @Questionario,
+                        UsuarioQuestionario: listUserQuest[0].IdUsuarioQuestionario,
+                        Concluido: concluido 
+                    },
+                    success: function (data, text) {
+                        if (data == "False") {
+                            alert("Nao foi possivel enviar sua resposta");
+                        }
+                        else if (data = "True") {
+                                if (cont < @TotalQuestoes-1){
+                                    cont++;
+                                    $('#questao').html(list[cont].Numero+"."+list[cont].Enunciado);
+                                    $('#resposta').attr('disabled', false);
+                                    $('#loading').hide();
+                                } else {
+                                   $('#btnAvancar').hide();
+                                   $('#Questionario').hide();
+                                   $('#msgConclusao').show();
+                                   $('#loading').hide();
+                                   $('#msgConclusao').html("Parabens vc concluido o questionario com sucesso");
+                                }
+                        }
+                    }
+                });
+            //};
+        });        
+    });
+</script>

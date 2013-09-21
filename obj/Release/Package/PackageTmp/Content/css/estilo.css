@@ -1,0 +1,832 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 11pt;
+    font-style: normal;
+    font-family: "Myriad-Regular", Verdana, Tahoma, sans-serif;
+    color: #333;
+    /*background-color: whitesmoke;*/
+    background-image: url(/Content/imgs/background.png);
+}
+
+/* Global / Fontes especiais
+***********************************************************************************************************/
+@font-face{
+	font-family: "Broadway";
+	src: url("/Content/fonts/BROADW.TTF") format("TrueType");
+	!important;
+}
+
+@font-face{
+	font-family: "Myriad-Regular";
+	src: url("/Content/fonts/MyriadPro-Regular.otf");
+	!important;
+}
+
+/* Global / Background color Barras
+***********************************************************************************************************/
+.Green
+{
+    background-color:#13a59c;
+}
+
+.Pink
+{
+    background-color:#ec217c;    
+}
+
+.Yellow
+{
+    background-color:#fcd20b;    
+}
+
+/* input[type='radio']
+***********************************************************************************************************/
+input[type='radio'] {
+    -webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+    -webkit-appearance: none;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 3px;
+    -webkit-transition: border 500ms;
+    background: -webkit-linear-gradient(#fafafa, #dcdcdc);
+    border-radius: 100%;
+    border: 1px solid #a0a0a0;
+    display: inline-block;
+    height: 15px;
+    margin-bottom: 0;
+    position: relative;
+    top: 3px;
+    vertical-align: baseline;
+    width: 15px;
+}
+
+input[type='radio']:disabled {
+    opacity: .75;
+}
+
+input[type='radio']:not(:disabled):not(:active):hover {
+    background: -webkit-linear-gradient(#fff, #e6e6e6);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+input[type='radio']:not(:disabled):active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    background: -webkit-linear-gradient(#f0f0f0, #bebebe);
+    border: 1px solid #808080;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+
+input[type='radio']:checked::before {
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    -webkit-margin-start: 4px;
+    background: #808080;
+    border-radius: 10px;
+    content: '';
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    height: 5px;
+    left: 0;
+    margin-top: 4px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    vertical-align: top;
+    width: 5px;
+}
+
+html[dir='rtl'] input[type='radio']:checked::before {
+    right: 0;
+}
+
+input[type='radio']:active:checked::before {
+    background: #606060;
+}
+
+/* Global / Div LogOn
+***********************************************************************************************************/
+#topLogon
+{
+    background-image: url(/Content/imgs/barra_top.png);
+    background-repeat:no-repeat;
+    min-height:160px;
+}
+
+#logOn 
+{
+    float: right;
+    -moz-border-radius: 4px 0px 0px 0px;
+    -webkit-border-radius: 4px 0px 0px 0px;
+    border-radius: 4px 0px 0px 0px;
+    max-width: 360px;
+}
+
+/* Global / Div Logo
+***********************************************************************************************************/
+#logo
+{
+    padding: 25px;
+    width:262px;
+    float: left;
+}
+
+/* Global / Option Menu
+***********************************************************************************************************/
+.browser
+{
+    margin: 5px;
+}
+
+.browser img
+{
+    margin-right: 5px;
+}
+
+.menu
+{
+    cursor: default;
+    padding-bottom: 4px;
+    font-weight: bold;
+    border: 1px solid #c2c2c2;
+    margin: 1.7% 2.5%;
+    color: White;
+    text-transform: uppercase;
+    float: left;
+    min-width:360px;
+}
+
+.sombramenu
+{
+    height: 3px;
+    width: 100%;
+}
+
+.folder
+{
+    cursor: default;
+    padding: 15px;
+    background-color:#13a59c;
+    border-bottom:5px solid #ed217c;
+}
+
+.selectedMenuItem 
+{
+    background-color: #e5e3de;
+    border: 1px dotted white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius:  4px;
+}
+
+.treeMenuOption
+{
+    padding: 5px 10px 5px 30px;
+    cursor: pointer;
+    color:#1a1a1a;
+    text-transform: capitalize;
+}
+
+.appheader
+{
+    height: 102px;
+    padding: 5px 10px 0px 10px;
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+
+.appbody
+{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 960px;
+}
+
+.pageheader
+{
+    background: #dadada;
+    padding: 10px 10px 5px;
+    margin: -5px -5px 4px -5px;
+}
+
+#conteudo
+{
+    /*background-image: url(/Content/imgs/background.png);*/
+    padding: 5px;
+    min-height: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+a img
+{
+    border: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+p, a, a:visited
+{
+    color: #333;
+}
+
+a:hover
+{
+    color: #fd795b;
+}
+
+img
+{
+    border: none;
+}
+
+fieldset
+{
+    border: 1px solid #b7b3b2;
+    padding: 15px;
+    margin: 10px 0 5px 5px;
+}
+
+fieldset label
+{
+    float: left;
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+}
+
+fieldset input[type="radio"]
+{
+    display: inline;
+    border: 0px;
+    background-color: #e0dccb;
+}
+
+fieldset .radiogroup label
+{
+    float: none;
+    display: inline;
+    text-align: left;
+}
+
+fieldset input[type="checkbox"]
+{
+    display: inline;
+    border: 0px;
+    background-color: #e0dccb;
+}
+
+fieldset .checkboxgroup label
+{
+    float: none;
+    display: inline;
+    text-align: left;
+}
+
+fieldset .inputTextgroup input[type="text"]
+{
+    display: inline; 
+    padding:1px 0px 1px 0px;   
+}
+
+fieldset .inputTextgroup label
+{
+    float: none;
+    display: inline;
+    text-align: left;
+    padding:0px 0px 0px 0px;   
+}
+
+fieldset legend
+{
+    background-color: #e0dccb;
+    width: 99%;
+    padding: 2px 5px 2px 5px;
+    border-top: 1px solid #22222;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+fieldset input
+{
+    display: block;
+    color: #000000;
+    background: #ffffff;
+    padding: 2px 2px;
+    margin-bottom: 5px;
+}
+
+fieldset input[type="button"], input[type="button"]
+{
+    padding: 4px 20px 4px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"]
+{
+    width: 300px;
+    height: 25px;
+    border: 1px solid #cfcfcf;
+}
+
+input[type="button"]
+{
+    display: inline;
+    margin: 0 0 0 0;
+    background-color: #5e3a60;
+    border: 1px solid #5e3a60;
+    color:#FFF;
+}
+
+#resetPassword
+{
+    margin-left:10px;
+}
+
+fieldset input[disabled=disabled], input[disabled=disabled]
+{
+    background: #e0dfe4;
+}
+
+fieldset input:hover[disabled=disabled], input:hover[disabled=disabled]
+{
+    background: #e0dfe4;
+}
+
+fieldset input:focus, input:focus
+{
+    border: 1px solid #00793a;
+}
+
+fieldset input:hover, input:hover
+{
+    border: 1px solid #00793a;
+}
+
+fieldset select, select
+{
+    border: 1px inset #aaaaaa;
+    color: #000000;
+    background: #ffffff;
+    padding: 2px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+    margin-bottom: 5px;
+}
+
+fieldset select:hover, select:hover
+{
+    border: 2px ridge #fd795b;
+}
+
+fieldset input[readonly=readonly], input[readonly=readonly]
+{
+    background: #e0dfe4;
+}
+
+fieldset ul
+{
+    margin-bottom: 5px;
+}
+
+.textBoxDisabled
+{
+    color: #000000;
+    background: #e0dfe4;
+    border: 1px solid #afafaf;
+    padding: 2px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+.textBoxDestaque
+{
+    color: #000000;
+    background: #FFFCDB;
+    border: 1px solid #E9A914;
+    padding: 2px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+.selectBox
+{
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #656565;
+    padding: 2px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+.SelectBoxDestaque
+{
+    color: #000000;
+    background: #FFFCDB;
+    border: 1px solid #E9A914;
+    padding: 2px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+#contenttitle
+{
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#ui-datepicker-div
+{
+    z-index: 999999;
+}
+
+.splitter
+{
+    cursor: pointer;
+}
+
+.ui-jqgrid
+{
+    margin-top: 5px;
+}
+
+.vsplitter
+{
+    cursor: pointer;
+    border: 1px solid #DAD8D4;
+    background: #e0dccb url(/CockpitContent/Content/imgs/prev_mon.gif) no-repeat center;
+    width: 8px;
+    height: 15px;
+    margin-top: 10px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.hsplitter
+{
+    cursor: pointer;
+    border: 1px solid #DAD8D4;
+    background: #e0dccb url(/CockpitContent/Content/imgs/up_mon.gif) no-repeat center;
+    width: 15px;
+    height: 8px;
+    margin-left: 5px;
+    margin-top: -7px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.trwithoutheight
+{
+    line-height: 0px;
+}
+
+.buttonsbar
+{
+    margin: 0 0 5px 0;
+    padding: 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+.btadd
+{
+    background: url(/CockpitContent/Content/imgs/add.png) no-repeat 3px center;
+}
+
+.btedit
+{
+    background: url(/CockpitContent/Content/imgs/edit.png) no-repeat 3px center;
+}
+
+.btdel
+{
+    background: url(/CockpitContent/Content/imgs/delete.png) no-repeat 3px center;
+}
+
+.btback
+{
+    background: url(/CockpitContent/Content/imgs/back.png) no-repeat 3px center;
+}
+
+.btsave
+{
+    background: url(/CockpitContent/Content/imgs/accept.png) no-repeat 3px center;
+}
+
+.btsaveAs
+{
+    background: url(/CockpitContent/Content/imgs/save_as.png) no-repeat 3px center;
+}
+
+.btconfiguration
+{
+    background: url(/CockpitContent/Content/imgs/configuration.png) no-repeat 3px center;
+}
+
+.btprinter
+{
+    background: url(/Content/imgs/export_excel.png) no-repeat 3px center;
+}
+
+.btfilter
+{
+    background: url(/CockpitContent/Content/imgs/filter.png) no-repeat 3px center;
+}
+
+.btfilterSave
+{
+    background: url(/CockpitContent/Content/imgs/filter_save.png) no-repeat 3px center;
+}
+
+.btfilterDelete
+{
+    background: url(/CockpitContent/Content/imgs/filter_delete.png) no-repeat 3px center;
+}
+
+.btlogin
+{
+    background: url(/Content/imgs/lock_open.png) no-repeat 3px center;
+}
+
+.btlogout
+{
+    background: url(/CockpitContent/Content/imgs/lock.png) no-repeat 3px center;
+}
+
+.bthelp
+{
+    background: url(/CockpitContent/Content/imgs/help.png) no-repeat 3px center;
+}
+
+.btsearch
+{
+    background: url(/CockpitContent/Content/imgs/search.png) no-repeat 3px center;
+}
+
+#tooltip
+{
+    position: absolute;
+    z-index: 6000;
+    border: 1px solid #111;
+    background-color: #eee;
+    padding: 5px;
+    opacity: 0.85;
+}
+
+#tooltip h3, #tooltip div
+{
+    margin: 0;
+}
+
+#ouralert
+{
+    padding: 5px;
+    display: none;
+    position: fixed; /*width:200px; */
+    top: 5px;
+    left: 30%;
+    right: 30%;
+    z-index: 100;
+    text-align: center;
+    font-weight: bold;
+    text-indent: 20px;
+    background: url(/CockpitContent/Content/imgs/warn.png) no-repeat 2px center;
+    background-color: #fd795b;
+    border: 1px solid #fd795b;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+}
+
+table.defaultTable
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px;
+    min-height: 40px;
+    height: 40px;
+    color: #333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+}
+table.defaultTable th
+{
+    background-color: #dadada;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #aaa;
+}
+table.defaultTable tr
+{
+    background-color: #fff;
+    font-weight: bold;
+}
+table.defaultTable td
+{
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #aaaaaa;
+}
+
+table.defaultTable tr.Expander
+{
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+table.defaultTable tr.Expander:hover 
+{
+    background-color: #d4e3e5;
+    cursor: pointer;
+}
+
+#tableCashFlowReport th, #tableCashFlowReport td
+{
+    border: 1px solid #aaaaaa;
+    padding: 6px;
+    text-align: right;
+    color: #333;
+    height: 4px;
+}
+
+#tableCashFlowReport .labelCashFlow
+{
+    text-align: left;
+    font-weight: bold;
+    width: 400px;
+}
+
+#tableCashFlowReport tr.totalCashFlowIn
+{
+    background-color: rgb(239, 243, 214);
+}
+
+#tableCashFlowReport tr.subTotalCashFlowIn
+{
+    background-color: rgb(243, 247, 226);
+}
+
+#tableCashFlowReport tr.totalCashFlowOut
+{
+    background-color: #fdd;
+}
+
+#tableCashFlowReport tr.subTotalCashFlowOut
+{
+    background-color: #fee;
+}
+
+#tableCashFlowReport tr.totalCashFlow, td.totalCashFlow
+{
+    background-color: #ffd;
+}
+
+.showhideimg
+{
+    margin: 3px 3px 3px 20px;
+}
+
+label
+{
+    display: inline;
+}
+
+div.message
+{
+    background: url(/CockpitContent/Content/imgs/pointer.jpg) no-repeat left center; /* padding-left: 10px; */
+    padding-left: 10px;
+    z-index: 5;
+    margin-left: 5px;
+}
+
+div.error
+{
+    background-color: rgb(203, 46, 46);
+    border: 1px solid rgb(170, 0, 0);
+    padding-left: 10px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.slide
+{    
+    white-space: nowrap;
+    display: inline;
+}
+
+.slide .inner
+{
+    display: inline;
+    left: 36px;
+    top: -3px;
+}
+
+.slidePrint
+{    
+    white-space: nowrap;
+    display: inline;
+}
+
+.slidePrint .innerPrint
+{    
+    display: inline;
+    left: 105px;
+    top: -3px;
+}
+
+.sitebody 
+{
+    
+}
+
+.boxBusca {
+width: 380px;
+float: right;
+font-size: 16px;
+color: #B8362A;
+text-transform: uppercase;
+}
+
+.conteudotop {
+width: 960px;
+margin: 0 auto;
+margin-top: 0px;
+}
+
+.alinhaMenuTop {
+margin: 0;
+padding: 0;
+margin-left: 5px;
+-margin-left: 0px;
+list-style-type: none;
+}
+
+.alinhaMenuTop li 
+{
+    display: inline;
+    margin-left: 14px;
+}
+
+.boxMenuTop {
+margin-top: 10px;
+color: white;
+text-transform: uppercase;
+float: right;
+padding-right: 5px;
+}
+
+.rodapeTotal 
+{   
+    width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.rodapeTotal .botaosocial 
+{
+    margin-top: 3px;
+}
+
+.rodapeAlign 
+{
+    margin: 0px auto;
+    width: 960px;
+}
+
+p 
+{
+    margin-bottom: 5px;
+}
+
+.pointer
+{
+    cursor: pointer;
+}
+/**********/

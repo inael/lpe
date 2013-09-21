@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Security;
+using Negocio;
+using Modelo;
+
+namespace ViewWebMvc.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            CampanhaBll negocioCampanha = new CampanhaBll();
+            Campanha model = new Campanha();
+            
+            List<Campanha> lista = negocioCampanha.ListarDestaque();
+            return View(lista);
+        }
+
+        public ActionResult LogOn()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult LogOn(FormCollection colecao, string returnUrl)
+        {
+            Usuario model = new Usuario();
+            model.Login = colecao["user"];
+            model.Senha = colecao["pwd"];
+
+            if (Membership.ValidateUser(model.Login, model.Senha))
+            {
+                FormsAuthentication.SetAuthCookie(model.Login, false);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Usuário e senha inválidos.");
+            }
+
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
+        public ActionResult LogOff()
+        {
+            FormsAuthentication.SignOut();
+
+            return RedirectToAction("Index", "Home");
+        }
+    }
+}

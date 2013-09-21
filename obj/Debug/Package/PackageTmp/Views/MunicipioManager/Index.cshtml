@@ -1,0 +1,47 @@
+﻿<div id="PartialContent">
+    @{
+        Html.RenderAction("CreateAndUpdate", "MunicipioManager");
+    }
+</div>
+<div id="Base">
+    <div class="pageheader">
+        <input type="button" id="addRowButton" onclick="callCreate('MunicipioManager','Create')" value="" class="btadd" />
+        <input type="button" id="updateRowButton" onclick="callUpdate('MunicipioManager','Update','IdMunicipio')" value="" class="btedit" />
+        <input type="button" id="deleteRowButton" onclick="callDelete('MunicipioManager','Delete','IdMunicipio')" value="" class="btdel" />
+        <input type="button" id="menuButton" onclick="initializeOptionMenu('#conteudo');" value="" class="btback" />        
+    </div>
+    <div id="search"></div>
+    <table id="Grid"></table>
+</div>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        createGrid();
+        loadGrid('MunicipioManager', 'List');
+    });
+
+    function createGrid() {
+        $("#Grid").jqGrid({
+            colNames: ['Código', 'UF', 'Município', 'Código UF'],
+            colModel: [
+                { name: 'IdMunicipio', index: 'IdMunicipio', width: 50, sorttype: "text" },
+                { name: 'UF', index: 'UF', width: 249, sorttype: "text" },
+                { name: 'NomeMunicipio', index: 'NomeMunicipio', width: 249, sorttype: "text" },
+                { name: 'IDUF', index: 'IDUF', width: 249, sorttype: "text" }
+   	              ],
+            grouping: true,
+            groupingView: {
+                groupField: ['UF'],
+                groupColumnShow: [false]
+            },
+            rowNum: 1,
+            datatype: "json",
+            height: 'auto',
+            caption: "Municípios Cadastrados",
+            sortorder: "asc",
+            sortable: true,
+            viewrecords: true,
+            datatype: "local"
+        });
+    };
+</script>

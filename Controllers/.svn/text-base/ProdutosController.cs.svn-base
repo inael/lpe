@@ -1,0 +1,120 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Negocio;
+using Modelo;
+
+namespace ViewWebMvc.Controllers
+{
+    public class ProdutosController : Controller
+    {
+        ProdutosBll negocio;
+
+        public ProdutosController()
+        {
+            negocio = new ProdutosBll();
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Index()
+        {
+            List<Produtos> lista = negocio.Listar();
+            return View(lista);
+        }
+
+        public ActionResult IndexSelect()
+        {
+            List<Produtos> lista = negocio.ListarAtivos();
+            return View(lista);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Details(int id)
+        {
+            Produtos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create()
+        {
+            return View();
+        } 
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(FormCollection collection, Produtos entidade)
+        {
+            try
+            {
+                int idEmpresa = Convert.ToInt32(collection["empresa"]);
+                entidade.EmpresaProdutos = new Empresa { Id = idEmpresa };
+                
+                int idTipoProduto = Convert.ToInt32(collection["produtoTipo"]);
+                entidade.TipoProduto = new ProdutoTipo { Id = idTipoProduto };
+
+                int idProdutoSubTipo = Convert.ToInt32(collection["produtoSubTipo"]);
+                entidade.ProdutoProdutoSubTipo= new ProdutoSubTipo { Id = idProdutoSubTipo};
+
+                int idMarca = Convert.ToInt32(collection["marca"]);
+                entidade.MarcaProduto = new Marcas { Id = idMarca };
+
+                entidade.UsuarioInclusao = User.Identity.Name;
+                negocio.Inserir(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(entidade);
+            }
+        }
+        
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id)
+        {
+            Produtos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id, FormCollection collection, Produtos entidade)
+        {
+            try
+            {
+                entidade.UsuarioAteracao = entidade.UsuarioAteracao = User.Identity.Name;
+                negocio.Alterar(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id)
+        {
+            Produtos entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+ 
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+﻿@model Modelo.Usuario
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<div id="detail_content">
+    <div id="detail_head">
+        <h2>@ViewBag.Title</h2>
+    </div>
+    <table align="center">
+        <tr>
+            <td>
+                <div id="detail_display">
+                    <fieldset>
+                        <legend>Usuário</legend>
+
+                        <div class="display-label">Nome</div>
+                        <div class="display-field">
+                            @Html.DisplayFor(model => model.Nome)
+                        </div>
+            
+                        <div class="display-label">Login</div>
+                        <div class="display-field">
+                            @Html.DisplayFor(model => model.Login)
+                        </div>
+
+                        <div class="display-label">Senha</div>
+                        <div class="display-field">
+                            @Html.DisplayFor(model => model.Senha)
+                        </div>
+
+                        <div class="display-label">Administrador</div>
+                        <div class="display-field">
+                            @Html.DisplayFor(model => model.Administrador)
+                        </div>
+
+                        <div class="display-label">Excluido</div>
+                        <div class="display-field">
+                            @Html.DisplayFor(model => model.Excluido)
+                        </div>
+                    </fieldset>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

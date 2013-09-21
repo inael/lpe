@@ -1,0 +1,23 @@
+﻿@{
+    var Message = TempData["Message"];
+    var MessageStatus = TempData["MessageStatus"];    
+}
+<input type="text" value="@Message" name="Message" id="Message" style="display:none;" />
+<input type="text" value="@MessageStatus" name="MessageStatus" id="MessageStatus" style="display:none;" />
+<script type="text/javascript" runat="server">  
+    var msg = document.getElementById('Message'); 
+	if(msg.value != "") { 
+		alert(msg.value); 
+    } 
+
+    var msgStatus = document.getElementById('MessageStatus');     
+	if(msgStatus.value == "401") { 
+        logoutPage();		
+    }     
+</script>
+<div class="contTodo" style="margin: 10px">
+    <div style="font-size: 26px; border-bottom: 1px dotted #333; margin-bottom: 10px; text-transform: uppercase;">
+        LPE - Levantamento do Perfil Empreendedor</div>
+   
+    </div>
+</div>

@@ -1,0 +1,16 @@
+/****
+--- cores ---
+#bbae79 --> bege botão de pesquisa, titulo destaque semana, linhas, #promo preço;
+#696039 --> links topo esquerdo;
+#6a6863 --> 'esqueceu a senha', prox. ofertas, links rodape -> bege mais escuro
+****/
+
+#detail_content{border:0px solid black; margin:0 auto;}
+	#detail_head{border:0px solid black; width:100%; height:70px; background-color:#bbae79;}
+#detail_content h2{border: 0px solid black; float:left; font-size: 23px; color:#fff; margin:20px;}
+#detail_display {border:0px solid green; float:left; width:98%; color:#373530; margin:15px 0 0 10px;}
+#detail_display fieldset{border:1px solid #847a63; font-family:Verdana; font-size:15px; text-align:left; padding-left:15px;}
+#detail_display .editor{border:0px solid green; float:left; width:100%; margin-top:5px;}
+#detail_display p{border:0px solid green; float:right; clear:both;}
+#detail_display .display-label{border:0px solid blue; float:left; font-weight:bold; padding:4px;}
+#detail_display .display-field{border:0px solid #bbae79; float:left; margin-right:20px; padding:4px;}

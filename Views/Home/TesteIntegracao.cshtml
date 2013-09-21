@@ -1,0 +1,31 @@
+﻿<div id="content">
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-ui-1.8.13.custom.min.js"></script>
+
+
+    <h2>TesteIntegraçao</h2>
+    <div>
+        <a id="button">clique aqui</a>
+    </div>
+    <script language="javascript">
+        $("#button").click(function () {
+            $.ajax({
+                url: "http://www.lpeperfilempreendedor.com.br/LPE/Home/LoginMPE",
+                //url: "http://localhost:62341/LPE/Home/LoginMPE",
+                //dataType:"JSON",
+                type: "post",
+                data: { Email: "ricardo@gmail.com", PasswordHash: "yYHZtvpkTfazcgfmBshi6057f20f883e", Nome: "ricardo" },
+                traditional: true,
+                success: function (data, text) {
+                    alert("sucesso");
+                    $("#content").html(data);
+                },
+                error: function (response, status, error) {
+                    alert(response);
+                    alert(status);
+                    alert(error);
+                }
+            });
+        });
+    </script>
+</div>

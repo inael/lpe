@@ -1,0 +1,54 @@
+﻿<div id="PartialContent">
+    @{
+        Html.RenderAction("CreateAndUpdate", "NivelEscolaridadeManager");
+    }
+</div>
+<div id="Base">
+    <div class="pageheader">
+        <input type="button" id="addRowButton" onclick="callCreate('NivelEscolaridadeManager','Create')" value="" class="btadd" />
+        <input type="button" id="updateRowButton" onclick="callUpdate('NivelEscolaridadeManager','Update','IdNivelEscolaridade','List')" value="" class="btedit" />
+        <input type="button" id="deleteRowButton" onclick="callDelete('NivelEscolaridadeManager','Delete','IdNivelEscolaridade')" value="" class="btdel" />
+        <input type="button" id="menuButton" onclick="initializeOptionMenu('#conteudo');" value="" class="btback" />        
+    </div>
+    <div id="search"></div>
+    <table id="Grid"></table>
+</div>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        createGrid();
+        loadGrid('NivelEscolaridadeManager', 'List');
+    });
+
+    function createGrid() {
+        $("#Grid").jqGrid({
+            colNames: ['Codigo', 'Descriçao'],
+            colModel: [
+            { name: 'IdNivelEscolaridade', index: 'IdNivelEscolaridade', width: 50, sorttype: "text" },
+            { name: 'DescricaoNivelEscolaridade', index: 'DescricaoNivelEscolaridade', width: 600, sorttype: "text" },
+   	              ],
+            datatype: "json",
+            height: 'auto',
+            caption: "Nivel de escolaridade cadastrados",
+            sortorder: "asc",
+            sortable: true,
+            viewrecords: true,
+            datatype: "local"
+        });
+    };
+
+    function setupUpdateForm(Controller, Action, id) {
+        $.ajax({
+            type: "post",
+            url: Controller + "/" + Action,
+            traditional: true,
+            data: { 'id': id },
+            success: function (data, text) {
+                var entidade = eval("(" + data + ")");
+
+                fillFormWithObject(entidade);
+            }
+        });
+    }
+
+</script>

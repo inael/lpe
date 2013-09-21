@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Negocio;
+using Modelo;
+
+namespace ViewWebMvc.Controllers
+{
+    public class TipoContatoController : Controller
+    {
+        TipoContatoBll negocio;
+
+        public TipoContatoController()
+        {
+            negocio = new TipoContatoBll();
+        }
+
+        [Authorize(Roles="Admin")]
+        public ActionResult Index()
+        {
+            List<TipoContato> lista = negocio.Listar();
+            return View(lista);
+        }
+
+        public ActionResult IndexSelect()
+        {
+            List<TipoContato> lista = negocio.Listar();
+            return View(lista);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Details(int id)
+        {
+            TipoContato entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create()
+        {
+            return View();
+        } 
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(FormCollection collection, TipoContato entidade)
+        {
+            try
+            {
+                negocio.Inserir(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(entidade);
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id)
+        {
+            TipoContato entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id, FormCollection collection, TipoContato entidade)
+        {
+            try
+            {
+                negocio.Alterar(entidade);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(entidade);
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id)
+        {
+            TipoContato entidade = negocio.Consultar(id);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                negocio.Excluir(id);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+}

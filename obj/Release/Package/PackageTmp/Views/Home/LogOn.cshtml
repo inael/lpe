@@ -1,0 +1,30 @@
+﻿@using Modelo;
+@model IEnumerable<Modelo.MenuOpcao> 
+@{
+    Usuario user = (Usuario)Session["user"];
+}
+
+@if (user == null)
+{
+    <form id="loginForm" name="loginForm" action="" method="post" autocomplete="on">
+    <fieldset>
+        <!-- Mensagem Login -->
+        @*<label for="selectLogin[]">Email:</label><br />*@
+        <input type="text" id="selectLogin" name="selectLogin" value="rafael@gmail.com" size="15" />
+        @*<label for="selectSenha[]">Senha:</label><br />*@
+        <input type="password" id="selectSenha" name="selectSenha" value="123456" size="13" onkeypress="if (event.keyCode == 13) { loginClick(); } "/>
+        <input id="btnLogin" class="btlogin" type="button" value="Entrar" />
+        <input id="resetPassword" class="btprinter" type="button" value="Esqueceu a senha?" />
+    </fieldset>
+    </form>
+}
+else
+{
+    <!-- Usuario/logout -->
+    <div style="padding: 10px;">
+        <p><b>@user.Pessoa_Usuario.NomePessoa</b>, seja bem vindo!</p>
+        <input id="btnLogout" class="btlogout" type="button" value="Sair"  />
+    </div>
+    <br />
+}
+<script type="text/javascript" src="/Content/Scripts/LogOn.js"></script>

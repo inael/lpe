@@ -1,0 +1,41 @@
+﻿<div id="PartialContent">
+    @{
+        Html.RenderAction("CreateAndUpdate", "PessoaManager");
+    }
+</div>
+<div id="Base">
+    <div class="pageheader">
+        <input type="button" id="addRowButton" onclick="callCreate('PessoaManager','Create')" value="" class="btadd" />
+        <input type="button" id="updateRowButton" onclick="callUpdate('PessoaManager','Update','IdPessoa')" value="" class="btedit" />
+        <input type="button" id="deleteRowButton" onclick="callDelete('PessoaManager','Delete','IdPessoa')" value="" class="btdel" />        
+    </div>
+    <div id="search"></div>
+    <table id="Grid"></table>
+</div>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        createGrid();
+        loadGrid('PessoaManager', 'List');
+    });
+
+    function createGrid() {
+        $("#Grid").jqGrid({
+            colNames: ['Codigo', 'Tratamento', 'Nome', 'Sobrenome', 'E-mail'],
+            colModel: [
+            { name: 'IdPessoa', index: 'IdPessoa', width: 50, sorttype: "text" },
+            { name: 'TratamentoPessoa', index: 'TratamentoPessoa', width: 100, sorttype: "text" },
+            { name: 'NomePessoa', index: 'NomePessoa', width: 249, sorttype: "text" },
+            { name: 'SobrenomePessoa', index: 'SobrenomePessoa', width: 249, sorttype: "text" },
+            { name: 'EmailPessoa', index: 'EmailPessoa', width: 249, sorttype: "text" }
+   	              ],
+            datatype: "json",
+            height: 'auto',
+            caption: "Pessoas Cadastradas",
+            sortorder: "asc",
+            sortable: true,
+            viewrecords: true,
+            datatype: "local"
+        });
+    };
+</script>
