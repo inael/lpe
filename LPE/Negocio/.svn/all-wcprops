@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/levivier/!svn/ver/35/trunk/2%20-%20Implementacao/Levivier/Negocio
+END
+CuponsCreditoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Negocio/CuponsCreditoBll.cs
+END
+MenuGrupoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Negocio/MenuGrupoBll.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Negocio/packages.config
+END
+Negocio.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Negocio/Negocio.csproj
+END
+UsuarioBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Negocio/UsuarioBll.cs
+END
+ProdutoTipoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Negocio/ProdutoTipoBll.cs
+END
+EmpresaBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Negocio/EmpresaBll.cs
+END
+CidadesBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Negocio/CidadesBll.cs
+END
+ProdutoCaracteristicaBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Negocio/ProdutoCaracteristicaBll.cs
+END
+MenuFuncaoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Negocio/MenuFuncaoBll.cs
+END
+RamoNegocioBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/Negocio/RamoNegocioBll.cs
+END
+ProdutoSubTipoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Negocio/ProdutoSubTipoBll.cs
+END
+TipoContatoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Negocio/TipoContatoBll.cs
+END
+RegiaoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Negocio/RegiaoBll.cs
+END
+MarcasBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Negocio/MarcasBll.cs
+END
+ContatoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/29/trunk/2%20-%20Implementacao/Levivier/Negocio/ContatoBll.cs
+END
+CampanhaBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/levivier/!svn/ver/35/trunk/2%20-%20Implementacao/Levivier/Negocio/CampanhaBll.cs
+END
+AmigosBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Negocio/AmigosBll.cs
+END
+ProdutosBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Negocio/ProdutosBll.cs
+END
+CuponsUsuarioBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Negocio/CuponsUsuarioBll.cs
+END

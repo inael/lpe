@@ -1,0 +1,125 @@
+﻿/*
+ * Classe de persistência
+ * Arquiteto: José Lino Neto
+ * Desenvolvedor: 
+ * 
+ */
+
+#region Using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Modelo;
+
+#endregion
+
+namespace Persistencia
+{
+    /// <summary>
+    /// Classe de Persistência da entidade Campanha
+    /// </summary>
+    public class CampanhaDao : Crud<Campanha>
+    {
+        #region Construtores
+
+        /// <summary>
+        /// Construtor padrão passando para a classe base qual banco de operação.
+        /// </summary>
+        public CampanhaDao()
+        {
+
+        }
+
+        #endregion
+
+        #region Propridades
+
+        #endregion
+
+        #region Métodos padrões
+
+        /// <summary>
+        /// Método para listar todas as entidades do tipo: Campanha
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        public List<Campanha> Listar()
+        {
+            List<Campanha> lista = Contexto.Listar().ToList();
+            return lista;
+        }
+
+        /// <summary>
+        /// Método para consultar uma entidade do tipo: Campanha
+        /// </summary>
+        /// <param name="id">chave primária da entidade Campanha.</param>
+        /// <returns>Retorna uma entidade</returns>
+        public Campanha Consultar(int id)
+        {
+            Campanha entidade = Contexto.Consultar(a => a.Id == id);
+            return entidade;
+        }
+
+        /// <summary>
+        /// Método para incluir uma entidade do tipo: Campanha
+        /// </summary>
+        /// <param name="entidade">Entidade a ser inserida.</param>
+        /// <returns>Retorna a entidade com a chave primaria definida.</returns>
+        public Campanha Incluir(Campanha entidade)
+        {
+            Contexto.Incluir(entidade);
+            return entidade;
+        }
+
+        /// <summary>
+        /// Método para alterar uma entidade do tipo: Campanha.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a alteração.</returns>
+        public bool Alterar(Campanha entidade)
+        {
+            return Contexto.Alterar(entidade);
+        }
+
+        /// <summary>
+        /// Método para excluir uma entidade do tipo: Campanha.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser excluida.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a excluida.</returns>
+        public bool Excluir(Campanha entidade)
+        {
+            return Contexto.Excluir(entidade);
+        }
+
+        #endregion
+
+        #region Métodos personalizados
+
+        /// <summary>
+        /// Método para listar as entidades ativas do tipo: Campanha.
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades ativas.</returns>
+        public List<Campanha> ListarAtivos()
+        {
+            List<Campanha> lista = Contexto.Listar(a => a.Excluido == false).ToList();
+            return lista;
+        }
+
+        public List<Campanha> ListarDestaque()
+        {
+            DateTime dataFim = DateTime.Now;
+            DateTime dataInicio = dataFim.AddDays(-7);
+            DateTime dataLista = dataFim.AddDays(13);
+
+            List<Campanha> lista = Contexto.Listar(a => a.DataInicio >= dataInicio && a.DataInicio <= dataLista && a.DataFim <= dataLista, b => b.DataInicio, "Desc").ToList();
+            return lista;
+        }
+
+        public List<Campanha> ListarCorrentes()
+        {
+            List<Campanha> Lista = Contexto.Listar(a => a.DataFim >= DateTime.Now).ToList();
+            return Lista;
+        }
+        #endregion
+    }
+}

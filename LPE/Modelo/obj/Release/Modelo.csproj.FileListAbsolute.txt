@@ -1,0 +1,12 @@
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\Modelo.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\FluentNHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\Iesi.Collections.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\log4net.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\NHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\FluentNHibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\Iesi.Collections.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\log4net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Release\NHibernate.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\obj\Release\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\obj\Release\Modelo.pdb

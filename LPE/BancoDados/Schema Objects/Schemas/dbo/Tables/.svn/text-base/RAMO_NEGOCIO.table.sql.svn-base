@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[RAMO_NEGOCIO] (
+    [ID]                NUMERIC (18)   IDENTITY (1, 1) NOT NULL,
+    [DESCRICAO]         NVARCHAR (255) NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATETIME       NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATETIME       NULL,
+    [EXCLUIDO]          bit			   NULL
+);
+

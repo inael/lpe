@@ -1,0 +1,3 @@
+﻿/*ALTER DATABASE [$(DatabaseName)]
+    ADD FILE (NAME = [LPE], FILENAME = 'D:\Developer\DB\LPE.mdf', SIZE = 3072 KB, FILEGROWTH = 1024 KB) TO FILEGROUP [PRIMARY];*/
+

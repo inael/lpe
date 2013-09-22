@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[ENDERECOS] (
+    [ID_ENDERECO]       NUMERIC (18)   IDENTITY (1, 1) NOT NULL,
+    [ID_MUNICIPIO]      NUMERIC (18)   NOT NULL,
+    [LOGRADOURO]        NVARCHAR (100) NOT NULL,
+    [BAIRRO]            NVARCHAR (200) NOT NULL,
+    [CEP]               NVARCHAR (15)  NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATE           NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATE           NULL,
+    [EXCLUIDO]          INT            NULL
+);
+
+
+
+
+

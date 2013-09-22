@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Modelo
+{
+    public class Contato
+    {
+        public virtual int Id { get; set; }                         //[ID]                NUMERIC (18)    IDENTITY (1, 1) NOT NULL,
+        public virtual string CpfContato { get; set; }              //[CPF]               NVARCHAR (14)   NULL,
+        public virtual string NomeContato { get; set; }             //[NOME]              NVARCHAR (255)  NULL,
+        public virtual string RgContato { get; set; }               //[RG]                NVARCHAR (30)   NULL,
+        public virtual string OrgaoExpedidorContato { get; set; }   //[ORGAO_EXPEDIDOR]   NVARCHAR (30)   NULL,
+        public virtual string TelefoneContato { get; set; }         //[TELEFONE1]         NVARCHAR (14)   NULL,
+        public virtual string CelularContato { get; set; }          //[CELULAR1]          NVARCHAR (14)   NULL,
+        public virtual string EmailContato { get; set; }            //[EMAIL1]            NVARCHAR (255)  NULL,
+        public virtual string TelefoneContato2 { get; set; }        //[TELEFONE2]         NVARCHAR (14)   NULL,
+        public virtual string CelularContato2 { get; set; }         //[CELULAR2]          NVARCHAR (14)   NULL,
+        public virtual string EmailContato2 { get; set; }           //[EMAIL2]            NVARCHAR (255)  NULL,
+        public virtual string ObservacaoContato { get; set; }       //[OBS]               NVARCHAR (1024) NULL,
+        public virtual bool PrincipalContato { get; set; }          //[PRINCIPAL]         NUMERIC (18)    NULL,
+        public virtual Empresa EmpresaContato { get; set; }         //[ID_EMPRESA]        NUMERIC (18)    NULL,
+        public virtual TipoContato TipoContatoContato { get; set; } //[ID_TIPO_CONTATO]   NUMERIC (18)    NULL,
+        public virtual string UsuarioInclusao { get; set; }         //[USUARIO_INCLUSAO]   NVARCHAR (30)   NULL,
+        public virtual DateTime DataInclusao { get; set; }          //[DATA_INCLUSAO]      DATETIME        NULL,
+        public virtual string UsuarioAteracao { get; set; }         //[USUARIO_ALTERACAO]  NVARCHAR (30)   NULL,
+        public virtual DateTime DataAteracao { get; set; }          //[DATA_ALTERACAO]     DATETIME        NULL,
+        public virtual bool Excluido { get; set; }                  //[EXCLUIDO]           NUMERIC (18)    NULL,
+    }
+}

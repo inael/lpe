@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class ProdutosMap : ClassMap<Produtos>
+    {
+        public ProdutosMap()
+        {
+            Table("PRODUTO");
+            Id(a => a.Id, "ID");
+            Map(a => a.NomeProduto, "NOME");
+            References(a => a.EmpresaProdutos, "ID_EMPRESA").LazyLoad();
+            References(a => a.TipoProduto, "ID_TIPO").LazyLoad();
+            References(a => a.MarcaProduto, "ID_MARCA").LazyLoad();
+            References(a => a.ProdutoProdutoSubTipo, "ID_SUB_TIPO").LazyLoad();
+            Map(a => a.CodigoProduto, "COD_PRODUTO");
+            Map(a => a.ValorOriginalProduto, "VALOR_ORIGINAL");
+            Map(a => a.PercentDescontoProduto, "PERCENT_DESCONTO");
+            Map(a => a.DescricaoProduto, "DESCRICAO");
+            Map(a => a.ComposicaoProduto, "COMPOSICAO");
+            Map(a => a.InstrucaoLavagemProduto, "INST_LAVAGEM");
+            Map(a => a.ObservacaoProduto, "OBSERVACAO");
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+            Map(a => a.Excluido, "EXCLUIDO");
+            HasMany(a => a.CarrinhoProduto)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+            HasMany(a => a.PedidosProduto)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+        }
+    }
+}

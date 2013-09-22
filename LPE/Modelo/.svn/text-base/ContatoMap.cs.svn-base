@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class ContatoMap : ClassMap<Contato>
+    {
+        public ContatoMap()
+        {
+            Table("CONTATO");
+            Id(a => a.Id, "ID");
+            Map(a => a.CpfContato, "CPF");
+            Map(a => a.NomeContato, "NOME");
+            Map(a => a.RgContato, "RG");
+            Map(a => a.OrgaoExpedidorContato, "ORGAO_EXPEDIDOR");
+            Map(a => a.TelefoneContato, "TELEFONE1");
+            Map(a => a.CelularContato, "CELULAR1");
+            Map(a => a.EmailContato, "EMAIL1");
+            Map(a => a.TelefoneContato2, "TELEFONE2");
+            Map(a => a.CelularContato2, "CELULAR2");
+            Map(a => a.EmailContato2, "EMAIL2");
+            Map(a => a.ObservacaoContato, "OBS");
+            Map(a => a.PrincipalContato, "PRINCIPAL");
+            References(a => a.EmpresaContato, "ID_EMPRESA").LazyLoad();
+            References(a => a.TipoContatoContato, "ID_TIPO_CONTATO").LazyLoad();
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+            Map(a => a.Excluido, "EXCLUIDO");
+         }
+    }
+}

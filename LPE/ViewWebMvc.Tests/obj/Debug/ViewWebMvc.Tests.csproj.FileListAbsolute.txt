@@ -1,0 +1,54 @@
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.dll.config
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\obj\Debug\ViewWebMvc.Tests.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\obj\Debug\ViewWebMvc.Tests.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Negocio.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Modelo.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Persistencia.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\FluentNHibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Fabrica.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\FabricaNhibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\NHibernate.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Iesi.Collections.dll
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Negocio.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Modelo.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Persistencia.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\FluentNHibernate.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Fabrica.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.xml
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\FabricaNhibernate.pdb
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\NHibernate.xml
+D:\THIAGO\www\Levivier\ViewWebMvc.Tests\bin\Debug\Iesi.Collections.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.dll.config
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.Tests.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Negocio.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Modelo.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Persistencia.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\FluentNHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Fabrica.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\FabricaNhibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\NHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Iesi.Collections.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\ViewWebMvc.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Negocio.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Persistencia.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\FluentNHibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Ninject.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\FabricaNhibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\NHibernate.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\bin\Debug\Iesi.Collections.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\obj\Debug\ResolveAssemblyReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\obj\Debug\ViewWebMvc.Tests.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\ViewWebMvc.Tests\obj\Debug\ViewWebMvc.Tests.pdb

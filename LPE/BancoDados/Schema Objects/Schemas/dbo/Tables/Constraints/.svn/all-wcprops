@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints
+END
+DF_CAMPANHA_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CAMPANHA_EXCLUIDO.defconst.sql
+END
+DF_MNU_GRUPO_FUNCAO_EXC.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_GRUPO_FUNCAO_EXC.defconst.sql
+END
+DF_PRODUTO_SUB_TIPO_INT_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_PRODUTO_SUB_TIPO_INT_EXCLUIDO.defconst.sql
+END
+DF_MNU_GRUPO_FUNCAO_ALT.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_GRUPO_FUNCAO_ALT.defconst.sql
+END
+DF_MNU_GRUPO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_GRUPO_EXCLUIDO.defconst.sql
+END
+DF_CONTATO_PRINCIPAL.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CONTATO_PRINCIPAL.defconst.sql
+END
+DF_CUPONS_USUARIO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CUPONS_USUARIO_EXCLUIDO.defconst.sql
+END
+DF_AMIGOS_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_AMIGOS_EXCLUIDO.defconst.sql
+END
+DF_CUPONS_CREDITO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CUPONS_CREDITO_EXCLUIDO.defconst.sql
+END
+DF_PEDIDOS_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_PEDIDOS_EXCLUIDO.defconst.sql
+END
+DF_MNU_FUNCAO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_FUNCAO_EXCLUIDO.defconst.sql
+END
+DF_MNU_FUNCAO_NIVEL.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_FUNCAO_NIVEL.defconst.sql
+END
+DF_CIDADES_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CIDADES_EXCLUIDO.defconst.sql
+END
+DF_EMPRESA_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_EMPRESA_EXCLUIDO.defconst.sql
+END
+DF_MNU_FUNCAO_SEPARADOR.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_FUNCAO_SEPARADOR.defconst.sql
+END
+DF_PRODUTO_TIPO_INT_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_PRODUTO_TIPO_INT_EXCLUIDO.defconst.sql
+END
+DF_RAMO_NEGOCIO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_RAMO_NEGOCIO_EXCLUIDO.defconst.sql
+END
+DF_MNU_GRUPO_FUNCAO_INC.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MNU_GRUPO_FUNCAO_INC.defconst.sql
+END
+DF_CARRINHO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CARRINHO_EXCLUIDO.defconst.sql
+END
+DF_PRODUTO_INT_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_PRODUTO_INT_EXCLUIDO.defconst.sql
+END
+DF_MARCAS_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_MARCAS_EXCLUIDO.defconst.sql
+END
+DF_REGIAO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_REGIAO_EXCLUIDO.defconst.sql
+END
+DF_CONTATO_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_CONTATO_EXCLUIDO.defconst.sql
+END
+DF_PRODUTO_CARACTERISTICA_INT_EXCLUIDO.defconst.sql
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Constraints/DF_PRODUTO_CARACTERISTICA_INT_EXCLUIDO.defconst.sql
+END

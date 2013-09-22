@@ -1,0 +1,18 @@
+﻿CREATE TABLE [dbo].[QUESTOES] (
+    [ID_QUESTAO]        NUMERIC (18)   IDENTITY (1, 1) NOT NULL,
+    [ID_GRUPO]          NUMERIC (18)   NOT NULL,
+    [NUMERO]            NUMERIC (18)   NULL,
+    [ENUNCIADO]         NVARCHAR (255) NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATE           NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATE           NULL,
+    [EXCLUIDO]          INT            NULL
+);
+
+
+
+
+
+
+

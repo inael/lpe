@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[USUARIOS] (
+    [ID_USUARIO]        NUMERIC (18)   IDENTITY (1, 1) NOT NULL,
+    [ID_PESSOA]         NUMERIC (18)   NOT NULL,
+    [ID_PERFIL]         NUMERIC (18)   NOT NULL,
+    [LOGIN]             NVARCHAR (50)  NOT NULL,
+    [SENHA]             NVARCHAR (200) NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATE           NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATE           NULL,
+    [EXCLUIDO]          INT            NULL
+);
+

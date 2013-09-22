@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class MenuFuncaoMap : ClassMap<MenuFuncao>
+    {
+        public MenuFuncaoMap()
+        {
+            Table("MNU_FUNCAO");
+            Id(a => a.Id, "ID");
+            Map(a => a.NomeMenuFuncao, "NOME");
+            Map(a => a.DescricaoMenuFuncao, "DESCRICAO");
+            Map(a => a.ImagemMenuFuncao, "IMAGEM");
+            Map(a => a.ControllerMenuFuncao, "PAGINA");
+            Map(a => a.JsMenuFuncao, "JS");
+            Map(a => a.SeparadorMenuFuncao, "SEPARADOR");
+            Map(a => a.idFuncaoMenuFuncao, "ID_FUNCAO");
+            Map(a => a.OrdemMenuFuncao, "ORDEM");
+            Map(a => a.NivelMenuFuncao, "NIVEL");
+            Map(a => a.Excluido, "EXCLUIDO");
+            HasMany(a => a.MenuGrupoFuncaoMenuFuncao)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+        }
+    }
+}

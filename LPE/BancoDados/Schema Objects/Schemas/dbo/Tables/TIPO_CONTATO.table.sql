@@ -1,0 +1,5 @@
+﻿/*CREATE TABLE [dbo].[TIPO_CONTATO] (
+    [ID]        NUMERIC (18)  IDENTITY (1, 1) NOT NULL,
+    [NOME_TIPO] NVARCHAR (50) NULL
+);*/
+

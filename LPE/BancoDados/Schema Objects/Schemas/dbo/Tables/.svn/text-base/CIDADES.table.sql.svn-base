@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[CIDADES] (
+    [ID]                NUMERIC (18)  IDENTITY (1, 1) NOT NULL,
+    [NOME]              NVARCHAR (30) NOT NULL,
+    [UF]                CHAR (2)      NOT NULL,
+    [ID_REGIAO]         NUMERIC (18)  NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (30) NULL,
+    [DATA_INCLUSAO]     DATETIME      NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (30) NULL,
+    [DATA_ALTERACAO]    DATETIME      NULL,
+    [EXCLUIDO]          INT           NULL
+);
+
+
+
+
+

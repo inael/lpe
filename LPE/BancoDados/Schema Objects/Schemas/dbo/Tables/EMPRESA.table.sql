@@ -1,0 +1,28 @@
+﻿/*CREATE TABLE [dbo].[EMPRESA] (
+    [ID]                 NUMERIC (18)    IDENTITY (1, 1) NOT NULL,
+    [RAZAO_SOCIAL]       NVARCHAR (255)  NULL,
+    [NOME_FANTASIA]      NVARCHAR (255)  NULL,
+    [CNPJ]               NVARCHAR (18)   NULL,
+    [INSCRICAO_ESTADUAL] NVARCHAR (50)   NULL,
+    [ENDERECO]           NVARCHAR (255)  NULL,
+    [COMPLEMENTO]        NVARCHAR (127)  NULL,
+    [BAIRRO]             NVARCHAR (127)  NULL,
+    [CEP]                NVARCHAR (9)    NULL,
+    [MARGEM_COMERCIAL]   NUMERIC (10, 2) NULL,
+    [ID_CIDADE]          NUMERIC (18)    NULL,
+    [ID_RAMO_NEGOCIO]    NUMERIC (18)    NULL,
+    [USUARIO_INCLUSAO]   NVARCHAR (30)   NULL,
+    [DATA_INCLUSAO]      DATETIME        NULL,
+    [USUARIO_ALTERACAO]  NVARCHAR (30)   NULL,
+    [DATA_ALTERACAO]     DATETIME        NULL,
+    [EXCLUIDO]           NUMERIC (18)    NULL
+);*/
+
+
+
+
+
+
+
+
+

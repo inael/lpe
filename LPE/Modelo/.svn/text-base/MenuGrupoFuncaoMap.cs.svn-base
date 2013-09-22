@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class MenuGrupoFuncaoMap : ClassMap<MenuGrupoFuncao>
+    {
+        public MenuGrupoFuncaoMap()
+        {
+            Table("MNU_GRUPO_FUNCAO");
+            Id(a => a.Id, "ID");
+            References(a => a.MenuGrupoMenuGrupoFuncao, "ID_MNU_GRUPO").LazyLoad();
+            References(a => a.MenuFuncaoMenuGrupoFuncao, "ID_MNU_FUNCAO").LazyLoad();
+            Map(a => a.IncluidoMenuGrupoFuncao, "INC");
+            Map(a => a.AlteradoMenuGrupoFuncao, "ALT");
+            Map(a => a.ExcluidoMenuGrupoFuncao, "EXC");
+        }
+    }
+}

@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class UsuarioMap : ClassMap<Usuario>
+    {
+        public UsuarioMap()
+        {
+            Table("USUARIO");
+            Id(a => a.Id, "ID");
+            Map(a => a.Nome, "NOME");
+            Map(a => a.Login, "LOGIN");
+            Map(a => a.Senha, "SENHA");
+            Map(a => a.Administrador, "ADM");
+<<<<<<< .mine
+            References(a => a.EmpresaUsuario, "ID_EMPRESA").Fetch.Join();
+            ReferencesAny(a => a.MnuGrupo);
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+=======
+            ReferencesAny(a => a.Empresa);
+            ReferencesAny(a => a.MnuGrupo);
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+>>>>>>> .r17
+            Map(a => a.Excluido, "EXCLUIDO");
+        }
+    }
+}

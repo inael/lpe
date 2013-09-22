@@ -1,0 +1,69 @@
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Persistencia.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Persistencia.pdb
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Fabrica.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\FabricaNhibernate.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Iesi.Collections.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Modelo.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\NHibernate.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Ninject.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\FluentNHibernate.dll
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\FabricaNhibernate.pdb
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Fabrica.pdb
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Modelo.pdb
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Iesi.Collections.xml
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\NHibernate.xml
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Ninject.pdb
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\Ninject.xml
+D:\THIAGO\www\Levivier\Persistencia\bin\Debug\FluentNHibernate.pdb
+D:\THIAGO\www\Levivier\Persistencia\obj\Debug\ResolveAssemblyReference.cache
+D:\THIAGO\www\Levivier\Persistencia\obj\Debug\Persistencia.dll
+D:\THIAGO\www\Levivier\Persistencia\obj\Debug\Persistencia.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Persistencia.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Persistencia.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Fabrica.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\FabricaNhibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Iesi.Collections.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Modelo.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\NHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Ninject.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\FluentNHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\FabricaNhibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Iesi.Collections.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\NHibernate.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Ninject.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\Ninject.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\FluentNHibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\obj\Debug\ResolveAssemblyReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\obj\Debug\Persistencia.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\obj\Debug\Persistencia.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\log4net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\log4net.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\BCrypt.Net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\BCrypt.Net.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Persistencia\bin\Debug\BCrypt.Net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\obj\Debug\Persistencia.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\obj\Debug\Persistencia.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Persistencia.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Persistencia.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\FabricaNhibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Iesi.Collections.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\log4net.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\NHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Ninject.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\FluentNHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\FabricaNhibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Fabrica.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Modelo.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Iesi.Collections.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\log4net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\NHibernate.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Ninject.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\Ninject.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\FluentNHibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\AutoCompleteModel.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Persistencia\bin\Debug\AutoCompleteModel.pdb

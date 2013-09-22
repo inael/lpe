@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace Modelo
+{
+    public class Pedidos
+    {
+        public virtual int Id { get; set; }                         //[ID]                NUMERIC (18)    NOT NULL,
+        public virtual Usuario UsuarioPedidos { get; set; }         //[ID_USUARIO]        NUMERIC (18)    NOT NULL,
+        public virtual Produtos ProdutoPedidos { get; set; }        //[ID_PRODUTO]        NUMERIC (18)    NOT NULL,
+        public virtual Campanha CampanhaPedidos { get; set; }       //[ID_CAMPANHA]       NUMERIC (18)    NOT NULL,
+        public virtual int QuantidadePedido { get; set; }           //[QTD]               INT             NOT NULL,
+        public virtual decimal ValorUnitarioPedido { get; set; }    //[VALOR_UNITARIO]    NUMERIC (18, 2) NOT NULL,
+        public virtual string StatusPedido { get; set; }            //[STATUS]            NVARCHAR (20)   NOT NULL,
+        public virtual string CodgPagamentoPedido { get; set; }     //[COD_PAGAMENTO]     NVARCHAR (50)   NULL,
+        public virtual string UsuarioInclusao { get; set; }         //[USUARIO_INCLUSAO]   NVARCHAR (30)   NULL,
+        public virtual DateTime DataInclusao { get; set; }          //[DATA_INCLUSAO]      DATETIME        NULL,
+        public virtual string UsuarioAteracao { get; set; }         //[USUARIO_ALTERACAO]  NVARCHAR (30)   NULL,
+        public virtual DateTime DataAteracao { get; set; }          //[DATA_ALTERACAO]     DATETIME        NULL,
+        public virtual bool Excluido { get; set; }                  //[EXCLUIDO]           NUMERIC (18)    NULL,
+    }
+}

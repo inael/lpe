@@ -1,0 +1,6 @@
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Release\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Release\Fabrica.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Release\log4net.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Release\log4net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Release\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Release\Fabrica.pdb

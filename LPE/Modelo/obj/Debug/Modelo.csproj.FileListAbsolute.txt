@@ -1,0 +1,39 @@
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\Modelo.dll
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\Modelo.pdb
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\FluentNHibernate.dll
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\Iesi.Collections.dll
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\NHibernate.dll
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\FluentNHibernate.pdb
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\Iesi.Collections.xml
+D:\THIAGO\www\Levivier\Modelo\bin\Debug\NHibernate.xml
+D:\THIAGO\www\Levivier\Modelo\obj\Debug\ResolveAssemblyReference.cache
+D:\THIAGO\www\Levivier\Modelo\obj\Debug\Modelo.dll
+D:\THIAGO\www\Levivier\Modelo\obj\Debug\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\Modelo.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\FluentNHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\Iesi.Collections.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\NHibernate.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\FluentNHibernate.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\Iesi.Collections.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\NHibernate.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\obj\Debug\ResolveAssemblyReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\obj\Debug\Modelo.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\obj\Debug\Modelo.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\log4net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\log4net.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\BCrypt.Net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Modelo\bin\Debug\BCrypt.Net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\obj\Debug\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\obj\Debug\Modelo.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\Modelo.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\Modelo.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\FluentNHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\Iesi.Collections.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\log4net.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\NHibernate.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\FluentNHibernate.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\Iesi.Collections.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\log4net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\bin\Debug\NHibernate.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache

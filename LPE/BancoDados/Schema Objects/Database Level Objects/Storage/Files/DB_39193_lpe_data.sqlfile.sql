@@ -1,0 +1,3 @@
+﻿ALTER DATABASE [$(DatabaseName)]
+    ADD FILE (NAME = [DB_39193_lpe_data], FILENAME = 'e:\sqldata\DB_39193_lpe_data.mdf', SIZE = 5120 KB, MAXSIZE = 25600 KB, FILEGROWTH = 1024 KB) TO FILEGROUP [PRIMARY];
+

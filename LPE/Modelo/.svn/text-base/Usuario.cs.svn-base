@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace Modelo
+{
+    public class Usuario
+    {
+        public virtual int Id { get; set; }
+        [Required(ErrorMessage="Digite seu nome")]
+        public virtual string Nome { get; set; }
+        [Required(ErrorMessage = "Digite um nome de usuário")]
+        public virtual string Login { get; set; }
+        [Required(ErrorMessage = "Digite uma senha")]
+        public virtual string Senha { get; set; }
+        public virtual bool Administrador { get; set; }
+        public virtual Empresa EmpresaUsuario { get; set; }
+        public virtual MenuGrupo MenuGrupoUsuario  { get; set; }
+        public virtual string UsuarioInclusao { get; set; }
+        public virtual DateTime DataInclusao { get; set; }
+        public virtual string UsuarioAteracao { get; set; }
+        public virtual DateTime DataAteracao { get; set; }
+        public virtual bool Excluido { get; set; }
+        public virtual IList<Amigos> AmigosUsuario { get; set; }
+        public virtual IList<Carrinho> CarrinhoUsuario { get; set; }
+        public virtual IList<Pedidos> PedidosUsuario { get; set; }
+        public virtual IList<CuponsUsuario> CuponsUsuarioUsuario { get; set; }
+    }
+}

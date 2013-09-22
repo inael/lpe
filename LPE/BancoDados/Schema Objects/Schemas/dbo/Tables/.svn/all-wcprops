@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/levivier/!svn/ver/31/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables
+END
+PRODUTO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/PRODUTO.table.sql
+END
+CIDADES.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CIDADES.table.sql
+END
+EMPRESA.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/EMPRESA.table.sql
+END
+PRODUTO_CARACTERISTICA.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/PRODUTO_CARACTERISTICA.table.sql
+END
+PRODUTO_SUB_TIPO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/PRODUTO_SUB_TIPO.table.sql
+END
+RAMO_NEGOCIO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/RAMO_NEGOCIO.table.sql
+END
+TIPO_CONTATO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/TIPO_CONTATO.table.sql
+END
+CARRINHO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CARRINHO.table.sql
+END
+MNU_GRUPO_FUNCAO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/MNU_GRUPO_FUNCAO.table.sql
+END
+MARCAS.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/MARCAS.table.sql
+END
+REGIAO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/REGIAO.table.sql
+END
+CONTATO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CONTATO.table.sql
+END
+CAMPANHA.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/levivier/!svn/ver/31/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CAMPANHA.table.sql
+END
+MNU_GRUPO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/MNU_GRUPO.table.sql
+END
+CUPONS_USUARIO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CUPONS_USUARIO.table.sql
+END
+AMIGOS.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/AMIGOS.table.sql
+END
+CUPONS_CREDITO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CUPONS_CREDITO.table.sql
+END
+PRODUTO_TIPO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/PRODUTO_TIPO.table.sql
+END
+PEDIDOS.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/PEDIDOS.table.sql
+END
+USUARIO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/USUARIO.table.sql
+END
+CONTATO_TIPO_CONTATO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/CONTATO_TIPO_CONTATO.table.sql
+END
+MNU_FUNCAO.table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/MNU_FUNCAO.table.sql
+END

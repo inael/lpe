@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug
+END
+BancoDados.deploymanifest
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/levivier/!svn/ver/21/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/BancoDados.deploymanifest
+END
+BancoDados.dbschema
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/BancoDados.dbschema
+END
+LEVIVIER_Database.sqlcmdvars
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/LEVIVIER_Database.sqlcmdvars
+END
+LEVIVIER_Database.sqldeployment
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/LEVIVIER_Database.sqldeployment
+END
+LEVIVIER_Database.sqlsettings
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/LEVIVIER_Database.sqlsettings
+END
+BancoDados.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/BancoDados.sql
+END
+LEVIVIER_Script.PostDeployment.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/LEVIVIER_Script.PostDeployment.sql
+END
+LEVIVIER_Script.PreDeployment.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/sql/debug/LEVIVIER_Script.PreDeployment.sql
+END

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC037D8A-B04F-4689-91BE-89B5F3818023}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Persistencia</RootNamespace>
+    <AssemblyName>Persistencia</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.2.0.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmigosDao.cs" />
+    <Compile Include="CidadesDao.cs" />
+    <Compile Include="ContatoDao.cs" />
+    <Compile Include="CampanhaDao.cs" />
+    <Compile Include="CuponsUsuarioDao.cs" />
+    <Compile Include="ProdutosDao.cs" />
+    <Compile Include="ProdutoSubTipoDao.cs" />
+    <Compile Include="ProdutoTipoDao.cs" />
+    <Compile Include="CuponsCreditoDao.cs" />
+    <Compile Include="MarcasDao.cs" />
+    <Compile Include="ProdutoCaracteristicaDao.cs" />
+    <Compile Include="TipoContatoDao.cs" />
+    <Compile Include="RegiaoDao.cs" />
+    <Compile Include="Crud.cs" />
+    <Compile Include="EmpresaDao.cs" />
+    <Compile Include="MenuFuncaoDao.cs" />
+    <Compile Include="MenuGrupoDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RamoNegocioDao.cs" />
+    <Compile Include="UsuarioDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FabricaNhibernate\FabricaNhibernate.csproj">
+      <Project>{3B0C21E2-5F6D-4651-8BBF-11BE2D3864D5}</Project>
+      <Name>FabricaNhibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fabrica\Fabrica.csproj">
+      <Project>{626AFF0E-564E-4EE1-A4AB-61E08FF0F966}</Project>
+      <Name>Fabrica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{3A97BAF8-1CEA-46B6-87FC-3055CEB49C9D}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class EmpresaMap : ClassMap<Empresa>
+    {
+        public EmpresaMap()
+        {
+            Table("EMPRESA");
+            Id(a => a.Id, "ID");
+            Map(a => a.RazaoSocial, "RAZAO_SOCIAL");
+            Map(a => a.NomeFantasia, "NOME_FANTASIA");
+            Map(a => a.CNPJ, "CNPJ");
+            Map(a => a.InscricaoEstadual, "INSCRICAO_ESTADUAL");
+            Map(a => a.Endereco, "ENDERECO");
+            Map(a => a.Complemento, "COMPLEMENTO");
+            Map(a => a.Bairro , "BAIRRO");
+            Map(a => a.CEP , "CEP");
+            Map(a => a.MargemComercial , "MARGEM_COMERCIAL");
+            References(a => a.CidadeEmpresa, "ID_CIDADE").LazyLoad();
+            References(a => a.RamoNegocioEmpresa, "ID_RAMO_NEGOCIO").LazyLoad();
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+            Map(a => a.Excluido, "EXCLUIDO");
+            HasMany(a => a.UsuarioEmpresa)
+                .KeyColumn("ID_EMPRESA")
+                .Inverse()
+                .LazyLoad();
+            HasMany(a => a.ContatoEmpresa)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+            HasMany(a => a.CampanhaEmpresa)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+            HasMany(a => a.ProdutosEmpresa)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+        }
+    }
+}

@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Persistencia;
+using Modelo;
+
+namespace Negocio
+{
+    public class EmpresaBll
+    {
+        EmpresaDao persistencia;
+
+        public EmpresaBll()
+        {
+            persistencia = new EmpresaDao();
+        }
+
+        public List<Empresa> Listar()
+        {
+            return persistencia.Listar();
+        }
+
+        public Empresa Consultar(int id)
+        {
+            return persistencia.Consultar(id);
+        }
+
+        public Empresa Incluir(Empresa entidade)
+        {
+<<<<<<< .mine
+=======
+            RamoNegocioBll negocioRamoNegocio = new RamoNegocioBll();
+            RamoNegocio entidadeRamoNegocio = negocioRamoNegocio.Consultar(entidade.RamoNegocioEmpresa.Id);
+
+            CidadesBll negocioCidades = new CidadesBll();
+            Cidades entidadeCidades = negocioCidades.Consultar(entidade.CidadeEmpresa.Id);
+
+            entidade.CidadeEmpresa = entidadeCidades;
+            entidade.RamoNegocioEmpresa = entidadeRamoNegocio;
+            entidade.DataInclusao = DateTime.Now;
+            entidade.DataAteracao = DateTime.MaxValue;
+>>>>>>> .r27
+            return persistencia.Incluir(entidade);
+        }
+<<<<<<< .mine
+=======
+
+        /// <summary>
+        /// Método para alterar uma entidade do tipo: Empresa.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a alteração.</returns>
+        public bool Alterar(Empresa entidade)
+        {
+            Empresa entidadeConsulta = this.Consultar(entidade.Id);
+            entidade.UsuarioInclusao = entidadeConsulta.UsuarioInclusao;
+            entidade.DataInclusao = entidadeConsulta.DataInclusao;
+            return persistencia.Alterar(entidade);
+        }
+
+        public List<Empresa> ListarAtivos()
+        {
+            List<Empresa> lista = persistencia.ListarAtivos();
+            return lista;
+        }
+
+        #endregion
+>>>>>>> .r27
+    }
+}

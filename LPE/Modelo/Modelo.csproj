@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A97BAF8-1CEA-46B6-87FC-3055CEB49C9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Modelo</RootNamespace>
+    <AssemblyName>Modelo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.1.3.0.717\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.2.0.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditoriaEntidadesBd.cs" />
+    <Compile Include="CBOSinonimos.cs" />
+    <Compile Include="CBOSinonimosMap.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="EnderecoComplemento.cs" />
+    <Compile Include="EnderecoComplementoMap.cs" />
+    <Compile Include="EnderecoMap.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Escolaridade.cs" />
+    <Compile Include="EscolaridadeMap.cs" />
+    <Compile Include="Estado.cs" />
+    <Compile Include="EstadoCivil.cs" />
+    <Compile Include="EstadoCivilMap.cs" />
+    <Compile Include="EstadoMap.cs" />
+    <Compile Include="GraficoResposta.cs" />
+    <Compile Include="GraficoRespostaMap.cs" />
+    <Compile Include="Relatorio.cs" />
+    <Compile Include="RelatorioGrupo.cs" />
+    <Compile Include="RelatorioGrupoMap.cs" />
+    <Compile Include="RelatorioMap.cs" />
+    <Compile Include="MenuOpcao.cs" />
+    <Compile Include="MenuOpcaoMap.cs" />
+    <Compile Include="MenuOpcoesPerfis.cs" />
+    <Compile Include="MenuOpcoesPerfisMap.cs" />
+    <Compile Include="Municipio.cs" />
+    <Compile Include="MunicipioMap.cs" />
+    <Compile Include="NivelEscolaridade.cs" />
+    <Compile Include="NivelEscolaridadeMap.cs" />
+    <Compile Include="OpcaoRespostaToQuestionario.cs" />
+    <Compile Include="OpcaoRespostaToQuestionarioMap.cs" />
+    <Compile Include="Perfil.cs" />
+    <Compile Include="PerfilMap.cs" />
+    <Compile Include="OpcaoResposta.cs" />
+    <Compile Include="OpcaoRespostaMap.cs" />
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="PessoaMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questao.cs" />
+    <Compile Include="QuestaoGrupo.cs" />
+    <Compile Include="QuestaoGrupoMap.cs" />
+    <Compile Include="QuestaoMap.cs" />
+    <Compile Include="Questionario.cs" />
+    <Compile Include="QuestionarioMap.cs" />
+    <Compile Include="QuestaoToQuestionario.cs" />
+    <Compile Include="QuestaoToQuestionarioMap.cs" />
+    <Compile Include="Resposta.cs" />
+    <Compile Include="RespostaMap.cs" />
+    <Compile Include="Resultado.cs" />
+    <Compile Include="ResultadoMap.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioMap.cs" />
+    <Compile Include="UsuarioToQuestionario.cs" />
+    <Compile Include="UsuarioToQuestionarioMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

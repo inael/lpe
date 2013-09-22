@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace Modelo
+{
+    public class MenuFuncao
+    {
+        public virtual int Id { get; set; }                         //[ID]        NUMERIC (18)   IDENTITY (1, 1) NOT NULL,
+        public virtual string NomeMenuFuncao { get; set; }          //[NOME]      NVARCHAR (255) NULL,
+        public virtual string DescricaoMenuFuncao { get; set; }     //[DESCRICAO] NVARCHAR (255) NULL,
+        public virtual string ImagemMenuFuncao { get; set; }        //[IMAGEM]    NVARCHAR (255) NULL,
+        public virtual string ControllerMenuFuncao { get; set; }    //[PAGINA]    NVARCHAR (255) NULL,
+        public virtual string JsMenuFuncao { get; set; }            //[JS]        NVARCHAR (255) NULL,
+        public virtual decimal SeparadorMenuFuncao { get; set; }    //[SEPARADOR] NUMERIC (18)   NULL,
+        public virtual decimal idFuncaoMenuFuncao { get; set; }     //[ID_FUNCAO] NUMERIC (18)   NULL,
+        public virtual decimal OrdemMenuFuncao { get; set; }        //[ORDEM]     NUMERIC (18)   NULL,
+        public virtual decimal NivelMenuFuncao { get; set; }        //[NIVEL]     NUMERIC (18)   NULL,
+        public virtual bool Excluido { get; set; }                  //[EXCLUIDO]           NUMERIC (18)    NULL,
+        public virtual IList<MenuGrupoFuncao> MenuGrupoFuncaoMenuFuncao { get; set; }
+    }
+}

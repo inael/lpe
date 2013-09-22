@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[CBO_FAMILIAS] (
+    [ID_FAMILIA]        NUMERIC (18)   NOT NULL,
+    [ID_SUB_GRUPO]      NUMERIC (18)   NOT NULL,
+    [DESCRICAO]         NVARCHAR (300) NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATE           NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATE           NULL,
+    [EXCLUIDO]          INT            NULL
+);
+

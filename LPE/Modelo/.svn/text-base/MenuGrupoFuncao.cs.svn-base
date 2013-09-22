@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace Modelo
+{
+    public class MenuGrupoFuncao
+    {
+        public virtual int Id { get; set; }                                 //[ID]            NUMERIC (18) IDENTITY (1, 1) NOT NULL,
+        public virtual MenuGrupo MenuGrupoMenuGrupoFuncao { get; set; }     //[ID_MNU_GRUPO]  NUMERIC (18) NULL,
+        public virtual MenuFuncao MenuFuncaoMenuGrupoFuncao { get; set; }   //[ID_MNU_FUNCAO] NUMERIC (18) NULL,
+        public virtual decimal IncluidoMenuGrupoFuncao { get; set; }        //[INC]           NUMERIC (18) NULL,
+        public virtual decimal AlteradoMenuGrupoFuncao { get; set; }        //[ALT]           NUMERIC (18) NULL,
+        public virtual decimal ExcluidoMenuGrupoFuncao { get; set; }        //[EXC]           NUMERIC (18) NULL
+    }
+}

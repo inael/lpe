@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+<<<<<<< .mine
+    <TargetConnectionString>Data Source=localhost;User ID=sa;Pooling=False</TargetConnectionString>
+=======
+    <TargetConnectionString>Data Source=.\sqlexpress;Integrated Security=True;Pooling=False</TargetConnectionString>
+>>>>>>> .r21
+    <TargetDatabase>LEVIVIER</TargetDatabase>
+    <DeployToDatabase>True</DeployToDatabase>
+    <DeployToScript>True</DeployToScript>
+    <SourceModel>BancoDados.dbschema</SourceModel>
+    <DeployScriptFileName>BancoDados.sql</DeployScriptFileName>
+    <DeploymentConfigurationFile>LEVIVIER_Database.sqldeployment</DeploymentConfigurationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SqlCommandVariablesFile>LEVIVIER_Database.sqlcmdvars</SqlCommandVariablesFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <DeploymentExtensionConfiguration Include="LEVIVIER_Script.PostDeployment.sql">
+      <__PostdeploymentMetadata>
+      </__PostdeploymentMetadata>
+    </DeploymentExtensionConfiguration>
+    <DeploymentExtensionConfiguration Include="LEVIVIER_Script.PreDeployment.sql">
+      <__PredeploymentMetadata>
+      </__PredeploymentMetadata>
+    </DeploymentExtensionConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <DeploymentExtension Include="Microsoft.Data.Schema.Sql.Build.SqlPlanOrderModifier">
+      <Assembly>Microsoft.Data.Schema.Sql</Assembly>
+      <Version>10.0.0.0</Version>
+      <Token>sD9ffxHVCjo=</Token>
+    </DeploymentExtension>
+    <DeploymentExtension Include="Microsoft.Data.Schema.Sql.Build.SqlPrePostDeploymentModifier">
+      <Assembly>Microsoft.Data.Schema.Sql</Assembly>
+      <Version>10.0.0.0</Version>
+      <Token>sD9ffxHVCjo=</Token>
+    </DeploymentExtension>
+    <DeploymentExtension Include="Microsoft.Data.Schema.Sql.Refactoring.SqlRefactoringDeploymentContributor">
+      <Assembly>Microsoft.Data.Schema.Sql</Assembly>
+      <Version>10.0.0.0</Version>
+      <Token>sD9ffxHVCjo=</Token>
+    </DeploymentExtension>
+  </ItemGroup>
+</Project>

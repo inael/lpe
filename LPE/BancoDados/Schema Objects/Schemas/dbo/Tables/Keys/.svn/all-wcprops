@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys
+END
+FK_PRODUTO_EMPRESA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_EMPRESA.fkey.sql
+END
+PK_USUARIO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_USUARIO.pkey.sql
+END
+FK_PRODUTO_PRODUTO_SUB_TIPO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_PRODUTO_SUB_TIPO.fkey.sql
+END
+PK_CONTATO_TIPO_CONTATO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CONTATO_TIPO_CONTATO.pkey.sql
+END
+PK_MNU_FUNCAO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_MNU_FUNCAO.pkey.sql
+END
+FK_CUPONS_USUARIO_CUPONS_CREDITO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CUPONS_USUARIO_CUPONS_CREDITO.fkey.sql
+END
+FK_PEDIDOS_CAMPANHA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PEDIDOS_CAMPANHA.fkey.sql
+END
+PK_PRODUTO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_PRODUTO.pkey.sql
+END
+FK_CONTATO_TIPO_CONTATO_CONTATO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CONTATO_TIPO_CONTATO_CONTATO.fkey.sql
+END
+PK_PRODUTO_CARACTERISTICA.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_PRODUTO_CARACTERISTICA.pkey.sql
+END
+FK_CIDADES_REGIAO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CIDADES_REGIAO.fkey.sql
+END
+FK_REGIAO_CIDADES.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_REGIAO_CIDADES.fkey.sql
+END
+PK_CARRINHO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CARRINHO.pkey.sql
+END
+PK_MNU_GRUPO_FUNCAO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_MNU_GRUPO_FUNCAO.pkey.sql
+END
+PK_MARCAS.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_MARCAS.pkey.sql
+END
+PK_REGIAO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_REGIAO.pkey.sql
+END
+FK_MNU_GRUPO_FUNCAO_MNU_GRUPO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_MNU_GRUPO_FUNCAO_MNU_GRUPO.fkey.sql
+END
+PK_CUPONS_USUARIO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CUPONS_USUARIO.pkey.sql
+END
+PK_AMIGOS.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_AMIGOS.pkey.sql
+END
+PK_CUPONS_CREDITO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CUPONS_CREDITO.pkey.sql
+END
+FK_PRODUTO_SUB_TIPO_PRODUTO_TIPO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_SUB_TIPO_PRODUTO_TIPO.fkey.sql
+END
+FK_EMPRESA_CIDADES.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_EMPRESA_CIDADES.fkey.sql
+END
+FK_PRODUTO_CARACTERISTICA_PRODUTO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_CARACTERISTICA_PRODUTO.fkey.sql
+END
+FK_PRODUTO_PRODUTO_CARACTERISTICA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_PRODUTO_CARACTERISTICA.fkey.sql
+END
+PK_PEDIDOS.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_PEDIDOS.pkey.sql
+END
+PK_PRODUTO_TIPO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_PRODUTO_TIPO.pkey.sql
+END
+FK_CARRINHO_USUARIO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CARRINHO_USUARIO.fkey.sql
+END
+FK_EMPRESA_RAMO_NEGOCIO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_EMPRESA_RAMO_NEGOCIO.fkey.sql
+END
+FK_PRODUTO_CARACTERISTICA_PRODUTO_SUB_TIPO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_CARACTERISTICA_PRODUTO_SUB_TIPO.fkey.sql
+END
+PK_CIDADES.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CIDADES.pkey.sql
+END
+PK_EMPRESA.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_EMPRESA.pkey.sql
+END
+FK_MNU_GRUPO_FUNCAO_MNU_FUNCAO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_MNU_GRUPO_FUNCAO_MNU_FUNCAO.fkey.sql
+END
+FK_CARRINHO_PRODUTO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CARRINHO_PRODUTO.fkey.sql
+END
+FK_PRODUTO_MARCAS.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_MARCAS.fkey.sql
+END
+FK_CONTATO_EMPRESA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CONTATO_EMPRESA.fkey.sql
+END
+FK_CAMPANHA_EMPRESA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CAMPANHA_EMPRESA.fkey.sql
+END
+PK_PRODUTO_SUB_TIPO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_PRODUTO_SUB_TIPO.pkey.sql
+END
+PK_RAMO_NEGOCIO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_RAMO_NEGOCIO.pkey.sql
+END
+FK_CUPONS_USUARIO_USUARIO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CUPONS_USUARIO_USUARIO.fkey.sql
+END
+FK_AMIGOS_USUARIO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_AMIGOS_USUARIO.fkey.sql
+END
+FK_CONTATO_TIPO_CONTATO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CONTATO_TIPO_CONTATO.fkey.sql
+END
+PK_CONTATO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CONTATO.pkey.sql
+END
+PK_CAMPANHA.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_CAMPANHA.pkey.sql
+END
+FK_CARRINHO_CAMPANHA.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_CARRINHO_CAMPANHA.fkey.sql
+END
+FK_PEDIDOS_USUARIO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PEDIDOS_USUARIO.fkey.sql
+END
+PK_MNU_GRUPO.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/PK_MNU_GRUPO.pkey.sql
+END
+FK_PEDIDOS_PRODUTO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PEDIDOS_PRODUTO.fkey.sql
+END
+FK_PRODUTO_PRODUTO_TIPO.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/levivier/!svn/ver/9/trunk/2%20-%20Implementacao/Levivier/BancoDados/Schema%20Objects/Schemas/dbo/Tables/Keys/FK_PRODUTO_PRODUTO_TIPO.fkey.sql
+END

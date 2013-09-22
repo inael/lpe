@@ -1,0 +1,25 @@
+﻿/*CREATE TABLE [dbo].[PRODUTO] (
+    [ID]                NUMERIC (18)    IDENTITY (1, 1) NOT NULL,
+    [NOME]              NVARCHAR (300)  NOT NULL,
+    [ID_EMPRESA]        NUMERIC (18)    NOT NULL,
+    [ID_TIPO]           NUMERIC (18)    NOT NULL,
+    [ID_SUB_TIPO]       NUMERIC (18)    NOT NULL,
+    [ID_MARCA]          NUMERIC (18)    NOT NULL,
+    [COD_PRODUTO]       NVARCHAR (50)   NOT NULL,
+    [VALOR_ORIGINAL]    NUMERIC (18, 2) NOT NULL,
+    [PERCENT_DESCONTO]  NUMERIC (18, 2) NOT NULL,
+    [DESCRICAO]         TEXT            NULL,
+    [COMPOSICAO]        NVARCHAR (300)  NULL,
+    [INST_LAVAGEM]      NVARCHAR (200)  NULL,
+    [OBSERVACAO]        TEXT            NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)   NULL,
+    [DATA_INCLUSAO]     DATE            NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)   NULL,
+    [DATA_ALTERACAO]    DATE            NULL,
+    [EXCLUIDO]          INT             NULL
+);*/
+
+
+
+
+

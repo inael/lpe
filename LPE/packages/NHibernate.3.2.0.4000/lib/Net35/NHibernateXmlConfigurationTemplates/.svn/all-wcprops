@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates
+END
+PostgreSQL.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/PostgreSQL.cfg.xml
+END
+MySql.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/MySql.cfg.xml
+END
+Oracle.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/Oracle.cfg.xml
+END
+FireBird.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/FireBird.cfg.xml
+END
+MSSQL.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/MSSQL.cfg.xml
+END
+SybaseASE.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/SybaseASE.cfg.xml
+END
+SQLite.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/packages/NHibernate.3.2.0.4000/lib/Net35/NHibernateXmlConfigurationTemplates/SQLite.cfg.xml
+END

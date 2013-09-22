@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class CampanhaMap : ClassMap<Campanha>
+    {
+        public CampanhaMap()
+        {
+            Table("CAMPANHA");
+            Id(a => a.Id, "ID");
+            Map(a => a.NomeCampanha, "NOME");
+            References(a => a.EmpresaCampanha, "ID_EMPRESA").LazyLoad();
+            Map(a => a.UrlImagemCampanha, "IMAGEM");
+            Map(a => a.DataInicio, "DATA_INICIO");
+            Map(a => a.DataFim, "DATA_FIM");
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+            Map(a => a.Excluido, "EXCLUIDO");
+            HasMany(a => a.CarrinhoCampanha)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+            HasMany(a => a.PedidosCampanha)
+                .KeyColumn("ID")
+                .Inverse()
+                .LazyLoad();
+        }
+    }
+}

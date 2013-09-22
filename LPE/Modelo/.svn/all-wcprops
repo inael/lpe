@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Modelo
+END
+MenuGrupoFuncaoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuGrupoFuncaoMap.cs
+END
+CuponsUsuarioMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/CuponsUsuarioMap.cs
+END
+MenuGrupoFuncao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuGrupoFuncao.cs
+END
+CuponsCreditoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/CuponsCreditoMap.cs
+END
+CuponsUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/CuponsUsuario.cs
+END
+MenuGrupoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuGrupoMap.cs
+END
+MenuGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuGrupo.cs
+END
+CuponsCredito.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/CuponsCredito.cs
+END
+PedidosMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/PedidosMap.cs
+END
+Pedidos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/Pedidos.cs
+END
+ProdutoTipo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoTipo.cs
+END
+Empresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/Empresa.cs
+END
+Cidades.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/Modelo/Cidades.cs
+END
+ProdutoCaracteristicaMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoCaracteristicaMap.cs
+END
+MenuFuncaoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuFuncaoMap.cs
+END
+RamoNegocioMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/Modelo/RamoNegocioMap.cs
+END
+ProdutoSubTipoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoSubTipoMap.cs
+END
+CarrinhoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/CarrinhoMap.cs
+END
+Carrinho.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/Carrinho.cs
+END
+ContatoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/ContatoMap.cs
+END
+Marcas.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/Marcas.cs
+END
+Regiao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/Regiao.cs
+END
+CampanhaMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/31/trunk/2%20-%20Implementacao/Levivier/Modelo/CampanhaMap.cs
+END
+Contato.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/levivier/!svn/ver/29/trunk/2%20-%20Implementacao/Levivier/Modelo/Contato.cs
+END
+Entity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/levivier/!svn/ver/4/trunk/2%20-%20Implementacao/Levivier/Modelo/Entity.cs
+END
+ProdutosMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutosMap.cs
+END
+AmigosMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Modelo/AmigosMap.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Modelo/packages.config
+END
+Amigos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Modelo/Amigos.cs
+END
+Produtos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/Produtos.cs
+END
+UsuarioMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/UsuarioMap.cs
+END
+ProdutoTipoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoTipoMap.cs
+END
+Usuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/Usuario.cs
+END
+CidadesMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/27/trunk/2%20-%20Implementacao/Levivier/Modelo/CidadesMap.cs
+END
+EmpresaMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/EmpresaMap.cs
+END
+ProdutoCaracteristica.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoCaracteristica.cs
+END
+MenuFuncao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MenuFuncao.cs
+END
+TipoContatoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/TipoContatoMap.cs
+END
+RamoNegocio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/Modelo/RamoNegocio.cs
+END
+ProdutoSubTipo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Modelo/ProdutoSubTipo.cs
+END
+TipoContato.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/TipoContato.cs
+END
+MarcasMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/MarcasMap.cs
+END
+RegiaoMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/levivier/!svn/ver/20/trunk/2%20-%20Implementacao/Levivier/Modelo/RegiaoMap.cs
+END
+Campanha.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/levivier/!svn/ver/31/trunk/2%20-%20Implementacao/Levivier/Modelo/Campanha.cs
+END
+Modelo.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Modelo/Modelo.csproj
+END

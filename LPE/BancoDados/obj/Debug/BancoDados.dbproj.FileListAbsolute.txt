@@ -1,0 +1,24 @@
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\LEVIVIER_Script.PreDeployment.sql
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\LEVIVIER_Script.PostDeployment.sql
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqlsettings
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqldeployment
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqlcmdvars
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\BancoDados.deploymanifest
+D:\THIAGO\www\Levivier\BancoDados\sql\debug\BancoDados.dbschema
+D:\THIAGO\www\Levivier\BancoDados\obj\Debug\BancoDados.dbschema
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\LEVIVIER_Script.PreDeployment.sql
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\LEVIVIER_Script.PostDeployment.sql
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqlsettings
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqldeployment
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\LEVIVIER_Database.sqlcmdvars
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\BancoDados.deploymanifest
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\sql\debug\BancoDados.dbschema
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\BancoDados\obj\Debug\BancoDados.dbschema
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\obj\Debug\BancoDados.dbschema
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\LEVIVIER_Script.PreDeployment.sql
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\LEVIVIER_Script.PostDeployment.sql
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\LEVIVIER_Database.sqlsettings
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\LEVIVIER_Database.sqldeployment
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\LEVIVIER_Database.sqlcmdvars
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\BancoDados.deploymanifest
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\BancoDados\sql\debug\BancoDados.dbschema

@@ -1,0 +1,105 @@
+﻿/*
+ * Classe de negócio
+ * Arquiteto: José Lino Neto
+ * Desenvolvedor: 
+ * 
+ */
+
+#region Using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Modelo;
+using Persistencia;
+
+#endregion
+
+namespace Negocio
+{
+    /// <summary>
+    /// Classe de negócio da entidade: MenuFuncao
+    /// </summary>
+    public class MenuFuncaoBll
+    {
+        #region Campos privados
+
+        MenuFuncaoDao persistencia;
+
+        #endregion
+
+        #region Construtores
+
+        /// <summary>
+        /// Construtor padrão do objeto de negócio.
+        /// </summary>
+        public MenuFuncaoBll()
+        {
+            persistencia = new MenuFuncaoDao();
+        }
+
+        #endregion
+
+        #region Métodos
+
+        /// <summary>
+        /// Método para listar todas as entidades do tipo: MenuFuncao
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        public List<MenuFuncao> Listar()
+        {
+            List<MenuFuncao> lista = persistencia.Listar();
+            return lista;
+        }
+
+        /// <summary>
+        /// Método para consultar uma entidade do tipo: MenuFuncao
+        /// </summary>
+        /// <param name="id">chave primária da entidade MenuFuncao.</param>
+        /// <returns>Retorna uma entidade</returns>
+        public MenuFuncao Consultar(int id)
+        {
+            MenuFuncao entidade = persistencia.Consultar(id);
+            return entidade;
+        }
+        
+              /// <summary>
+        /// Método para incluir uma entidade do tipo: MenuFuncao
+        /// </summary>
+        /// <param name="entidade">Entidade a ser inserida.</param>
+        /// <returns>Retorna a entidade com a chave primaria definida.</returns>
+        public MenuFuncao Inserir(MenuFuncao entidade)
+        {
+            return persistencia.Incluir(entidade);
+        }
+
+        /// <summary>
+        /// Método para alterar uma entidade do tipo: MenuFuncao.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a alteração.</returns>
+        public bool Alterar(MenuFuncao entidade)
+        {
+            MenuFuncao entidadeConsulta = this.Consultar(entidade.Id);
+
+            return persistencia.Alterar(entidade);
+        }
+
+        #endregion
+
+        public bool Excluir(int id)
+        {
+            MenuFuncao entidade = this.Consultar(id);
+            entidade.Excluido = true;
+
+            return this.Alterar(entidade);
+        }
+
+        public List<MenuFuncao> ListarAtivos()
+        {
+            List<MenuFuncao> listar = persistencia.ListarAtivos();
+            return listar;
+        }
+    }
+}

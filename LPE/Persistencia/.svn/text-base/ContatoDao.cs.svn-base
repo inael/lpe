@@ -1,0 +1,100 @@
+﻿/*
+ * Classe de persistência
+ * Arquiteto: José Lino Neto
+ * Desenvolvedor: 
+ * 
+ */
+
+#region Using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Modelo;
+
+#endregion
+
+namespace Persistencia
+{
+    /// <summary>
+    /// Classe de Persistência da entidade Contato
+    /// </summary>
+    public class ContatoDao : Crud<Contato>
+    {
+        #region Construtores
+
+        /// <summary>
+        /// Construtor padrão passando para a classe base qual banco de operação.
+        /// </summary>
+        public ContatoDao()
+        {
+
+        }
+
+        #endregion
+
+        #region Propridades
+
+        #endregion
+
+        #region Métodos padrões
+
+        /// <summary>
+        /// Método para listar todas as entidades do tipo: Contato
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        public List<Contato> Listar()
+        {
+            List<Contato> lista = Contexto.Listar().ToList();
+            return lista;
+        }
+
+        /// <summary>
+        /// Método para consultar uma entidade do tipo: Contato
+        /// </summary>
+        /// <param name="id">chave primária da entidade Contato.</param>
+        /// <returns>Retorna uma entidade</returns>
+        public Contato Consultar(int id)
+        {
+            Contato entidade = Contexto.Consultar(a => a.Id == id);
+            return entidade;
+        }
+
+        /// <summary>
+        /// Método para incluir uma entidade do tipo: Contato
+        /// </summary>
+        /// <param name="entidade">Entidade a ser inserida.</param>
+        /// <returns>Retorna a entidade com a chave primaria definida.</returns>
+        public Contato Incluir(Contato entidade)
+        {
+            Contexto.Incluir(entidade);
+            return entidade;
+        }
+
+        /// <summary>
+        /// Método para alterar uma entidade do tipo: Contato.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a alteração.</returns>
+        public bool Alterar(Contato entidade)
+        {
+            return Contexto.Alterar(entidade);
+        }
+
+        /// <summary>
+        /// Método para excluir uma entidade do tipo: Contato.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser excluida.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a excluida.</returns>
+        public bool Excluir(Contato entidade)
+        {
+            return Contexto.Excluir(entidade);
+        }
+
+        #endregion
+
+        #region Métodos personalizados
+
+        #endregion
+    }
+}

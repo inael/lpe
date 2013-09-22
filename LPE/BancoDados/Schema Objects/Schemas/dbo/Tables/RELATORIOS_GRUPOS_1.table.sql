@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[RELATORIOS_GRUPOS] (
+    [ID_GRUPO]          NUMERIC (18)   NOT NULL,
+    [NOME]              NVARCHAR (200) NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50)  NULL,
+    [DATA_INCLUSAO]     DATE           NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50)  NULL,
+    [DATA_ALTERACAO]    DATE           NULL,
+    [EXCLUIDO]          INT            NULL
+);
+

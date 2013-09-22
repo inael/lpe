@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/levivier/!svn/ver/35/trunk/2%20-%20Implementacao/Levivier/Persistencia
+END
+UsuarioDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Persistencia/UsuarioDao.cs
+END
+ProdutoTipoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/ProdutoTipoDao.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Persistencia/packages.config
+END
+CidadesDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/CidadesDao.cs
+END
+EmpresaDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/EmpresaDao.cs
+END
+ProdutoCaracteristicaDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Persistencia/ProdutoCaracteristicaDao.cs
+END
+MenuFuncaoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Persistencia/MenuFuncaoDao.cs
+END
+Persistencia.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/levivier/!svn/ver/32/trunk/2%20-%20Implementacao/Levivier/Persistencia/Persistencia.csproj
+END
+ProdutoSubTipoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/ProdutoSubTipoDao.cs
+END
+RamoNegocioDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/levivier/!svn/ver/22/trunk/2%20-%20Implementacao/Levivier/Persistencia/RamoNegocioDao.cs
+END
+TipoContatoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Persistencia/TipoContatoDao.cs
+END
+MarcasDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Persistencia/MarcasDao.cs
+END
+RegiaoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Persistencia/RegiaoDao.cs
+END
+ContatoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/ContatoDao.cs
+END
+CampanhaDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/levivier/!svn/ver/35/trunk/2%20-%20Implementacao/Levivier/Persistencia/CampanhaDao.cs
+END
+Crud.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/levivier/!svn/ver/8/trunk/2%20-%20Implementacao/Levivier/Persistencia/Crud.cs
+END
+AmigosDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Persistencia/AmigosDao.cs
+END
+ProdutosDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/levivier/!svn/ver/25/trunk/2%20-%20Implementacao/Levivier/Persistencia/ProdutosDao.cs
+END
+CuponsUsuarioDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Persistencia/CuponsUsuarioDao.cs
+END
+MenuGrupoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/levivier/!svn/ver/26/trunk/2%20-%20Implementacao/Levivier/Persistencia/MenuGrupoDao.cs
+END
+CuponsCreditoDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/levivier/!svn/ver/24/trunk/2%20-%20Implementacao/Levivier/Persistencia/CuponsCreditoDao.cs
+END

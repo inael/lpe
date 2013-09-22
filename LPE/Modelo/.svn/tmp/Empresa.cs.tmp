@@ -1,0 +1,80 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace Modelo
+{
+    public class Empresa
+    {
+<<<<<<< .mine
+        public int Id { get; set; }
+        public string RazaoSocial { get; set; }             /*[RAZAO_SOCIAL]       NVARCHAR (255)  NULL,*/
+        public string NomeFantasia { get; set; }            /*[NOME_FANTASIA]      NVARCHAR (255)  NULL,*/
+        public string CNPJ { get; set; }                    /*[CNPJ]               NVARCHAR (18)   NULL,*/
+        public string InscricaoEstadual { get; set; }       /*[INSCRICAO_ESTADUAL] NVARCHAR (50)   NULL,*/
+        public string Endereco { get; set; }                /*[ENDERECO]           NVARCHAR (255)  NULL,*/
+        public string Complemento { get; set; }             /*[COMPLEMENTO]        NVARCHAR (127)  NULL,*/
+        public string Bairro { get; set; }                  /*[BAIRRO]             NVARCHAR (127)  NULL,*/
+        public string CEP { get; set; }                     /*[CEP]                NVARCHAR (9)    NULL,*/
+        public string Municipio { get; set; }               /*[MUNICIPIO]          NVARCHAR (127)  NULL,*/
+        public string UF { get; set; }                      /*[UF]                 NVARCHAR (2)    NULL,*/
+        public string DDD { get; set; }                     /*[DDD]                NVARCHAR (2)    NULL,*/
+        public string Telefone { get; set; }                /*[TELEFONE]           NVARCHAR (10)   NULL,*/
+        public float MargemComercial { get; set; }          /*[MARGEM_COMERCIAL]   NUMERIC (10, 2) NULL,*/
+        public Regiao RegiaoEmpresa { get; set; }           /*[ID_REGIAO]          NUMERIC (18)    NULL,*/
+        public RamoNegocio RamoNegocioEmpresa { get; set; } /*[ID_RAMO_NEGOCIO]    NUMERIC (18)    NULL,*/
+        public virtual string UsuarioInclusao { get; set; } /*[USUARIO_INCLUSAO]   NVARCHAR (30)   NULL,*/
+        public virtual DateTime DataInclusao { get; set; }  /*[DATA_INCLUSAO]      DATETIME        NULL,*/
+        public virtual string UsuarioAteracao { get; set; } /*[USUARIO_ALTERACAO]  NVARCHAR (30)   NULL,*/
+        public virtual DateTime DataAteracao { get; set; }  /*[DATA_ALTERACAO]     DATETIME        NULL,*/
+        public virtual bool Excluido { get; set; }          /*[EXCLUIDO]           NUMERIC (18)    NULL,*/
+
+=======
+        public int Id { get; set; }
+        public string RazaoSocial { get; set; }             /*[RAZAO_SOCIAL]       NVARCHAR (255)  NULL,*/
+        public string NomeFantasia { get; set; }            /*[NOME_FANTASIA]      NVARCHAR (255)  NULL,*/
+        public string CNPJ { get; set; }                    /*[CNPJ]               NVARCHAR (18)   NULL,*/
+        public string InscricaoEstadual { get; set; }       /*[INSCRICAO_ESTADUAL] NVARCHAR (50)   NULL,*/
+        public string Endereco { get; set; }                /*[ENDERECO]           NVARCHAR (255)  NULL,*/
+        public string Complemento { get; set; }             /*[COMPLEMENTO]        NVARCHAR (127)  NULL,*/
+        public string Bairro { get; set; }                  /*[BAIRRO]             NVARCHAR (127)  NULL,*/
+        public string CEP { get; set; }                     /*[CEP]                NVARCHAR (9)    NULL,*/
+        public string Municipio { get; set; }               /*[MUNICIPIO]          NVARCHAR (127)  NULL,*/
+        public string UF { get; set; }                      /*[UF]                 NVARCHAR (2)    NULL,*/
+        public string DDD { get; set; }                     /*[DDD]                NVARCHAR (2)    NULL,*/
+        public string Telefone { get; set; }                /*[TELEFONE]           NVARCHAR (10)   NULL,*/
+        public string NomeContato { get; set; }             /*[NOME_CONTATO]       NVARCHAR (127)  NULL,*/
+        public string Email { get; set; }                   /*[EMAIL]              NVARCHAR (512)  NULL,*/
+        public string DDDComercial { get; set; }            /*[DDD1]               NVARCHAR (2)    NULL,*/
+        public string TelComercial { get; set; }            /*[TELEFONE1]          NVARCHAR (10)   NULL,*/
+        public string NomeContatoComercial { get; set; }    /*[NOME_CONTATO1]      NVARCHAR (127)  NULL,*/
+        public string EmailComercial { get; set; }          /*[EMAIL1]             NVARCHAR (512)  NULL,*/
+        public string DDDFinanceiro { get; set; }           /*[DDD2]               NVARCHAR (2)    NULL,*/
+        public string TelFinanceiro { get; set; }           /*[TELEFONE2]          NVARCHAR (10)   NULL,*/
+        public string NomeContatoFinanceiro { get; set; }   /*[NOME_CONTATO2]      NVARCHAR (127)  NULL,*/
+        public string EmailFinanceiro { get; set; }         /*[EMAIL2]             NVARCHAR (512)  NULL,*/
+        public float MargemComercial { get; set; }          /*[MARGEM_COMERCIAL]   NUMERIC (10, 2) NULL,*/
+        public string Regiao { get; set; }                  /*[ID_REGIAO]          NUMERIC (18)    NULL,*/
+        public string RamoNegocio { get; set; }             /*[ID_RAMO_NEGOCIO]    NUMERIC (18)    NULL,*/
+        public virtual string UsuarioInclusao { get; set; } /*[USUARIO_INCLUSAO]   NVARCHAR (30)   NULL,*/
+        public virtual DateTime DataInclusao { get; set; }  /*[DATA_INCLUSAO]      DATETIME        NULL,*/
+        public virtual string UsuarioAteracao { get; set; } /*[USUARIO_ALTERACAO]  NVARCHAR (30)   NULL,*/
+        public virtual DateTime DataAteracao { get; set; }  /*[DATA_ALTERACAO]     DATETIME        NULL,*/
+        public virtual bool Excluido { get; set; }          /*[EXCLUIDO]           NUMERIC (18)    NULL,*/
+>>>>>>> .r17
+        public IList<Contato> ContatoEmpresa { get; set; }
+        public IList<Usuario> UsuarioEmpresa { get; set; }
+
+        public Empresa()
+        {
+            this.ContatoEmpresa = new List<Contato>();
+        }
+
+        public Empresa()
+        {
+            this.UsuarioEmpresa = new List<Usuario>();
+        }
+    }
+}

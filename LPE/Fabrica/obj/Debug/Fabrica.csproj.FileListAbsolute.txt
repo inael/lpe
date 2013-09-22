@@ -1,0 +1,21 @@
+D:\THIAGO\www\Levivier\Fabrica\bin\Debug\Fabrica.dll
+D:\THIAGO\www\Levivier\Fabrica\bin\Debug\Fabrica.pdb
+D:\THIAGO\www\Levivier\Fabrica\obj\Debug\ResolveAssemblyReference.cache
+D:\THIAGO\www\Levivier\Fabrica\obj\Debug\Fabrica.dll
+D:\THIAGO\www\Levivier\Fabrica\obj\Debug\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\Fabrica.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\obj\Debug\ResolveAssemblyReference.cache
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\obj\Debug\Fabrica.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\obj\Debug\Fabrica.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\log4net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\log4net.xml
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\BCrypt.Net.dll
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\BCrypt.Net.pdb
+E:\Web\Sites\Leviver\Projeto\trunk\2 - Implementacao\Levivier\Fabrica\bin\Debug\BCrypt.Net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\Fabrica.pdb
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\log4net.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\log4net.xml
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Debug\Fabrica.dll
+D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Debug\Fabrica.pdb

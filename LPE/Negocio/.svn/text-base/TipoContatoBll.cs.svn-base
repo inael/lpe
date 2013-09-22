@@ -1,0 +1,98 @@
+﻿/*
+ * Classe de negócio
+ * Arquiteto: José Lino Neto
+ * Desenvolvedor: 
+ * 
+ */
+
+#region Using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Modelo;
+using Persistencia;
+
+#endregion
+
+namespace Negocio
+{
+    /// <summary>
+    /// Classe de negócio da entidade: TipoContato
+    /// </summary>
+    public class TipoContatoBll
+    {
+        #region Campos privados
+
+        TipoContatoDao persistencia;
+
+        #endregion
+
+        #region Construtores
+
+        /// <summary>
+        /// Construtor padrão do objeto de negócio.
+        /// </summary>
+        public TipoContatoBll()
+        {
+            persistencia = new TipoContatoDao();
+        }
+
+        #endregion
+
+        #region Métodos
+
+        /// <summary>
+        /// Método para listar todas as entidades do tipo: TipoContato
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        public List<TipoContato> Listar()
+        {
+            List<TipoContato> lista = persistencia.Listar();
+            return lista;
+        }
+
+        /// <summary>
+        /// Método para consultar uma entidade do tipo: TipoContato
+        /// </summary>
+        /// <param name="id">chave primária da entidade TipoContato.</param>
+        /// <returns>Retorna uma entidade</returns>
+        public TipoContato Consultar(int id)
+        {
+            TipoContato entidade = persistencia.Consultar(id);
+            return entidade;
+        }
+
+        /// <summary>
+        /// Método para incluir uma entidade do tipo: TipoContato
+        /// </summary>
+        /// <param name="entidade">Entidade a ser inserida.</param>
+        /// <returns>Retorna a entidade com a chave primaria definida.</returns>
+        public TipoContato Inserir(TipoContato entidade)
+        {
+            return persistencia.Incluir(entidade);
+        }
+
+        /// <summary>
+        /// Método para alterar uma entidade do tipo: TipoContato.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro ou falso se houve a alteração.</returns>
+        public bool Alterar(TipoContato entidade)
+        {
+            TipoContato entidadeConsulta = this.Consultar(entidade.Id);
+
+            return persistencia.Alterar(entidade);
+        }
+
+        #endregion
+
+        public bool Excluir(int id)
+        {
+            TipoContato entidade = this.Consultar(id);
+
+            return this.Alterar(entidade);
+        }
+    }
+}

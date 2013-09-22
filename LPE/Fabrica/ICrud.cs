@@ -1,0 +1,121 @@
+﻿/*
+ * Framework de Acesso a Dados
+ * Arquiteto: José Lino Neto - joselinoneto@gmail.com
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Data;
+using System.Reflection;
+using System.Text;
+
+namespace Fabrica
+{
+    public interface ICrud<T>
+    {
+        /// <summary>
+        /// Método para listar todas as entidades. Cuidado com a quantidade de registros.
+        /// </summary>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        IEnumerable<T> Listar();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tamanhoPagina"></param>
+        /// <param name="primeiroResultado"></param>
+        /// <returns></returns>
+        IEnumerable<T> Listar(int tamanhoPagina, int primeiroResultado);
+
+        /// <summary>
+        /// Método para listar as entidades de acordo com os filtros.
+        /// </summary>
+        /// <param name="filtro">Filtros de consulta.</param>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        IEnumerable<T> Listar(Expression<Func<T, bool>> filtro);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filtro"></param>
+        /// <param name="tamanhoPagina"></param>
+        /// <param name="primeiroResultado"></param>
+        /// <returns></returns>
+        IEnumerable<T> Listar(Expression<Func<T, bool>> filtro, int tamanhoPagina, int primeiroResultado);
+
+        /// <summary>
+        /// Método para listar todas as entidades e com alguma ordem e seu fluxo. Cuidado com a quantidade de registros.
+        /// </summary>
+        /// <param name="ordem">Campo para ser utilizado como ordem.</param>
+        /// <param name="fluxo">Fluxo de ordenação. Utilize Asc para crescente e Des para decrescente.</param>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        IEnumerable<T> Listar(Expression<Func<T, object>> ordem, string fluxo);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ordem"></param>
+        /// <param name="fluxo"></param>
+        /// <param name="tamanhoPagina"></param>
+        /// <param name="primeiroResultado"></param>
+        /// <returns></returns>
+        IEnumerable<T> Listar(Expression<Func<T, object>> ordem, string fluxo, int tamanhoPagina, int primeiroResultado);
+
+        /// <summary>
+        /// Método para listar as entidades de acordo com os filtros e  e com alguma ordem e seu fluxo.
+        /// </summary>
+        /// <param name="filtro">Filtros de consulta.</param>
+        /// <param name="ordem">Campo para ser utilizado como ordem.</param>
+        /// <param name="fluxoOrdem">Fluxo de ordenação. Utilize Asc para crescente e Des para decrescente.</param>
+        /// <returns>Retorna uma lista de entidades.</returns>
+        IEnumerable<T> Listar(Expression<Func<T, bool>> filtro, Expression<Func<T, object>> ordem, string fluxoOrdem);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filtro"></param>
+        /// <param name="ordem"></param>
+        /// <param name="fluxoOrdem"></param>
+        /// <param name="tamanhoPagina"></param>
+        /// <param name="primeiroResultado"></param>
+        /// <returns></returns>
+        IEnumerable<T> Listar(Expression<Func<T, bool>> filtro, Expression<Func<T, object>> ordem, string fluxoOrdem, int tamanhoPagina, int primeiroResultado);
+
+        /// <summary>
+        /// Método para incluir uma nova entidade.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser incluida.</param>
+        /// <returns>Retorna a própria entidade com sua chave primária preenchida.</returns>
+        T Incluir(T entidade);
+
+        /// <summary>
+        /// Método para consultar uma entidade.
+        /// </summary>
+        /// <param name="filtro">Filtro a ser utilizado para consulta.</param>
+        /// <returns>Retorna uma entidade.</returns>
+        T Consultar(Expression<Func<T, bool>> filtro);
+
+        /// <summary>
+        /// Método para excluir uma entidade.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser excluida.</param>
+        /// <returns>Retorna verdadeiro quando a transação da exclusão for concluida com sucesso.</returns>
+        bool Excluir(T entidade);
+
+        /// <summary>
+        /// Método para alterar uma entidade.
+        /// </summary>
+        /// <param name="entidade">Entidade a ser alterada.</param>
+        /// <returns>Retorna verdadeiro quando a transação de alteração for concluida.</returns>
+        bool Alterar(T entidade);
+
+        /// <summary>
+        /// Método para executar consulta sql em uma entidade.
+        /// </summary>
+        /// <param name="Sql">Consulta Sql.</param>
+        /// <returns>Retorna verdadeiro quando a consulta for concluida.</returns>
+        List<T> ExecutarSqlListagem<T>(string Sql) where T : new();
+
+    }
+}

@@ -1,0 +1,52 @@
+10
+
+dir
+35
+https://subversion.assembla.com/svn/levivier/trunk/2%20-%20Implementacao/Levivier/packages/log4net.2.0.0/lib
+https://subversion.assembla.com/svn/levivier
+
+
+
+2012-08-13T21:45:21.121084Z
+32
+svn_levivier
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+aa7b5f1d-4862-4721-8e16-11fc317d9ec3
+
+net40-client
+dir
+
+net10-full
+dir
+
+net11-full
+dir
+
+net20-full
+dir
+
+net35-client
+dir
+
+net40-full
+dir
+
+net20-cf
+dir
+
+net35-full
+dir
+

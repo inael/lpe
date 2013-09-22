@@ -1,0 +1,16 @@
+﻿/*CREATE TABLE [dbo].[PEDIDOS] (
+    [ID]                NUMERIC (18)    NOT NULL,
+    [ID_USUARIO]        NUMERIC (18)    NOT NULL,
+    [ID_PRODUTO]        NUMERIC (18)    NOT NULL,
+    [ID_CAMPANHA]       NUMERIC (18)    NOT NULL,
+    [QTD]               INT             NOT NULL,
+    [VALOR_UNITARIO]    NUMERIC (18, 2) NOT NULL,
+    [STATUS]            NVARCHAR (20)   NOT NULL,
+    [COD_PAGAMENTO]     NVARCHAR (50)   NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (30)   NULL,
+    [DATA_INCLUSAO]     DATETIME        NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (30)   NULL,
+    [DATA_ALTERACAO]    DATETIME        NULL,
+    [EXCLUIDO]          INT             NULL
+);*/
+

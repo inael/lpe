@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[RESULTADOS] (
+    [ID_RESULTADO]      NUMERIC (18)  IDENTITY (1, 1) NOT NULL,
+    [ID_USUARIO]        NUMERIC (18)  NOT NULL,
+    [ID_QUESTIONARIO]   NUMERIC (18)  NOT NULL,
+    [ID_RELATORIO]      NUMERIC (18)  NOT NULL,
+    [VALOR]             NUMERIC (18)  NOT NULL,
+    [PDF]               BIT           NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (50) NULL,
+    [DATA_INCLUSAO]     DATE          NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (50) NULL,
+    [DATA_ALTERACAO]    DATE          NULL,
+    [EXCLUIDO]          INT           NULL
+);
+
+
+
+
+
+
+

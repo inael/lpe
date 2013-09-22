@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using FluentNHibernate.Mapping;
+
+namespace Modelo
+{
+    public class CarrinhoMap : ClassMap<Carrinho>
+    {
+        public CarrinhoMap()
+        {
+            Table("CARRINHO");
+            Id(a => a.Id, "ID");
+            References(a => a.UsuarioCarrinho, "ID_USUARIO").LazyLoad();
+            References(a => a.ProdutoCarrinho, "ID_PRODUTO").LazyLoad();
+            References(a => a.CampanhaCarrinho, "ID_CAMPANHA").LazyLoad();
+            Map(a => a.QuantidadeCarrinho, "QTD");
+            Map(a => a.ValorUnitarioCarrinho, "VALOR_UNITARIO");
+            Map(a => a.UsuarioInclusao, "USUARIO_INCLUSAO");
+            Map(a => a.DataInclusao, "DATA_INCLUSAO");
+            Map(a => a.UsuarioAteracao, "USUARIO_ALTERACAO");
+            Map(a => a.DataAteracao, "DATA_ALTERACAO");
+            Map(a => a.Excluido, "EXCLUIDO");
+        }
+    }
+}

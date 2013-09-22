@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\FabricaNhibernate\packages.config" />
+  <repository path="..\Persistencia\packages.config" />
+  <repository path="..\ViewWebMvc\packages.config" />
+  <repository path="..\Modelo\packages.config" />
+  <repository path="..\Fabrica\packages.config" />
+  <repository path="..\Negocio\packages.config" />
+</repositories>

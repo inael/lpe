@@ -1,0 +1,12 @@
+﻿/*CREATE TABLE [dbo].[REGIAO] (
+    [ID]                NUMERIC (18)  IDENTITY (1, 1) NOT NULL,
+    [NOME]              NVARCHAR (50) NOT NULL,
+    [USUARIO_INCLUSAO]  NVARCHAR (30) NULL,
+    [DATA_INCLUSAO]     DATETIME      NULL,
+    [USUARIO_ALTERACAO] NVARCHAR (30) NULL,
+    [DATA_ALTERACAO]    DATETIME      NULL,
+    [EXCLUIDO]          NUMERIC (18)  NULL
+);*/
+
+
+

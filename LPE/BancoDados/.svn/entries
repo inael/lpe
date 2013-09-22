@@ -1,0 +1,151 @@
+10
+
+dir
+35
+https://subversion.assembla.com/svn/levivier/trunk/2%20-%20Implementacao/Levivier/BancoDados
+https://subversion.assembla.com/svn/levivier
+
+
+
+2012-08-08T21:35:28.701358Z
+31
+svn_levivier
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+aa7b5f1d-4862-4721-8e16-11fc317d9ec3
+
+sql
+dir
+
+Import Schema Logs
+dir
+
+Data Generation Plans
+dir
+
+BancoDados.dbproj.schemaview
+file
+
+
+
+
+2012-03-23T21:45:38.000000Z
+8cf708279cdb36bd1f10fa1952f2854f
+2012-03-21T22:11:16.823244Z
+9
+joselinoneto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+364
+
+Scripts
+dir
+
+BancoDados.dbproj.user
+file
+
+
+
+
+2012-05-02T14:49:31.617779Z
+02816bcc1da4abf7ab716035d355eb7c
+2012-03-21T22:11:16.823244Z
+9
+joselinoneto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+143
+
+Schema Objects
+dir
+
+Properties
+dir
+
+BancoDados.dbproj
+file
+
+
+
+
+2012-08-08T23:27:27.836418Z
+4c3a207d7418e94ad0dbdb71ced6b50a
+2012-08-08T21:35:28.701358Z
+31
+svn_levivier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22635
+
+Schema Comparisons
+dir
+
