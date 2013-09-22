@@ -80,7 +80,7 @@ namespace ViewWebMvc.Controllers
 
             //Resize image depend upon your need
             //For give the size to image
-            jpg.ScaleToFit(2481, 3447);//, 790);
+            jpg.ScaleToFit(2481, 3447);
 
             //If you want to choose image as background then,
             jpg.Alignment = iTextSharp.text.Image.UNDERLYING;
@@ -92,13 +92,58 @@ namespace ViewWebMvc.Controllers
 
             doc.Open();
 
-            doc.Add(jpg);
+            string texto = @"estar neste mundo para cumprir uma missão inovadora.
+É estimulada pelos obstáculos, e deposita fé tanto na sua capacidade de visão para mover montanhas, como no seu empenho na busca dos resultados; o impossível para os outros, para ela é uma questão de tempo.
+Como se sente altamente segura de seus projetos, espera com todas as suas forças que suas ideias sejam aceitas e aplicadas pelos outros.
+Por sua capacidade de resolução e persistência, pode facilmente conseguir que sua equipe trabalhe com o mesmo engajamento.
+Dá grande valor à eficiência, tanto a própria quanto a dos outros.
+Pessoas deste tipo são capazes de aproveitar ao máximo o momento presente, saboreando cada uma das múltiplas facetas.
+Suas atitudes demonstram respeito à natureza.
+ COMO SE MOTIVA
+Ter atividades diferentes ao mesmo tempo.
+Usar da originalidade e improvisar soluções para os problemas, visando o alcance de objetivos maiores.
+Enfrentar desafios, dar sugestões, trabalhar com algo que necessite de sua habilidade de comunicação, persuasão, relacionamento com pessoas e de exercitar seu bom humor.
+Ser valorizada por sua competência em resolver problemas com rapidez e eficiência.
+ O QUE A DESAGRADA
+Realizar atividades metódicas, uma de cada vez.
+Trabalhar com atividades cujos procedimentos sejam rigidamente definidos.
+Desenvolver tarefas sozinha, sem contato com equipe de trabalho.
+Implementar projetos em que perceba ações antiecológicas.
+ UTILIZANDO SEUS POTENCIAIS
+Trabalhar em equipe, com possibilidade de liderar e estimular as pessoas a se engajarem em seus projetos.
+Lidar com situações que ofereçam oportunidades de ação e exijam boa capacidade de adaptação.
+Ser menos teimosa.
+Pode atingir melhores resultados se contar em sua equipe com pessoas mais práticas e objetivas, que a ajudem a ponderar e refletir sobre as consequências de seus atos. Da mesma forma, acercar-se de colaboradores que desempenhem tarefas rotineiras, com regras, métodos e precisão, proporcionando-lhe maior organização e foco.";
+            Font Myriad = new Font(FontFactory.GetFont(Server.MapPath("~/Content/Fonts/MyriadPro-Regular.otf"), 34, Font.NORMAL));
+            texto = texto.Replace(Environment.NewLine, String.Empty).Replace("  ", String.Empty);
+            
+            Chunk beginning = new Chunk(texto, Myriad);
+            Phrase p1 = new Phrase(beginning);
 
-            Paragraph paragraph = new Paragraph("2 this is the testing text for demonstrate the image is in background \n\n\n this is the testing text for demonstrate the image is in background");
+            // Heading
+            Paragraph pHeading = new Paragraph(170, new Chunk("Relatório", Myriad));
+            pHeading.Alignment = Element.ALIGN_CENTER;
 
-            doc.Add(jpg);
+            int pageNumber = -1;
 
-            doc.Add(paragraph);
+            for (int i = 0; i < writer.PageNumber; i++)
+            {
+                if (pageNumber != writer.PageNumber)
+                {
+                    // Add image
+                    doc.Add(jpg);
+                }
+
+                // Add something else
+                doc.Add(pHeading);
+
+                Paragraph paragraph = new Paragraph("2 this is the testing text for demonstrate the image is in background \n\n\n this is the testing text for demonstrate the image is in background");
+
+                doc.Add(p1);
+                doc.Add(paragraph);
+            }
+
+            
 
             // Render the view xml to a string, then parse that string into an XML dom.
             //string xmltext = this.RenderActionResultToString(this.View(model));
