@@ -159,8 +159,7 @@ namespace ViewWebMvc.Seguranca
 
             if (entidade != null)
             {
-                //if(passwordHash==entidade.Senha)//assume-se que o password no banco tambem eh um hash MD5
-                if (EncryptionService.VerifyHash(passwordHash, "MD5", entidade.Senha))
+                if(passwordHash==entidade.Senha || EncryptionService.VerifyHash(passwordHash, "MD5", entidade.Senha))
                 {
                     System.Web.HttpContext.Current.Session["user"] = entidade;
 

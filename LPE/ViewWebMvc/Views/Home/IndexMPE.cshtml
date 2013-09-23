@@ -1,6 +1,9 @@
 ﻿<!doctype html>
 <html>
 <head>
+@{
+    var a;   
+}
     <title>LPE</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Estilos -->
@@ -14,6 +17,41 @@
     <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminIndex.css" />
     <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminDetalhes.css" />
     <link rel="stylesheet" type="text/css" href="/LPE/Content/css/adminCreate.css" />
+     <!--jQuery-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-ui-1.8.13.custom.min.js"></script>
+    <!--jQuery adds-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.fcbkcomplete.js"> </script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.history.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.tooltip.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.messages_ptbr.js"></script>
+    <!--jQuery Conversor from HTML Table to CSV format-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.table2csv.0.1.1.min.js"></script>
+    <!--Multi-Threading-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/Thread.js"></script>
+    <!--OAT-->
+    <script type="text/javascript">        var featureList = ["pivot"];</script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/loader.js"></script>
+    <!--jqGrid-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/grid.locale-pt-br.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.jqGrid.min.js"></script>
+    <!--Google -->
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+    </script>
+    <!--Futuriti-->
+    <script type="text/javascript" src="/LPE/Content/Scripts/ajaxUpdate.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/PivotTable.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/ValidationAndMask.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/index.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/CrudMenu.js"></script>
+    <script type="text/javascript" src="/LPE/Content/Scripts/GlobalFunctions.js"></script>
+    <script type='text/javascript' src="/LPE/Content/Scripts/IndexMPEOptionMenu.js"></script>
 </head>
 <body>
     <div class="sitebody">
@@ -59,85 +97,6 @@
             </div>
         </div>
     </div>
-    <!--jQuery-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-1.6.1.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery-ui-1.8.13.custom.min.js"></script>
-    <!--jQuery adds-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.fcbkcomplete.js"> </script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.ui.datepicker-pt-BR.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.history.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.tooltip.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.validate.messages_ptbr.js"></script>
-    <!--jQuery Conversor from HTML Table to CSV format-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.table2csv.0.1.1.min.js"></script>
-    <!--Multi-Threading-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/Thread.js"></script>
-    <!--OAT-->
-    <script type="text/javascript">        var featureList = ["pivot"];</script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/OAT/loader.js"></script>
-    <!--jqGrid-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/grid.locale-pt-br.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.jqGrid.min.js"></script>
-    <!--Google -->
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("visualization", "1", { packages: ["corechart"] });
-    </script>
-    <!--Futuriti-->
-    <script type="text/javascript" src="/LPE/Content/Scripts/ajaxUpdate.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/PivotTable.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/ValidationAndMask.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/jquery.maskedinput-1.3.min.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/index.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/CrudMenu.js"></script>
-    <script type="text/javascript" src="/LPE/Content/Scripts/GlobalFunctions.js"></script>
-    <script type='text/javascript'>
-        var indexPage = 0;
-        var sessionUser = '@Session["userKey"]';
-
-        $(document).ready(function () {
-            $.history.init(HistoryContentUpdate, { unescape: true });
-            $.ajaxSetup({
-                error: trataAjaxError
-            });
-
-            //set user in cookie
-            var dt = new Date();
-            dt.setHours(dt.getHours() + 3);
-            document.cookie = "username=" + escape($("#selectLogin").attr('value')) +
-                    ";expires=" + dt.toGMTString();
-
-            $('#conteudo').html('<img src="/LPE/Content/imgs/ajax-loader.gif" />');
-
-            $.ajax({
-                url: "Home/OptionMenu",
-                type: "Post",
-                data: {},
-                success: function (data) {
-                        $("#conteudo").html(data);
-                        var entidade = eval("(" + data + ")");
-                        if (entidade.isValid == "false") {
-                            alert("Login ou senha inválidos");
-                        }
-                        else if (entidade.isValid == "true") {
-                            $('#userName').show();
-                            $("#userName").prepend('Olá, <b>'+entidade.userName+'</b>.<br/>Seja bem vindo!<br/>');
-                        }
-
-                        initializeOptionMenu('#conteudo');
-                        //UpdateContainer('Home', 'LogOn', '#UserInfo', null);
-
-                        $('#logo').html('<img src="/LPE/Content/imgs/logo.png" width="262px" height="105px" />');
-                        $('#topLogon').css({ "height": "153px", "background-image": "url(/LPE/Content/imgs/bar-top-content.png)" });
-                        $('#logOn').hide();
-
-                    //initializeOptionMenu('#Conteudo');
-                    }
-            });
-    });
-    </script>
-    
+   
 </body>
 </html>

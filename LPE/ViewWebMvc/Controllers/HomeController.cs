@@ -117,15 +117,16 @@ namespace ViewWebMvc.Controllers
             JavaScriptSerializer serializer = JsDateTimeSerializer.GetSerializer();
             IDictionary<string, string> objetoRetornoLogin = (IDictionary<string, string>)serializer.Deserialize(jsonRetornoLogin, typeof(IDictionary<string, string>));
             bool isValid = Boolean.Parse(objetoRetornoLogin["isValid"]);
-            String userName = objetoRetornoLogin["userName"];
+            
             if (isValid)
             {
-                //retornar msg ao MPE informando que esse usuario nao esta cadastrado no LPE
-                // ViewData["msg"] = "Usuário "+userName +" não encontrado na base do LPE.";
                 return RedirectToAction("IndexMPE");
             }
             else
             {
+
+                //retornar msg ao MPE informando que esse usuario nao esta cadastrado no LPE
+                // ViewData["msg"] = "Usuário "+userName +" não encontrado na base do LPE.";
                 return View("erro");
             }
         }
@@ -158,16 +159,15 @@ namespace ViewWebMvc.Controllers
                     //isValidLogin = true;
                     modelUser = (Usuario)Session["user"];
                     modelUser = bllUser.Consultar(modelUser.IdUsuario);
-
+                    returnLogin.Add("userName", modelUser.Pessoa_Usuario.NomePessoa + " " + modelUser.Pessoa_Usuario.SobrenomePessoa);
                     returnLogin.Add("isValid","true");
-                    returnLogin.Add("userName", modelUser.Pessoa_Usuario.NomePessoa+" "+modelUser.Pessoa_Usuario.SobrenomePessoa);
-                }
+}
                 else
                 {
                     returnLogin.Add("isValid", "false");
                     ModelState.AddModelError("", "Usuário e senha inválidos.");
                 }
-
+                
 
                 // If we got this far, something failed, redisplay form
                 // return View(model);

@@ -19,3 +19,9 @@ D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\log4net.dl
 D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\bin\Debug\log4net.xml
 D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Debug\Fabrica.dll
 D:\Developer\Web\Sistemas\LPE\2 - Implementacao\LPE\Fabrica\obj\Debug\Fabrica.pdb
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\bin\Debug\Fabrica.dll
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\bin\Debug\Fabrica.pdb
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\bin\Debug\log4net.dll
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\bin\Debug\log4net.xml
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\obj\Debug\Fabrica.dll
+C:\Users\Inael\Documents\Visual Studio 2010\Projects\lpe\LPE\Fabrica\obj\Debug\Fabrica.pdb

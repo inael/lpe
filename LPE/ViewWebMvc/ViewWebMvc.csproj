@@ -185,6 +185,8 @@
     <Content Include="Content\imgs\timbrado.jpg" />
     <Content Include="Content\imgs\x_32x32.png" />
     <Content Include="Content\Scripts\ajaxUpdate.js" />
+    <Content Include="Content\Scripts\IndexMPEOptionMenu.js" />
+    <Content Include="Content\Scripts\testeintegracao.js" />
     <Content Include="Content\Scripts\CrudMenu.js" />
     <Content Include="Content\Scripts\FormResposta.js" />
     <Content Include="Content\Scripts\GlobalFunctions.js" />
