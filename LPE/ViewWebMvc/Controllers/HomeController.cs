@@ -21,15 +21,6 @@ namespace ViewWebMvc.Controllers
         
         public ActionResult Index()
         {
-            RedirectToAction("Logout");
-            
-            string[] myCookies = Request.Cookies.AllKeys;
-
-            foreach (string cookie in myCookies)
-            {
-                Response.Cookies[cookie].Expires = DateTime.Now.AddDays(-1);
-            }
-
             return View();
         }
 
@@ -106,28 +97,48 @@ namespace ViewWebMvc.Controllers
             return View();
         }
 
-        public ActionResult IndexMPE()
+
+        public String LoginMPE(String Email, String PasswordHash, String Nome, String UrlOrigin)
         {
-            return View();
-        }
-
-        public ActionResult LoginMPE(String Email, String PasswordHash, String Nome) {
             String jsonRetornoLogin = CheckLogin(Email, PasswordHash);
-
             JavaScriptSerializer serializer = JsDateTimeSerializer.GetSerializer();
+            IDictionary<string, string> returnLogin = new Dictionary<string, string>();
+
             IDictionary<string, string> objetoRetornoLogin = (IDictionary<string, string>)serializer.Deserialize(jsonRetornoLogin, typeof(IDictionary<string, string>));
             bool isValid = Boolean.Parse(objetoRetornoLogin["isValid"]);
-            
             if (isValid)
             {
-                return RedirectToAction("IndexMPE");
+
+                Usuario modelUser = new Usuario();
+                UsuarioBll bllUser = new UsuarioBll();
+                string sKey = PasswordHash;
+                string sUser = Convert.ToString(System.Web.HttpContext.Current.Cache[sKey]);
+                sUser = sUser == "" ? null : sUser;
+            
+                FormsAuthentication.SetAuthCookie(PasswordHash, true);
+
+                String sessionId = System.Web.HttpContext.Current.Session.SessionID;
+                int sessionTimeout = System.Web.HttpContext.Current.Session.Timeout;
+                TimeSpan SessTimeOut = new TimeSpan(0, 0, sessionTimeout, 0, 0);
+                System.Web.HttpContext.Current.Cache.Insert(sKey, sessionId, null, DateTime.MaxValue, SessTimeOut,
+                   System.Web.Caching.CacheItemPriority.NotRemovable, null);
+                Session["userKey"] = PasswordHash;
+                Session["userType"]   = "MPE";//quando o usuario terminar de preencher as perguntas, usar o userType para verificar se o usuario eh do tipo MPE
+                Session["urlOrigin"] = UrlOrigin;
+                modelUser = (Usuario)Session["user"];
+                modelUser = bllUser.Consultar(modelUser.IdUsuario);
+                returnLogin.Add("userName", modelUser.Pessoa_Usuario.NomePessoa + " " + modelUser.Pessoa_Usuario.SobrenomePessoa);
+                returnLogin.Add("isValid", "true");
+                string json = serializer.Serialize(returnLogin);
+                return json;
             }
             else
             {
 
-                //retornar msg ao MPE informando que esse usuario nao esta cadastrado no LPE
-                // ViewData["msg"] = "Usuário "+userName +" não encontrado na base do LPE.";
-                return View("erro");
+                returnLogin.Add("userName", "");
+                returnLogin.Add("isValid", "false");
+                string json = serializer.Serialize(returnLogin);
+                return json;
             }
         }
 
