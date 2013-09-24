@@ -350,6 +350,7 @@
     <Content Include="Views\ResultadoManager\ViewResult.cshtml" />
     <Content Include="Views\ResultadoManager\UpdateSetPdf.cshtml" />
     <Content Include="Views\Home\TesteIntegracao.cshtml" />
+    <Content Include="Views\Home\IndexMPE.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

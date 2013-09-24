@@ -23,6 +23,10 @@ namespace ViewWebMvc.Controllers
         {
             return View();
         }
+        public ActionResult IndexMPE()
+        {
+            return View();
+        }
 
         public PartialViewResult Overview()
         {
@@ -97,12 +101,24 @@ namespace ViewWebMvc.Controllers
             return View();
         }
 
+        public ActionResult LoginMPE(String Email, String PasswordHash, String Nome, String UrlOrigin)
+        {
+            bool loginValido = CheckLoginMPE(Email, PasswordHash, Nome, UrlOrigin);
+            if (loginValido)
+            {
+                return RedirectToAction("IndexMPE");
+            }
+            else
+            {
+                return Content("<h2>Usuario nao cadastrado</h2>");
+            }
+        }
 
-        public String LoginMPE(String Email, String PasswordHash, String Nome, String UrlOrigin)
+        public bool CheckLoginMPE(String Email, String PasswordHash, String Nome, String UrlOrigin)
         {
             String jsonRetornoLogin = CheckLogin(Email, PasswordHash);
             JavaScriptSerializer serializer = JsDateTimeSerializer.GetSerializer();
-            IDictionary<string, string> returnLogin = new Dictionary<string, string>();
+          //  IDictionary<string, string> returnLogin = new Dictionary<string, string>();
 
             IDictionary<string, string> objetoRetornoLogin = (IDictionary<string, string>)serializer.Deserialize(jsonRetornoLogin, typeof(IDictionary<string, string>));
             bool isValid = Boolean.Parse(objetoRetornoLogin["isValid"]);
@@ -127,18 +143,18 @@ namespace ViewWebMvc.Controllers
                 Session["urlOrigin"] = UrlOrigin;
                 modelUser = (Usuario)Session["user"];
                 modelUser = bllUser.Consultar(modelUser.IdUsuario);
-                returnLogin.Add("userName", modelUser.Pessoa_Usuario.NomePessoa + " " + modelUser.Pessoa_Usuario.SobrenomePessoa);
-                returnLogin.Add("isValid", "true");
-                string json = serializer.Serialize(returnLogin);
-                return json;
+              //  returnLogin.Add("userName", modelUser.Pessoa_Usuario.NomePessoa + " " + modelUser.Pessoa_Usuario.SobrenomePessoa);
+               // returnLogin.Add("isValid", "true");
+                //string json = serializer.Serialize(returnLogin);
+                return true;
             }
             else
             {
 
-                returnLogin.Add("userName", "");
-                returnLogin.Add("isValid", "false");
-                string json = serializer.Serialize(returnLogin);
-                return json;
+                //returnLogin.Add("userName", "");
+                //returnLogin.Add("isValid", "false");
+                //string json = serializer.Serialize(returnLogin);
+                return false;
             }
         }
 

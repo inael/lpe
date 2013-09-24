@@ -1,5 +1,5 @@
 ﻿function initializeOptionMenu(local) {
-
+    
     UpdateContainer('Home', 'OptionMenu', local,
                 function () {
                     setInitIndexPage(indexPage);
